@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>hello, world!</title>
+      <title>Hello, World!</title>
       <link href="/2020/02/20/hello-world/"/>
       <url>/2020/02/20/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>你好，世界</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello, World!"></a>Hello, World!</h1><h1 id="你好，世界"><a href="#你好，世界" class="headerlink" title="你好，世界"></a>你好，世界</h1><p>1987年，Brian Kernighan 和Dennis M. Ritchie合著的《C语言程序设计(The C Programme Language)》问世并广泛流传，书中的第一例写有：</p><pre><code>#include &lt;stdio.h&gt;int main(){    printf("Hello, World!");    return 0;}</code></pre><p>由此，『Hello, World! 』成为程序员们惯用的调试程序输出的事例。</p><p>今天，我也成功输出了『Hello, World! 』，这意味着我的博客正式开始运行。我的博客中将会写有我的学习历程，经验分享，踩过的坑，以及自己抛的又跳进去的坑，未来还可能会有我自己的项目。</p><p>博客基于github仓库和hexo搭建，永久域名<a href="https://boyinthesun.github.io/">https://boyinthesun.github.io/</a> ，感谢来访。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       

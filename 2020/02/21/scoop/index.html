@@ -469,12 +469,12 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>Scoop</strong>是一个强大的<strong>Windows包管理工具</strong>，这里有<a href="https://scoop.sh/" target="_blank" rel="noopener">Scoop官网</a>以及<a href="https://github.com/lukesampson/scoop" target="_blank" rel="noopener">github上的项目地址</a>，具体功能便是<strong>用一行命令安装程序</strong>。<br>这里使用Windows预装的<strong>PowerShell</strong>进行操作，可以在程序搜索框搜索PowerShell，或在运行窗口输入<code>powershell</code>，Win10也可右键开始按钮-&gt;Windows PowerShell。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(1).png" alt="Windows PowerShell"></p>
+                <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>Scoop</strong>是一个强大的<strong>Windows包管理工具</strong>，这里有<a href="https://scoop.sh/" target="_blank" rel="noopener">Scoop官网</a>以及<a href="https://github.com/lukesampson/scoop" target="_blank" rel="noopener">github上的项目地址</a>，具体功能便是<strong>用一行命令安装程序</strong>。<br>这里使用Windows预装的<strong>PowerShell</strong>进行操作，可以在程序搜索框搜索PowerShell，或在运行窗口输入<code>powershell</code>，Win10也可右键开始按钮-&gt;Windows PowerShell。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(1).png?x-oss-process=style/watermark" alt="Windows PowerShell"></p>
 <h2 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1. 环境配置"></a>1. 环境配置</h2><p><strong>①Windows 7 SP1 + / Windows Server 2008+</strong><br><strong>②.NET Framework 4.5+</strong>和<strong>PowerShell 5+</strong>，<br>一般的<strong>Win10系统符合要求可直接跳过</strong>。<br><strong>查看.NET Framework版本：</strong>在PowerShell窗口中输入</p>
 <pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>CLRVersion<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>或打开`控制面板-&gt;程序-&gt;启用或关闭 Windows 功能<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(2).png" alt="图中版本为4.8"><br>若版本过低，请点击下载<a href="https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net452-developer-pack-offline-installer" target="_blank" rel="noopener">.NET Framework 4.5.2</a>并安装。<br><strong>查看PowerShell版本：</strong>在PowerShell窗口中输入</p>
+<p>或打开`控制面板-&gt;程序-&gt;启用或关闭 Windows 功能<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(2).png?x-oss-process=style/watermark" alt="图中版本为4.8"><br>若版本过低，请点击下载<a href="https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net452-developer-pack-offline-installer" target="_blank" rel="noopener">.NET Framework 4.5.2</a>并安装。<br><strong>查看PowerShell版本：</strong>在PowerShell窗口中输入</p>
 <pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token variable">$PSVersionTable</span><span class="token punctuation">.</span>PSVersion<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><strong>Major</strong>为版本号。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(3).png" alt="如图版本号为5"><br>若版本过低，则需下载。这里有微软官方说明<a href="https://docs.microsoft.com/zh-cn/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1" target="_blank" rel="noopener">下载并安装 Windows PowerShell 5.1</a></p>
+<p><strong>Major</strong>为版本号。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(3).png?x-oss-process=style/watermark" alt="如图版本号为5"><br>若版本过低，则需下载。这里有微软官方说明<a href="https://docs.microsoft.com/zh-cn/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1" target="_blank" rel="noopener">下载并安装 Windows PowerShell 5.1</a></p>
 <h2 id="2-安装"><a href="#2-安装" class="headerlink" title="2. 安装"></a>2. 安装</h2><p>在PowerShell窗口中输入</p>
 <pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token function">iex</span> <span class="token punctuation">(</span><span class="token function">new-object</span> net<span class="token punctuation">.</span>webclient<span class="token punctuation">)</span><span class="token punctuation">.</span>downloadstring<span class="token punctuation">(</span><span class="token string">'https://get.scoop.sh'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果<strong>下载scoop的过程中断，那么必须先删除</strong><code>C:\Users&lt;user&gt;\scoop</code>文件夹(如我的用户名是sunboy，那么文件夹就是<code>C:\Users\sunboy\scoop</code>)，再执行以上命令安装。</p>
@@ -502,9 +502,9 @@
     <span class="token operator">+</span> FullyQualifiedErrorId : WebException<span class="token punctuation">,</span> Microsoft<span class="token punctuation">.</span>PowreShell<span class="token punctuation">.</span>Commands<span class="token punctuation">.</span>InvokeExpressionCommand<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>需执行以下命令：</p>
 <pre class="line-numbers language-powershell"><code class="language-powershell"><span class="token namespace">[Net.ServicePointManager]</span>::SecurityProtocol = <span class="token namespace">[Net.SecurityProtocolType]</span>::Tls12<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果是新系统，可以尝试以下操作：打开ie，在弹出的窗口点击确定<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(4).png" alt=""></p>
+<p>如果是新系统，可以尝试以下操作：打开ie，在弹出的窗口点击确定<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(4).png?x-oss-process=style/watermark" alt=""></p>
 <h5 id="执行以下命令确认安装是否成功"><a href="#执行以下命令确认安装是否成功" class="headerlink" title="执行以下命令确认安装是否成功"></a>执行以下命令确认安装是否成功</h5><pre class="line-numbers language-powershell"><code class="language-powershell">scoop help<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(5).png" alt="scoop help"><br>若正常显示帮助信息则表示安装成功。</p>
+<p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/scoop(5).png?x-oss-process=style/watermark" alt="scoop help"><br>若正常显示帮助信息则表示安装成功。</p>
 <h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><p>因为用scoop下载软件大多是从外部链接下载的，网速较慢且容易失败，可以安装aria2来提升下载速度：</p>
 <pre class="line-numbers language-powershell"><code class="language-powershell">scoop install aria2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>安装完成后下载文件会优先调用aria2进行下载。</p>
@@ -1037,7 +1037,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.4k</span>&nbsp;字
+                class="white-color">4.3k</span>&nbsp;字
             
             
             

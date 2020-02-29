@@ -438,7 +438,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    905
+                    888
                 </div>
                 
 
@@ -474,10 +474,10 @@
 <li>然后以管理员运行CMD（或powershell），输入<code>bcdedit /set hypervisorlaunchtype off</code></li>
 <li>还需要在Windows功能中取消勾选<code>Hyper-v</code>。</li>
 <li><strong>重启</strong>之后就可以了</li>
-<li>此时只能运行windows沙盒，如果想运行vm，需要以管理员运行CMD（或powershell）<code>bcdedit /set hypervisorlaunchtype auto</code></li>
+<li>此时只能运行windows沙盒，如果想运行VMware或Hyper-v，需要以管理员运行CMD（或powershell）<code>bcdedit /set hypervisorlaunchtype auto</code></li>
 </ol>
 <hr>
-<p>目前我暂时没有找到Hyper-v与Windows沙盒共存的方法。<br>关于windows沙盒沙盒中不能更改语言的bug已经修复：<a href="https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941" target="_blank" rel="noopener">https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941</a></p>
+<p>关于windows沙盒沙盒中不能更改语言的bug已经修复：<a href="https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941" target="_blank" rel="noopener">https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {

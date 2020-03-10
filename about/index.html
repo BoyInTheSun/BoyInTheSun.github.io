@@ -513,7 +513,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-02","2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02"]
+            data: ["2019-03","2019-04","2019-05","2019-06","2019-07","2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03"]
         },
         yAxis: {
             type: 'value',
@@ -523,7 +523,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,11],
+                data: [0,0,0,0,0,0,0,0,0,0,0,11,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -565,7 +565,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"科普小文","value":2},{"name":"软件推荐","value":5},{"name":"杂记","value":2},{"name":"杂文","value":1}],
+                data: [{"name":"杂记","value":2},{"name":"科普小文","value":2},{"name":"软件推荐","value":5},{"name":"杂文","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -589,7 +589,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["软件","Windows","命令行软件","Scoop","杂记"]
+                data: ["软件","Windows","杂记","命令行软件","Scoop"]
             }
         ],
         yAxis: [
@@ -697,8 +697,20 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/tags/%E6%9D%82%E8%AE%B0/">
+                <span class="chip center-align waves-effect waves-light chip-default">杂记</span>
+            </a>
+            
+            
+            
             <a href="/tags/%E8%BD%AF%E4%BB%B6/">
                 <span class="chip center-align waves-effect waves-light chip-default">软件</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Windows/">
+                <span class="chip center-align waves-effect waves-light chip-default">Windows</span>
             </a>
             
             
@@ -711,18 +723,6 @@
             
             <a href="/tags/Scoop/">
                 <span class="chip center-align waves-effect waves-light chip-default">Scoop</span>
-            </a>
-            
-            
-            
-            <a href="/tags/Windows/">
-                <span class="chip center-align waves-effect waves-light chip-default">Windows</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%9D%82%E8%AE%B0/">
-                <span class="chip center-align waves-effect waves-light chip-default">杂记</span>
             </a>
             
             
@@ -859,6 +859,10 @@
             </script>
             
             <br>
+            
+            <span id="icp"><img src="https://cdn.jsdelivr.net/gh/BoyInTheSun/BoyInTheSun.github.io/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备20006745号</a>
+            </span>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">

@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>硕鼠——前些年很好用的视频下载神器</title>
+      <link href="/2020/03/10/flvcd/"/>
+      <url>/2020/03/10/flvcd/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>首先解释一下为什么要说是前几年。因为它太好用，知道的人越来越多，导致引起了视频平台的注意，以<strong>版权为由禁止自己的视频从硕鼠下载</strong>。这里推荐小众软件Annie，在我的另一篇中有介绍，<a href="https://boyinthesun.cn/2020/02/20/annie/" target="_blank" rel="noopener">传送门</a>。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/flvcd.png?x-oss-process=style/watermark" alt=""></p><h2 id="官方网站"><a href="#官方网站" class="headerlink" title="官方网站"></a>官方网站</h2><p><a href="http://www.flvcd.com" target="_blank" rel="noopener">http://www.flvcd.com</a><br>这是很成熟的软件，虽然有付费vip，但是基本上免费功能就足够使用了，只是限制批量解析最多20个，不支持自动解析剧集。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>具体方法就不介绍了，很简单，比较人性化。<br>可以下载其浏览器和下载器，不下载也可，直接在网页解析链接再下载即可，但是不建议。硕鼠浏览器还支持所有网页链接解析，可以通过此方法下载剧集，很好用。<br>同时还内置视频合并工具，可以进行简单的视频剪辑。</p><h2 id="支持网站"><a href="#支持网站" class="headerlink" title="支持网站"></a>支持网站</h2><p>主流视频网站(16)：<br>搜狐视频、乐视网、酷6网、56网、响巢看看、美拍、新浪视频、网易视频、激动网、糖豆网、华数TV、暴风影音、微博视频、秒拍、小咖秀、开眼视频<br>网络电视台(13)：<br>中国网络电视台、CCTV、凤凰宽频、江苏网络电视台、城市联合网络电视台、齐鲁网、北京网络广播电视台、广州电视台    浙江网络电视台、TVS南方电视台、台海宽频、中国时刻网、蓝天下<br>综合视频网站(29)：<br>优米网、时光网、播视网、淘米视频、豆瓣预告片、新华网、第一视频、中关村在线、TOM视频酷、搜房网、华录坞、爆米花、琥珀网、偶偶网、CC视频、中经播客、11688、视友网、艺术中国、知音视频网、MSN直播频道、ACFUN、嗶哩嗶哩、看看新闻网、酷米网、6平米、品善网、人民网、第一财经<br>教程视频网站(4)：<br>超星大讲堂、网易公开课、星火视频教程、51CTO学院<br>游戏视频网站(7)：<br>17173游戏视频、Replays.Net、星际视频网、太平洋游戏网、爱拍游戏、PLU游戏、4399游戏视频<br>音乐MV网站(10)：<br>音悦台、百度音乐掌门人、巨鲸MV、谷歌音乐、一听音乐、虾米网、巨鲸音乐、SoGua、5721儿歌、酷狗MV<br>国外视频网站(5)：<br>YouTube(专用下载器)、WAT TV、ESL TV    5min、Howcast</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件推荐 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Byte VS bit</title>
+      <link href="/2020/03/10/ByteVSbits/"/>
+      <url>/2020/03/10/ByteVSbits/</url>
+      
+        <content type="html"><![CDATA[<h2 id="存储量单位"><a href="#存储量单位" class="headerlink" title="存储量单位"></a>存储量单位</h2><h3 id="Byte-字节"><a href="#Byte-字节" class="headerlink" title="Byte 字节"></a>Byte 字节</h3><p><strong>字节</strong>是计算机常用的表示信息量大小的计量单位，一个字节包含八位二进制数，即包含8比特（位）。一字节数据可以表示0至9、a至z、A至Z等一个字符，或半个汉字。<strong>缩写为B</strong>。</p><h3 id="bit-位（比特）"><a href="#bit-位（比特）" class="headerlink" title="bit 位（比特）"></a>bit 位（比特）</h3><p><strong>位</strong>是最小的单位，有音译<strong>比特</strong>，表示一个二进制数，为0或1。<strong>缩写为b</strong>。</p><p>不难看出，1Byte = 8bits，1字节等于8位。</p><h2 id="速度常用单位"><a href="#速度常用单位" class="headerlink" title="速度常用单位"></a>速度常用单位</h2><p>对于宽带，常用的单位有两套。</p><h3 id="Mbps"><a href="#Mbps" class="headerlink" title="Mbps"></a>Mbps</h3><p>目前普及的百兆宽带，运营商通常写为100M，实际上是100<strong>Mbps</strong>，拆开来看，100 Million bits per second，100兆比特每秒。</p><h3 id="MB-s"><a href="#MB-s" class="headerlink" title="MB/s"></a>MB/s</h3><p>实际传输速度大概是10<strong>MB/s</strong>，这里是10MByte/s，10兆字节每秒。</p><p>两个单位换算也是八倍关系，8Mbps=1MB/s。所以100M宽带的理论速度为12.5MB/s，达到10MB/s就符合要求了。</p><h2 id="存储设备常用单位"><a href="#存储设备常用单位" class="headerlink" title="存储设备常用单位"></a>存储设备常用单位</h2><p>我们买到一块硬盘，上面标注1000GB，但是插到电脑上只显示953GB，难道是伪劣产品？</p><h3 id="GiB"><a href="#GiB" class="headerlink" title="GiB"></a>GiB</h3><p>GiB是1024进制的单位，<strong>1 GiB=1,024 MGiB=1,048,576 ‬KiB=1,073,741,824‬ Byte</strong>。但是Windows及大部分常用操作系统<strong>混淆了GB和GiB的概念</strong>，Windows系统中出现的GB实际上都是GiB，采用1024进制，因为对于操作系统，1024进制更为方便。上文中提到的单位在大多数情境下也都是1024进制。而Apple的OS X和其他某些系统中的GB却是1000进制（从mac OS 10.6开始），这也导致了同一文件在不同系统中看似大小不同的原因。</p><h3 id="GB"><a href="#GB" class="headerlink" title="GB"></a>GB</h3><p>GB是1000进制的单位，<strong>1 GB=1,000MB=1,000,000KB=1,000,000,000Byte</strong>。一般上在硬盘，u盘的单位均为1000进制，因为对于厂家，存储设备的大小都是10的整数倍。上文提到的1000GB硬盘，大小为1,000,000,000,000‬ Byte，在Windows上显示为953.7GB，缺少的50G并不是凭空消失，而是进制不同的缘故。<br>类似地，有<strong>1TiB=0.909TB, 1GiB=0.954, 1MiB=MB, 1KiB=0.977KB。</strong></p><h3 id="乌龙"><a href="#乌龙" class="headerlink" title="乌龙"></a>乌龙</h3><p>在计算机进入家庭的时候，<strong>这种差异无伤大雅</strong>。早期的存储设备出厂时是1024进制而不是1000进制。软盘在出厂的时候就是1024进制的，如3.5寸软盘大小为1440*1024Byte，标注为1.44MB。后期出现了光盘、磁盘、u盘、固态硬盘等等新的存储设备为了生产方便使用了1000进制，问题便出现了。<strong>如果存储设备不大，用户也难以感受到差别</strong>，但是现在的桌面级硬盘甚至出现了16TB的惊人容量，可是在系统上却显示14.5TB，消失的1.5TB引来消费者不满，实则是因为乱用单位的乌龙。</p><p>但是，也不乏商家利用消费者对于各种单位的混淆不清来欺骗消费者，此时就需要自己掌握以上进制知识，躲避陷阱。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科普小文 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博主提供的帮助</title>
       <link href="/2020/02/28/myskill/"/>
       <url>/2020/02/28/myskill/</url>
@@ -217,7 +255,7 @@
       <link href="/2020/02/20/changelog/"/>
       <url>/2020/02/20/changelog/</url>
       
-        <content type="html"><![CDATA[<h2 id="2020年3月10日"><a href="#2020年3月10日" class="headerlink" title="2020年3月10日"></a>2020年3月10日</h2><p><a href="https://boyinthesun.cn/" target="_blank" rel="noopener">boyinthesun.cn</a>域名备案通过，备案信息：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">京ICP备20006745号</a></p><h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>加入<a href="livere.com">来必力(LiveRe)</a>评论模块。</p><h2 id="2020年2月25日"><a href="#2020年2月25日" class="headerlink" title="2020年2月25日"></a>2020年2月25日</h2><p>修复了部分情景下缩略图无法显示的bug。并已由阿里云将sunboyang.cn域名备案申请提交管局。</p><h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>建站，完善所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云oos作图床和下载站，<strong>hexo-theme-matery</strong>主题。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="2020年3月10日"><a href="#2020年3月10日" class="headerlink" title="2020年3月10日"></a>2020年3月10日</h2><p><a href="https://boyinthesun.cn/" target="_blank" rel="noopener">boyinthesun.cn</a>域名备案通过，备案信息：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">京ICP备20006745号</a></p><h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>加入<a href="https://livere.com/" target="_blank" rel="noopener">来必力(LiveRe)</a>评论模块。</p><h2 id="2020年2月25日"><a href="#2020年2月25日" class="headerlink" title="2020年2月25日"></a>2020年2月25日</h2><p>修复了部分情景下缩略图无法显示的bug。并已由阿里云将sunboyang.cn域名备案申请提交管局。</p><h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>建站，完善所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云oos作图床和下载站，<strong>hexo-theme-matery</strong>主题。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>

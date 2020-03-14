@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>利用Windows共享文件夹互传文件</title>
+      <link href="/2020/03/13/sharefolder/"/>
+      <url>/2020/03/13/sharefolder/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在同一局域网下，或其中一台电脑有热点功能，甚至只有一根网线时，在Windows互传文件最方便的方式便是利用共享文件夹。共享文件夹支持的系统很多，从WinME到Win10都可以相互传输文件。在win7时微软推出家庭组以方便家庭或办公环境下互传文件，可惜到了win10就被废弃了。本文以win10为例，其他系统大同小异。</p><h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>首先要保证两机处于同一局域网下。如果是使用路由器或热点可以跳过以下步骤。<br>特别的，使用网线连接时需要额外配置。<br>在以前，两台电脑连接需使用双绞线。但是现在的网卡一般都有倒置功能，使用普通的平行线即可。<br>连接后，</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vmware安装详解</title>
       <link href="/2020/03/10/vm/"/>
       <url>/2020/03/10/vm/</url>
@@ -106,7 +119,7 @@
     
     
     <entry>
-      <title>格式工厂——难的一见的强大免费格式转换工具</title>
+      <title>格式工厂——难得一见的强大免费格式转换工具</title>
       <link href="/2020/02/27/formatfactory/"/>
       <url>/2020/02/27/formatfactory/</url>
       

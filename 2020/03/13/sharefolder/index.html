@@ -425,14 +425,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    273
+                    669
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -449,7 +449,10 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在同一局域网下，或其中一台电脑有热点功能，甚至只有一根网线时，在Windows互传文件最方便的方式便是利用共享文件夹。共享文件夹支持的系统很多，从WinME到Win10都可以相互传输文件。在win7时微软推出家庭组以方便家庭或办公环境下互传文件，可惜到了win10就被废弃了。本文以win10为例，其他系统大同小异。</p>
-<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>首先要保证两机处于同一局域网下。如果是使用路由器或热点可以跳过以下步骤。<br>特别的，使用网线连接时需要额外配置。<br>在以前，两台电脑连接需使用双绞线。但是现在的网卡一般都有倒置功能，使用普通的平行线即可。<br>连接后，</p>
+<h2 id="配置到同一网段"><a href="#配置到同一网段" class="headerlink" title="配置到同一网段"></a>配置到同一网段</h2><p>首先要保证两机处于同一局域网下。如果是使用路由器或热点务必跳过以下步骤。直接使用网线连接时需要额外配置。<br>在以前，两台电脑连接需使用双绞线。但是现在的网卡一般都有倒置功能，使用普通网线即可。<br>连接后，在任意机上找到<code>控制面板-&gt;网络和 Internet-&gt;网络和共享中心</code>，点击<code>以太网</code><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(1).png?x-oss-process=style/watermark" alt=""><br>点击<code>属性</code><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(2).png?x-oss-process=style/watermark" alt=""><br>选择<code>IPV4协议</code>，点击属性<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(3).png?x-oss-process=style/watermark" alt=""><br>按照如图填写，DNS留空即可<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(4).png?x-oss-process=style/watermark" alt=""><br>到另一机上到同样界面，如图填写，仅更改IP地址<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(5).png?x-oss-process=style/watermark" alt=""><br><strong>最后别忘了确定并关闭页面，否则不会生效</strong></p>
+<h2 id="设置共享文件夹"><a href="#设置共享文件夹" class="headerlink" title="设置共享文件夹"></a>设置共享文件夹</h2><p>到要共享文件夹的电脑上，<code>右键文件夹-&gt;属性-&gt;共享-&gt;共享</code>，选择everyone后点击共享即可，<strong>此时无需密码，这个网络的设备都可访问甚至更改文件</strong>。如果想设置成需要密码，可使用本机用户或者新建用户。若想改为仅读取等，更改权限级别即可。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(8).png?x-oss-process=style/watermark" alt=""></p>
+<h2 id="查看IP地址"><a href="#查看IP地址" class="headerlink" title="查看IP地址"></a>查看IP地址</h2><p>找到<code>控制面板-&gt;网络和 Internet-&gt;网络和共享中心</code>，点击正在使用的网络，点击详情<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(6).png?x-oss-process=style/watermark" alt=""><br>我们需要的是IPv4地址，记录下来，<strong>每人显示是不同的</strong>，如果按照上文来操作，应为<code>192.168.8.1</code>。图中是<code>192.168.1.100</code>。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/sharefolder(7).png?x-oss-process=style/watermark" alt=""><br>到另一台机子上，按快捷键<code>Win+R</code>打开运行窗口，输入IP地址并回车，要加上<code>\\</code>，如<code>\\192.168.1.100</code>。如果需要，需输入密码。至此，共享文件夹配置完成。为了方便，还可以将文件夹设置快捷方式。</p>
+<h2 id="说在最后"><a href="#说在最后" class="headerlink" title="说在最后"></a>说在最后</h2><p>如果你手动配置了IP地址，可能会导致下次连接其他网络出现无法访问的情况，别忘了改为<code>自动获得IP地址</code>。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -935,7 +938,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11.3k</span>&nbsp;字
+                class="white-color">11.7k</span>&nbsp;字
             
             
             

@@ -1,3 +1,5 @@
+http://www.boyinthesun.cn/post/c-hanoi/
+http://www.boyinthesun.cn/post/c-house/
 http://www.boyinthesun.cn/post/sharefolder/
 http://www.boyinthesun.cn/post/vm/
 http://www.boyinthesun.cn/post/flvcd/
@@ -6,5 +8,3 @@ http://www.boyinthesun.cn/post/myskill/
 http://www.boyinthesun.cn/post/5g/
 http://www.boyinthesun.cn/post/Universal/
 http://www.boyinthesun.cn/post/formatfactory/
-http://www.boyinthesun.cn/post/keyboard/
-http://www.boyinthesun.cn/post/winsndbox/

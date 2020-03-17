@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> 系统使用 </category>
+          <category> 小技巧 </category>
           
       </categories>
       
@@ -33,9 +33,23 @@
       <link href="/post/vm/"/>
       <url>/post/vm/</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>Vmware Workstation</strong>几乎是目前公认的Windows系统最好用的虚拟机软件，简称vm。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>目前计算机的硬件基本都符合要求，对于虚拟机，影响性能的主要是内存的大小和频率（推荐2GB以上）、存储介质（固态硬盘最好）、cpu、显卡等。请确认操作系统是<strong>64位</strong>，否则请下载<strong>vm10</strong>版本<br>下载<strong>vm15安装包</strong>，[<a href="https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1551-WIN&amp;productId=799&amp;rPId=39513" target="_blank" rel="noopener">官方下载链接</a>][<a href="http://down-ww3.newasp.net/pcdown/big/vmware15pro.rar" target="_blank" rel="noopener">备用下载链接1</a>][<a href="http://down-ww3.7down.net/pcdown/soft/xiazai/vmware-pro15.zip" target="_blank" rel="noopener">备用下载链接2</a>]<br>然后运行.exe安装程序<br>一直下一步，别忘了勾选<strong>接受条款</strong><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(1).png?x-oss-process=style/watermark" alt=""><br>安装路径自己选择，只是程序本体的安装路径，虚拟机路径可在以后单独设置。<br>增强型键盘可以不勾选，影响不大。勾选后可以绕过Windows系统直接把按键传输给虚拟机，比如当按下Cltr+Alt+Delete只会打开虚拟机中的任务管理器。安装后也可以通过再次运行安装包更改相关设置。<br>继续下一步，根据个人需求勾选选项。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(2).png?x-oss-process=style/watermark" alt="等待安装"><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(3).png?x-oss-process=style/watermark" alt=""><br>点击许可证，在框内输入密匙<code>FC7D0-D1YDL-M8DXZ-CYPZE-P2AY6</code>，重新启动。</p><h2 id="添加虚拟机"><a href="#添加虚拟机" class="headerlink" title="添加虚拟机"></a>添加虚拟机</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(4).png?x-oss-process=style/watermark" alt="创建新的虚拟机"><br>一般地，选择典型即可。<br>下文以安装Windows 7为例<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(5).png?x-oss-process=style/watermark" alt=""><br>选择iso格式的原版镜像镜像，Windows镜像推荐到<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN我告诉你</a>下载，汇总了微软几乎所有的ed2k下载链接，使用电驴、迅雷等下载。正常应出现<code>建议安装</code>，省去大部分手动操作。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(6).png?x-oss-process=style/watermark" alt=""><br>版本要选择正确。建议留空序列号，因为此时无法验证序列号是否可用。可以安装后以激活物理机的方式激活虚拟机。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(7).png?x-oss-process=style/watermark" alt=""><br>位置建议安装到固态硬盘，但不要在C盘。当然普通磁盘也可，只是速度感人。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(8).png?x-oss-process=style/watermark" alt=""><br>根据自己需求选择<br>完成后就由vm自动安装操作系统，静观其变即可。安装完成后别忘了激活系统。</p><h2 id="VMware-Tools"><a href="#VMware-Tools" class="headerlink" title="VMware Tools"></a>VMware Tools</h2><p>VMware Tools是一个实用插件，支持现有绝大多数系统。一般会自动安装，也可手动安装或更新。安装后可以支持直接拖拽传输文件、同步剪切板信息、任意分辨率显示、鼠标直接跨屏幕操作等等实用功能。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>Vmware Workstation</strong>几乎是目前公认的Windows系统最好用的虚拟机软件，简称vm。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>目前计算机的硬件基本都符合要求，对于虚拟机，影响性能的主要是内存的大小和频率（推荐2GB以上）、存储介质（固态硬盘最好）、cpu、显卡等。请确认操作系统是<strong>64位</strong>，否则请下载<strong>vm10</strong>版本<br>下载<strong>vm15安装包</strong>，[<a href="https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1551-WIN&amp;productId=799&amp;rPId=39513" target="_blank" rel="noopener">官方下载链接</a>][<a href="http://down-ww3.newasp.net/pcdown/big/vmware15pro.rar" target="_blank" rel="noopener">备用下载链接1</a>][<a href="http://down-ww3.7down.net/pcdown/soft/xiazai/vmware-pro15.zip" target="_blank" rel="noopener">备用下载链接2</a>]<br>然后运行.exe安装程序<br>一直下一步，别忘了勾选<strong>接受条款</strong><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(1).png?x-oss-process=style/watermark" alt=""><br>安装路径自己选择，只是程序本体的安装路径，虚拟机路径可在以后单独设置。<br>增强型键盘可以不勾选，影响不大。勾选后可以绕过Windows系统直接把按键传输给虚拟机，比如当按下Cltr+Alt+Delete只会打开虚拟机中的任务管理器。安装后也可以通过再次运行安装包更改相关设置。<br>继续下一步，根据个人需求勾选选项。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(2).png?x-oss-process=style/watermark" alt="等待安装"><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(3).png?x-oss-process=style/watermark" alt=""><br>点击许可证，在框内输入密匙<code>FC7D0-D1YDL-M8DXZ-CYPZE-P2AY6</code>，重新启动。</p><h2 id="添加虚拟机"><a href="#添加虚拟机" class="headerlink" title="添加虚拟机"></a>添加虚拟机</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(4).png?x-oss-process=style/watermark" alt="创建新的虚拟机"><br>一般地，选择典型即可。<br>下文以安装Windows 7为例<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(5).png?x-oss-process=style/watermark" alt=""><br>选择iso格式的原版镜像镜像，Windows镜像推荐到<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN我告诉你</a>下载，汇总了微软几乎所有的ed2k下载链接，使用电驴、迅雷等下载。正常应出现<code>快速安装</code>，省去大部分手动操作。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(6).png?x-oss-process=style/watermark" alt=""><br>版本要选择正确。建议留空序列号，因为此时无法验证序列号是否可用。可以安装后以激活物理机的方式激活虚拟机。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(7).png?x-oss-process=style/watermark" alt=""><br>位置建议安装到固态硬盘，但不要在C盘。当然普通磁盘也可，只是速度感人。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(8).png?x-oss-process=style/watermark" alt=""><br>根据自己需求选择<br>完成后就由vm自动安装操作系统，静观其变即可。安装完成后别忘了激活系统。</p><h2 id="VMware-Tools"><a href="#VMware-Tools" class="headerlink" title="VMware Tools"></a>VMware Tools</h2><p>VMware Tools是一个实用插件，支持现有绝大多数系统。一般会自动安装，也可手动安装或更新。安装后可以支持直接拖拽传输文件、同步剪切板信息、任意分辨率显示、鼠标直接跨屏幕操作等等实用功能。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> 软件推荐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
       
     </entry>
     
@@ -56,6 +70,14 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -75,6 +97,14 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 常识 </tag>
+            
+            <tag> 文件 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -93,6 +123,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -133,6 +169,18 @@
         <content type="html"><![CDATA[<p>此文的目的是汇总博主用过的破解器，不定期更新，如有需求请在文末留言，<strong>不保证绝对安全</strong>，但是我个人一直在使用，没有出现问题。<br><strong>如果涉及到版权问题，请联系我，我会在24小时内删除。</strong></p><h2 id="解压密码boyinthesun-cn"><a href="#解压密码boyinthesun-cn" class="headerlink" title="解压密码boyinthesun.cn"></a>解压密码<code>boyinthesun.cn</code></h2><h2 id="两句话"><a href="#两句话" class="headerlink" title="两句话"></a>两句话</h2><h3 id="支持正版"><a href="#支持正版" class="headerlink" title="支持正版"></a>支持正版</h3><h3 id="信杀软无破解"><a href="#信杀软无破解" class="headerlink" title="信杀软无破解"></a>信杀软无破解</h3><p>废话不多说，直接放下载链接<br>Corel全家桶算号器：<a href="https://boyinthesun.oss-cn-beijing.aliyuncs.com/files/Corel.X5-X9.All.Products.Universal%20keygen.rar" target="_blank" rel="noopener">Corel keygen</a><br>Adobe全家桶破解器：<a href="https://boyinthesun.oss-cn-beijing.aliyuncs.com/files/amtemu.v0.9.2-painter.rar" target="_blank" rel="noopener">amtemu</a>只支持cc2018及以前版本 </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> 杂文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂文 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -154,6 +202,8 @@
       
       
         <tags>
+            
+            <tag> 软件 </tag>
             
             <tag> Windows </tag>
             
@@ -180,6 +230,8 @@
       
         <tags>
             
+            <tag> 常识 </tag>
+            
             <tag> Windows </tag>
             
         </tags>
@@ -204,6 +256,8 @@
       
       
         <tags>
+            
+            <tag> 软件 </tag>
             
             <tag> Windows </tag>
             
@@ -232,6 +286,8 @@
             
             <tag> 软件 </tag>
             
+            <tag> Windows </tag>
+            
         </tags>
       
     </entry>
@@ -257,9 +313,11 @@
             
             <tag> 软件 </tag>
             
-            <tag> Scoop </tag>
+            <tag> Windows </tag>
             
-            <tag> 命令行软件 </tag>
+            <tag> 命令行 </tag>
+            
+            <tag> Scoop </tag>
             
         </tags>
       
@@ -286,9 +344,13 @@
             
             <tag> 软件 </tag>
             
+            <tag> Windows </tag>
+            
             <tag> 命令行 </tag>
             
             <tag> Scoop </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -301,7 +363,7 @@
       <link href="/post/changelog/"/>
       <url>/post/changelog/</url>
       
-        <content type="html"><![CDATA[<h2 id="2020年3月17日"><a href="#2020年3月17日" class="headerlink" title="2020年3月17日"></a>2020年3月17日</h2><p>为了解决部分网络访问速度不佳甚至不稳定的情况，配置域名在境内时指向阿里云云服务器ECS，并每日3:00与github仓库同步，境外时直接指向github仓库。<br>调小字号以解决在窄屏幕上网站标题<strong>BoyInthesun</strong>过长而折行的问题；<br>增加鼠标点击显示文字特效；增加动态彩带背景；<br>增加首页一言语录，引用API： <a href="https://api.uixsj.cn/hitokoto/w.php" target="_blank" rel="noopener">https://api.uixsj.cn/hitokoto/w.php</a> ；<br>更改404界面和502界面；</p><h2 id="2020年3月16日"><a href="#2020年3月16日" class="headerlink" title="2020年3月16日"></a>2020年3月16日</h2><p>更改文章路径，直接在<code>/post</code>下，而取代hexo默认的<code>/年/月/日</code>。<br>由于cloudflare的CDN效果不佳，弃用。</p><h2 id="2020年3月15日"><a href="#2020年3月15日" class="headerlink" title="2020年3月15日"></a>2020年3月15日</h2><p>改用cloudflare的DNS服务器，并开启其免费CDN加速</p><h2 id="2020年3月10日"><a href="#2020年3月10日" class="headerlink" title="2020年3月10日"></a>2020年3月10日</h2><p><a href="https://boyinthesun.cn/" target="_blank" rel="noopener">boyinthesun.cn</a>域名备案通过，备案信息：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">京ICP备20006745号</a></p><h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>加入<a href="https://livere.com/" target="_blank" rel="noopener">来必力(LiveRe)</a>评论模块。</p><h2 id="2020年2月25日"><a href="#2020年2月25日" class="headerlink" title="2020年2月25日"></a>2020年2月25日</h2><p>修复了部分情景下缩略图无法显示的bug。<br>已通过阿里云将sunboyang.cn域名备案申请提交管局。</p><h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>建站，完成所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云对象存储oos作图床和下载站，<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="2020年3月17日"><a href="#2020年3月17日" class="headerlink" title="2020年3月17日"></a>2020年3月17日</h2><p>为了解决部分网络访问速度不佳甚至不稳定的情况，配置域名在境内时指向阿里云云服务器ECS，并每日3:00与github仓库同步，境外时直接指向github仓库。<br>调小字号以解决在窄屏幕上网站标题<strong>BoyInthesun</strong>过长而折行的问题；<br>增加鼠标点击显示文字特效，《报菜名》；<br>增加动态彩带背景；<br>增加首页一言语录，引用API： <a href="https://api.uixsj.cn/hitokoto/w.php" target="_blank" rel="noopener">https://api.uixsj.cn/hitokoto/w.php</a> ；<br>更改404界面和502界面；</p><h2 id="2020年3月16日"><a href="#2020年3月16日" class="headerlink" title="2020年3月16日"></a>2020年3月16日</h2><p>更改文章路径，直接在<code>/post</code>下，而取代hexo默认的<code>/年/月/日</code>。<br>由于cloudflare的CDN效果不佳，弃用。</p><h2 id="2020年3月15日"><a href="#2020年3月15日" class="headerlink" title="2020年3月15日"></a>2020年3月15日</h2><p>改用cloudflare的DNS服务器，并开启其免费CDN加速</p><h2 id="2020年3月10日"><a href="#2020年3月10日" class="headerlink" title="2020年3月10日"></a>2020年3月10日</h2><p><a href="https://boyinthesun.cn/" target="_blank" rel="noopener">boyinthesun.cn</a>域名备案通过，备案信息：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">京ICP备20006745号</a></p><h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>加入<a href="https://livere.com/" target="_blank" rel="noopener">来必力(LiveRe)</a>评论模块。</p><h2 id="2020年2月25日"><a href="#2020年2月25日" class="headerlink" title="2020年2月25日"></a>2020年2月25日</h2><p>修复了部分情景下缩略图无法显示的bug。<br>已通过阿里云将sunboyang.cn域名备案申请提交管局。</p><h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>注册域名boyinthesun.cn<br>建立本站，完善所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云对象存储oos作图床和下载站，<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题。</p><h2 id="2020年2月左右"><a href="#2020年2月左右" class="headerlink" title="2020年2月左右"></a>2020年2月左右</h2><p>全国爆发信息冠状病毒疫情，受形势影响“被困家中”，故打算留下一些可以留下的足迹，见证我的成长。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
@@ -313,7 +375,7 @@
       
         <tags>
             
-            <tag> 杂记 </tag>
+            <tag> 杂文 </tag>
             
         </tags>
       
@@ -331,14 +393,14 @@
       
       <categories>
           
-          <category> 杂记 </category>
+          <category> 杂文 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 杂记 </tag>
+            <tag> 杂文 </tag>
             
         </tags>
       

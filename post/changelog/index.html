@@ -450,7 +450,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    269
+                    268
                 </div>
                 
 
@@ -473,13 +473,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2020年3月17日"><a href="#2020年3月17日" class="headerlink" title="2020年3月17日"></a>2020年3月17日</h2><p>增加鼠标点击显示文字特效；增加首页一言语录，引用一言语录API : <a href="https://api.uixsj.cn/hitokoto/w.php；" target="_blank" rel="noopener">https://api.uixsj.cn/hitokoto/w.php；</a><br>3.21 鼠标点击文字特效</p>
+                <h2 id="2020年3月17日"><a href="#2020年3月17日" class="headerlink" title="2020年3月17日"></a>2020年3月17日</h2><p>增加鼠标点击显示文字特效；增加动态彩带背景；增加首页一言语录，引用API : <a href="https://api.uixsj.cn/hitokoto/w.php" target="_blank" rel="noopener">https://api.uixsj.cn/hitokoto/w.php</a> ；更改404界面；</p>
 <h2 id="2020年3月16日"><a href="#2020年3月16日" class="headerlink" title="2020年3月16日"></a>2020年3月16日</h2><p>更改文章路径，直接在<code>/post</code>下，而取代hexo默认的<code>/年/月/日</code>。由于cloudflare的CDN效果不佳，弃用。</p>
 <h2 id="2020年3月15日"><a href="#2020年3月15日" class="headerlink" title="2020年3月15日"></a>2020年3月15日</h2><p>改用cloudflare的DNS服务器，并开启其免费CDN加速</p>
 <h2 id="2020年3月10日"><a href="#2020年3月10日" class="headerlink" title="2020年3月10日"></a>2020年3月10日</h2><p><a href="https://boyinthesun.cn/" target="_blank" rel="noopener">boyinthesun.cn</a>域名备案通过，备案信息：<a href="http://www.beian.miit.gov.cn" target="_blank" rel="noopener">京ICP备20006745号</a></p>
 <h2 id="2020年2月27日"><a href="#2020年2月27日" class="headerlink" title="2020年2月27日"></a>2020年2月27日</h2><p>加入<a href="https://livere.com/" target="_blank" rel="noopener">来必力(LiveRe)</a>评论模块。</p>
 <h2 id="2020年2月25日"><a href="#2020年2月25日" class="headerlink" title="2020年2月25日"></a>2020年2月25日</h2><p>修复了部分情景下缩略图无法显示的bug。并已由阿里云将sunboyang.cn域名备案申请提交管局。</p>
-<h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>建站，完善所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云oos作图床和下载站，<strong>hexo-theme-matery</strong>主题。</p>
+<h2 id="2020年2月20日"><a href="#2020年2月20日" class="headerlink" title="2020年2月20日"></a>2020年2月20日</h2><p>建站，完成所有基础功能，并开始运行。<br>采用<strong>github仓库+hexo部署</strong>，阿里云oos作图床和下载站，<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">hexo-theme-matery</a>主题。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -857,6 +857,43 @@
 
 </div>
 
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('150')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: BoyInTheSun<br />'
+            + '文章作者: BoyInTheSun<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。来自阳光男孩的博客www.boyinthesun.cn';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
 
 
 <!-- 代码块功能依赖 -->

@@ -1,3 +1,4 @@
+http://www.boyinthesun.cn/post/error-autosub/
 http://www.boyinthesun.cn/post/c-hanoi/
 http://www.boyinthesun.cn/post/c-house/
 http://www.boyinthesun.cn/post/sharefolder/
@@ -7,4 +8,3 @@ http://www.boyinthesun.cn/post/ByteVSbits/
 http://www.boyinthesun.cn/post/myskill/
 http://www.boyinthesun.cn/post/5g/
 http://www.boyinthesun.cn/post/Universal/
-http://www.boyinthesun.cn/post/formatfactory/

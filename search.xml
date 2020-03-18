@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Linux安装autosub踩坑“ERROR: Package &#39;cachetools&#39; requires a different Python: 2.7.13 not in &#39;~= 3.5&#39;”</title>
+      <link href="/post/error-autosub/"/>
+      <url>/post/error-autosub/</url>
+      
+        <content type="html"><![CDATA[<p>今天心血来潮，想在Debian上安装<code>autosub</code>，项目地址：<a href="https://github.com/agermanidis/autosub" target="_blank" rel="noopener">https://github.com/agermanidis/autosub</a><br>这是一个自动语音转文字的软件，基于python编写，以后有机会再介绍用法。</p><blockquote><p>安装<code>autosub</code>：</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">pip install autosub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>在安装过程中遇到问题，报错：</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">ERROR: Package 'cachetools' requires a different Python: 2.7.13 not in '~= 3.5'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>意思是python版本应该是3.5左右而非2.7.13<br><em>这里我疑惑了很久，是因为我英语太差，把它理解成了需要2.7.13而不是3.5</em></p><h2 id="踩坑过程，请勿轻易模仿"><a href="#踩坑过程，请勿轻易模仿" class="headerlink" title="踩坑过程，请勿轻易模仿"></a>踩坑过程，请勿轻易模仿</h2><blockquote><p>输入<code>pip -V</code>查看当前的python版本，得到：</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>可见python版本确实过低。我确定已经安装了python3.5，默认路径在<code>/usr/bin/</code>，请首先确保你已经安装了新版的python</p><blockquote><p>为新版python配置pip：<br>编辑文件<code>/usr/location/bin/pip</code>，第一行改为<code>#!/usr/bin/python3</code><br>如果该版本python未安装pip，执行：</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">wget https://bootstrap.pypa.io/get-pip.pypython3 get-pip.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>再运行autosub安装命令果然没有报错了<br><strong>但是！经判断，autosub是基于python2的项目，在python3.5下无法运行！</strong><br>如果你也不幸踩到这个坑，先把已经安装的autosub卸载</p><h2 id="正确解法"><a href="#正确解法" class="headerlink" title="正确解法"></a>正确解法</h2><p>问题出现的原因是<code>cachetools</code>包更新至<code>4.0.0</code>，此版本不支持2.7。我们<strong>只需手动安装低版本</strong>的<code>cachetools</code>包</p><blockquote><p>查看<code>cachetools</code>包历史版本</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">pip install cachetools==?<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>出现信息：</p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">Looking in indexes: https://mirrors.aliyun.com/pypi/simpleERROR: Could not find a version that satisfies the requirement cachetools==? (from versions: 0.0.0, 0.1.0, 0.2.0, 0.3.0, 0.3.1, 0.4.0, 0.5.0, 0.5.1, 0.6.0, 0.7.0, 0.7.1, 0.8.0, 0.8.1, 0.8.2, 1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.1.0, 1.1.1, 1.1.2, 1.1.3, 1.1.4, 1.1.5, 1.1.6, 2.0.0, 2.0.1, 2.1.0, 3.0.0, 3.1.0, 3.1.1, 4.0.0)ERROR: No matching distribution found for cachetools==?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><blockquote><p>尝试安装<code>3.1.1</code></p></blockquote><pre class="line-numbers language-shell"><code class="language-shell">pip install cachetools==3.1.1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装成功后，再运行安装<code>autosub</code>命令，程序成功安装并正常运行！</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 命令行 </tag>
+            
+            <tag> linux </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于C语言用递归算法实现汉诺塔解法的计算</title>
       <link href="/post/c-hanoi/"/>
       <url>/post/c-hanoi/</url>
@@ -363,11 +392,11 @@
             
             <tag> 软件 </tag>
             
-            <tag> Windows </tag>
-            
             <tag> 命令行 </tag>
             
             <tag> Scoop </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -394,11 +423,11 @@
             
             <tag> 软件 </tag>
             
-            <tag> Windows </tag>
-            
             <tag> 命令行 </tag>
             
             <tag> Scoop </tag>
+            
+            <tag> Windows </tag>
             
             <tag> Linux </tag>
             

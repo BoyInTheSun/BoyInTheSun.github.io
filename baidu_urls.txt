@@ -1,3 +1,4 @@
+http://boyinthesun.cn/post/python-scrapy/
 http://boyinthesun.cn/post/error-autosub/
 http://boyinthesun.cn/post/c-hanoi/
 http://boyinthesun.cn/post/c-house/
@@ -7,4 +8,3 @@ http://boyinthesun.cn/post/flvcd/
 http://boyinthesun.cn/post/ByteVSbits/
 http://boyinthesun.cn/post/myskill/
 http://boyinthesun.cn/post/5g/
-http://boyinthesun.cn/post/Universal/

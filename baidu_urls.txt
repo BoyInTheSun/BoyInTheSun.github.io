@@ -1,3 +1,5 @@
+http://boyinthesun.cn/post/persepolis/
+http://boyinthesun.cn/post/proxifier/
 http://boyinthesun.cn/post/python-scrapy/
 http://boyinthesun.cn/post/error-autosub/
 http://boyinthesun.cn/post/c-hanoi/
@@ -6,5 +8,3 @@ http://boyinthesun.cn/post/sharefolder/
 http://boyinthesun.cn/post/vm/
 http://boyinthesun.cn/post/flvcd/
 http://boyinthesun.cn/post/ByteVSbits/
-http://boyinthesun.cn/post/myskill/
-http://boyinthesun.cn/post/5g/

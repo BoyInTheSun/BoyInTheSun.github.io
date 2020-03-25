@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="scrapy实例————爬取链家新房数据, BoyInTheSun">
+    <meta name="keywords" content="Scrapy实例————爬取链家新房数据, BoyInTheSun">
     <meta name="description" content="目标通过Scrapy爬取链家新房数据，地址 https://bj.fang.lianjia.com/loupan ，并将爬取到的数据存储到json文件中。
 环境博主是在Windows平台使用PyCharm基于Python 3.7和Scrap">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>scrapy实例————爬取链家新房数据 | BoyInTheSun</title>
+    <title>Scrapy实例————爬取链家新房数据 | BoyInTheSun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">scrapy实例————爬取链家新房数据</h1>
+                    <h1 class="description center-align post-title">Scrapy实例————爬取链家新房数据</h1>
                 </div>
             </div>
         </div>
@@ -433,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -465,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-24
+                    2020-03-25
                 </div>
                 
 
@@ -514,7 +514,7 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
     area <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
     price_pre_spm <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
     price_pre_suite <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="分析网页"><a href="#分析网页" class="headerlink" title="分析网页"></a>分析网页</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(3).png?x-oss-process=style/watermark" alt=""><br>右键爬取内容，<code>检查</code>，以下以<code>name</code>为例讲解。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(4).png?x-oss-process=style/watermark" alt=""><br>为了寻找规律，复制三个<code>name</code>的xpath路径，不难找到规律。</p>
+<h3 id="分析网页"><a href="#分析网页" class="headerlink" title="分析网页"></a>分析网页</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(3).png?x-oss-process=style/watermark" alt=""><br>右键爬取内容，<code>检查</code>，以下以<code>name</code>为例讲解。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(4).png?x-oss-process=style/watermark" alt=""><br>复制三个<code>name</code>的xpath路径，不难找到规律。</p>
 <pre class="line-numbers language-xpath"><code class="language-xpath">/html/body/div[4]/ul[2]/li[1]/div/div[1]/a
 /html/body/div[4]/ul[2]/li[2]/div/div[1]/a
 /html/body/div[4]/ul[2]/li[3]/div/div[1]/a<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -588,7 +588,7 @@ USER_AGENT <span class="token operator">=</span> <span class="token string">'Moz
 <pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"金地旭辉·江山风华"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"resblock_type"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"住宅"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"sale_status"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"在售"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location0"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"大兴"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location1"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"黄村中"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location2"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"地铁4号线清源路站西侧800米"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num_room"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"3室"</span><span class="token punctuation">,</span> <span class="token string">"4室"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"area"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"建面 89-136㎡"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_spm"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"均价55800元/平方米"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_suite"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"总价480万/套"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
 <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"中海寰宇时代"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"resblock_type"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"住宅"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"sale_status"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"在售"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location0"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"大兴"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location1"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"瀛海"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location2"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"黄亦路与京福路西南口交叉口"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num_room"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"2室"</span><span class="token punctuation">,</span> <span class="token string">"3室"</span><span class="token punctuation">,</span> <span class="token string">"4室"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"area"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"建面 48-112㎡"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_spm"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"均价52449元/平方米"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_suite"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"总价350万/套"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
 <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"合景天汇广场"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"resblock_type"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"住宅"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"sale_status"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"在售"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location0"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"顺义"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location1"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"马坡"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"location2"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"昌金路与通顺路交汇处天汇广场售楼处"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num_room"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"3室"</span><span class="token punctuation">,</span> <span class="token string">"4室"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"area"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"建面 89-117㎡"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_spm"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"均价38000元/平方米"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"price_pre_suite"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"总价330万/套"</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>请不要把page改得过大，否则可能会封禁ip。如果想尝试，可以添加<code>time.sleep(1)</code>来暂停一秒防止被封。</p>
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>请不要把page改得过大，否则可能会封禁ip。如果想尝试，可以添加<code>time.sleep(1)</code>来暂停一秒防止被封，同时需要<code>import time</code>。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -670,8 +670,8 @@ USER_AGENT <span class="token operator">=</span> <span class="token string">'Moz
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -859,49 +859,53 @@ USER_AGENT <span class="token operator">=</span> <span class="token string">'Moz
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/python-scrapy/">
+                <a href="/post/proxifier/">
                     <div class="card-image">
                         
+                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/proxifier(1).png" class="responsive-img" alt="proxifier搭配v2ray等实现Windows全平台代理">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="scrapy实例————爬取链家新房数据">
-                        
-                        <span class="card-title">scrapy实例————爬取链家新房数据</span>
+                        <span class="card-title">proxifier搭配v2ray等实现Windows全平台代理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目标通过Scrapy爬取链家新房数据，地址 https://bj.fang.lianjia.com/loupan ，并将爬取到的数据存储到json文件中。
-环境博主是在Windows平台使用PyCharm基于Python 3.7和Scrap
+                            我们当前在Windows使用的梯子大多数只能通过修改代理使网页访问外网，但无法使程序走梯子。搭配proxifier，可以实现类似vpn的全平台代理，也可以分应用代理，功能强大。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
-                                    编程实例
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-category">
+                                    软件推荐
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6/">
+                        <span class="chip bg-color">软件</span>
+                    </a>
+                    
+                    <a href="/tags/Windows/">
+                        <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/macOS/">
+                        <span class="chip bg-color">macOS</span>
                     </a>
                     
                 </div>
@@ -953,12 +957,12 @@ USER_AGENT <span class="token operator">=</span> <span class="token string">'Moz
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">
-                        <span class="chip bg-color">命令行</span>
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
                     </a>
                     
-                    <a href="/tags/Linux/">
-                        <span class="chip bg-color">Linux</span>
+                    <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">
+                        <span class="chip bg-color">命令行</span>
                     </a>
                     
                     <a href="/tags/python/">
@@ -1151,7 +1155,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15k</span>&nbsp;字
+                class="white-color">16.3k</span>&nbsp;字
             
             
             

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BoyInTheSun</title>
+  
+  <subtitle>阳光男孩</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://boyinthesun.cn/"/>
+  <updated>2020-03-25T15:29:50.800Z</updated>
+  <id>http://boyinthesun.cn/</id>
+  
+  <author>
+    <name>BoyInTheSun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Persepolis Download Manager提升下载速度</title>
+    <link href="http://boyinthesun.cn/post/persepolis/"/>
+    <id>http://boyinthesun.cn/post/persepolis/</id>
+    <published>2020-03-25T08:06:19.000Z</published>
+    <updated>2020-03-25T15:29:50.800Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
+      <category term="macOS" scheme="http://boyinthesun.cn/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>proxifier搭配v2ray等实现Windows/macOS全平台代理</title>
+    <link href="http://boyinthesun.cn/post/proxifier/"/>
+    <id>http://boyinthesun.cn/post/proxifier/</id>
+    <published>2020-03-24T15:19:44.000Z</published>
+    <updated>2020-03-25T15:18:41.983Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="macOS" scheme="http://boyinthesun.cn/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scrapy实例————爬取链家新房数据</title>
+    <link href="http://boyinthesun.cn/post/python-scrapy/"/>
+    <id>http://boyinthesun.cn/post/python-scrapy/</id>
+    <published>2020-03-24T12:42:09.000Z</published>
+    <updated>2020-03-25T14:36:55.762Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot; title=&quot;目标&quot;&gt;&lt;/a&gt;目标&lt;/h2&gt;&lt;p&gt;通过&lt;code&gt;Scrapy&lt;/code&gt;爬取链家新房数据，地址 &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程实例" scheme="http://boyinthesun.cn/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    
+    
+      <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux安装autosub踩坑“ERROR: Package &#39;cachetools&#39; requires a different Python: 2.7.13 not in &#39;~= 3.5&#39;”</title>
+    <link href="http://boyinthesun.cn/post/error-autosub/"/>
+    <id>http://boyinthesun.cn/post/error-autosub/</id>
+    <published>2020-03-18T01:27:21.000Z</published>
+    <updated>2020-03-24T15:33:02.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天心血来潮，想在Debian上安装&lt;code&gt;autosub&lt;/code&gt;，项目地址：&lt;a href=&quot;https://github.com/agermanidis/autosub&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="linux" scheme="http://boyinthesun.cn/tags/linux/"/>
+    
+      <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于C语言用递归算法实现汉诺塔解法的计算</title>
+    <link href="http://boyinthesun.cn/post/c-hanoi/"/>
+    <id>http://boyinthesun.cn/post/c-hanoi/</id>
+    <published>2020-03-17T14:12:22.000Z</published>
+    <updated>2020-03-17T14:16:42.399Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;基于C语言用递归算法实现汉诺塔解法的计算&lt;br&gt;如有不懂欢迎提问&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程实例" scheme="http://boyinthesun.cn/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    
+    
+      <category term="C语言" scheme="http://boyinthesun.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于C语言用递归算法实现马踏棋盘解法的计算</title>
+    <link href="http://boyinthesun.cn/post/c-house/"/>
+    <id>http://boyinthesun.cn/post/c-house/</id>
+    <published>2020-03-17T13:11:41.000Z</published>
+    <updated>2020-03-17T14:13:51.141Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;基于C语言用递归算法实现马踏棋盘解法的计算&lt;br&gt;如有不懂欢迎提问&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-c&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程实例" scheme="http://boyinthesun.cn/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    
+    
+      <category term="C语言" scheme="http://boyinthesun.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows共享文件夹————Windows互传文件</title>
+    <link href="http://boyinthesun.cn/post/sharefolder/"/>
+    <id>http://boyinthesun.cn/post/sharefolder/</id>
+    <published>2020-03-13T00:20:19.000Z</published>
+    <updated>2020-03-17T13:57:31.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="小技巧" scheme="http://boyinthesun.cn/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vmware安装详解</title>
+    <link href="http://boyinthesun.cn/post/vm/"/>
+    <id>http://boyinthesun.cn/post/vm/</id>
+    <published>2020-03-10T11:50:32.000Z</published>
+    <updated>2020-03-17T12:48:25.883Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Vmware
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>硕鼠——前些年很好用的视频下载神器</title>
+    <link href="http://boyinthesun.cn/post/flvcd/"/>
+    <id>http://boyinthesun.cn/post/flvcd/</id>
+    <published>2020-03-10T06:00:16.000Z</published>
+    <updated>2020-03-17T12:51:59.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Byte VS bit</title>
+    <link href="http://boyinthesun.cn/post/ByteVSbits/"/>
+    <id>http://boyinthesun.cn/post/ByteVSbits/</id>
+    <published>2020-03-10T04:44:53.000Z</published>
+    <updated>2020-03-17T12:50:04.385Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;存储量单位&quot;&gt;&lt;a href=&quot;#存储量单位&quot; class=&quot;headerlink&quot; title=&quot;存储量单位&quot;&gt;&lt;/a&gt;存储量单位&lt;/h2&gt;&lt;h3 id=&quot;Byte-字节&quot;&gt;&lt;a href=&quot;#Byte-字节&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
+    
+    
+      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
+    
+      <category term="文件" scheme="http://boyinthesun.cn/tags/%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博主提供的帮助</title>
+    <link href="http://boyinthesun.cn/post/myskill/"/>
+    <id>http://boyinthesun.cn/post/myskill/</id>
+    <published>2020-02-28T03:26:43.000Z</published>
+    <updated>2020-03-17T12:52:42.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;博主可以提供以下帮助，只要不过分，帮忙宣传就免费！请&lt;a href=&quot;tencent://AddContact/?fromId=50&amp;amp;fromSubId=1&amp;amp;subcmd=all&amp;amp;uin=3527857306&quot;&gt;qq联系&lt;/a&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5G VS 5GHz</title>
+    <link href="http://boyinthesun.cn/post/5g/"/>
+    <id>http://boyinthesun.cn/post/5g/</id>
+    <published>2020-02-28T02:40:00.000Z</published>
+    <updated>2020-03-17T09:35:02.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;正像3G时代的远去，5G将取代4G，以提供速度更快的移动网络。而现今很多路由器产品都声称支持5G，这又是怎么回事呢？&lt;br&gt;事实上两者是完全不同的概念&lt;/p&gt;
+&lt;h2 id=&quot;5G——一种新的蜂窝网络标准&quot;&gt;&lt;a href=&quot;#5G——一种新的蜂窝网络标准&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
+    
+    
+      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
+    
+      <category term="网络" scheme="http://boyinthesun.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>破解器汇总</title>
+    <link href="http://boyinthesun.cn/post/Universal/"/>
+    <id>http://boyinthesun.cn/post/Universal/</id>
+    <published>2020-02-27T10:13:00.000Z</published>
+    <updated>2020-03-17T12:57:16.405Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;此文的目的是汇总博主用过的破解器，不定期更新，如有需求请在文末留言，&lt;strong&gt;不保证绝对安全&lt;/strong&gt;，但是我个人一直在使用，没有出现问题。&lt;br&gt;&lt;strong&gt;如果涉及到版权问题，请联系我，我会在24小时内删除。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>格式工厂——难得一见的强大免费格式转换工具</title>
+    <link href="http://boyinthesun.cn/post/formatfactory/"/>
+    <id>http://boyinthesun.cn/post/formatfactory/</id>
+    <published>2020-02-27T08:27:12.000Z</published>
+    <updated>2020-03-17T12:52:11.167Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;首先贴上官网地址：&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘不为人知的一面（一）</title>
+    <link href="http://boyinthesun.cn/post/keyboard/"/>
+    <id>http://boyinthesun.cn/post/keyboard/</id>
+    <published>2020-02-24T12:24:56.000Z</published>
+    <updated>2020-03-19T12:04:02.147Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;概况篇&quot;&gt;&lt;a href=&quot;#概况篇&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
+    
+    
+      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows沙盒——系统自带的一次性虚拟机</title>
+    <link href="http://boyinthesun.cn/post/winsndbox/"/>
+    <id>http://boyinthesun.cn/post/winsndbox/</id>
+    <published>2020-02-24T07:25:10.000Z</published>
+    <updated>2020-03-17T12:57:44.805Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TrafficMonitor——简洁实用的网速/cpu/内存监控器</title>
+    <link href="http://boyinthesun.cn/post/TrafficMonitor/"/>
+    <id>http://boyinthesun.cn/post/TrafficMonitor/</id>
+    <published>2020-02-21T15:51:09.000Z</published>
+    <updated>2020-03-17T12:57:06.222Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;项目地址：&lt;a href=&quot;https://github.com/zhongyang219/TrafficMonitor&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scoop安装详解</title>
+    <link href="http://boyinthesun.cn/post/scoop/"/>
+    <id>http://boyinthesun.cn/post/scoop/</id>
+    <published>2020-02-21T05:31:50.000Z</published>
+    <updated>2020-03-17T12:52:52.389Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Scoop&lt;/strong&gt;是一个强大的&lt;strong&gt;Windows包管理工具&lt;/strong&gt;，这里有&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="Scoop" scheme="http://boyinthesun.cn/tags/Scoop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Annie——一个简洁强大的轻量级下载神器</title>
+    <link href="http://boyinthesun.cn/post/annie/"/>
+    <id>http://boyinthesun.cn/post/annie/</id>
+    <published>2020-02-20T12:21:38.000Z</published>
+    <updated>2020-03-17T12:49:39.833Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;项目网站：&lt;a href=&quot;https://github.com/iawia002/annie&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="Scoop" scheme="http://boyinthesun.cn/tags/Scoop/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更新日志</title>
+    <link href="http://boyinthesun.cn/post/changelog/"/>
+    <id>http://boyinthesun.cn/post/changelog/</id>
+    <published>2020-02-20T00:00:00.000Z</published>
+    <updated>2020-03-25T15:35:33.466Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;2020年3月25日&quot;&gt;&lt;a href=&quot;#2020年3月25日&quot; class=&quot;headerlink&quot; title=&quot;2020年3月25日&quot;&gt;&lt;/a&gt;2020年3月25日&lt;/h2&gt;&lt;p&gt;新增RSS推送链接。&lt;/p&gt;
+&lt;h2 id=&quot;2020年3月24日&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://boyinthesun.cn/tags/%E6%9D%82%E6%96%87/"/>
+    
+  </entry>
+  
+</feed>

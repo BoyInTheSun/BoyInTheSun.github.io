@@ -473,21 +473,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-25
+                    2020-03-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    486
+                    717
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -511,7 +511,11 @@ scoop install persepolis<span aria-hidden="true" class="line-numbers-rows"><span
 <pre><code>brew cask install persepolis-download-manager</code></pre><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>Debian/Ubuntu <a href="https://pan.boyinthesun.cn/%E8%BD%AF%E4%BB%B6/PersepolisDownloadManager/persepolis_3.2.0.2_all.deb" target="_blank" rel="noopener">[本地下载]</a> <a href="https://github.com/persepolisdm/persepolis/releases/download/3.2.0/persepolis_3.2.0.2_all.deb" target="_blank" rel="noopener">[github下载]</a></p>
 <h3 id="其他系统"><a href="#其他系统" class="headerlink" title="其他系统"></a>其他系统</h3><p>请参见官方wiki <a href="https://github.com/persepolisdm/persepolis/wiki/Home-en" target="_blank" rel="noopener">https://github.com/persepolisdm/persepolis/wiki/Home-en</a></p>
 <h2 id="更改语言"><a href="#更改语言" class="headerlink" title="更改语言"></a>更改语言</h2><p>第一步便是更改到中文。But if you do kown what’s that mean, just pass this step.<br>找到<code>Edit-&gt;Preferences</code><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/persepolis(1).png?x-oss-process=style/watermark" alt=""><br>更改language为中文，如果你喜欢，也可以更改字体和字号<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/persepolis(2).png?x-oss-process=style/watermark" alt=""><br>改完后记得<strong>重新启动程序</strong></p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>点击加号新建任务便可以使用了。新版本增加了下载页面视频的功能，博主还没有尝试，感兴趣的自己研究吧。</p>
+<h2 id="添加浏览器拓展"><a href="#添加浏览器拓展" class="headerlink" title="添加浏览器拓展"></a>添加浏览器拓展</h2><p>这是可选步骤，如果你不安装，则需要手动添加下载链接<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/persepolis(4).png?x-oss-process=style/watermark" alt=""></p>
+<h3 id="网页安装"><a href="#网页安装" class="headerlink" title="网页安装"></a>网页安装</h3><p><a href="https://chrome.google.com/webstore/detail/persepolis-download-manag/legimlagjjoghkoedakdjhocbeomojao?hl=en" target="_blank" rel="noopener">[chrome安装]需梯子</a> 同时支持其他支持chrome扩展的浏览器<br><a href="https://addons.mozilla.org/zh-CN/firefox/addon/persepolis-dlm-integration/" target="_blank" rel="noopener">[firefox安装]</a></p>
+<h3 id="压缩包安装"><a href="#压缩包安装" class="headerlink" title="压缩包安装"></a>压缩包安装</h3><p><a href="https://pan.boyinthesun.cn/%E8%BD%AF%E4%BB%B6/PersepolisDownloadManager/PersepolisDownloadManagerIntegration_v2.2.0_0.rar" target="_blank" rel="noopener">[本地下载]</a><br>下载完成后将压缩包解压到某一个目录，也可将其解压到默认目录<code>C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Extensions</code>，在扩展程序界面打开<code>开发者模式</code>,<code>加载已解压扩展程序</code>，选择根文件夹<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/persepolis(3).png?x-oss-process=style/watermark" alt=""><br><strong>导入扩展后请勿将其删除</strong></p>
+<h3 id="crx格式安装"><a href="#crx格式安装" class="headerlink" title="crx格式安装"></a>crx格式安装</h3><p><a href="https://pan.boyinthesun.cn/%E8%BD%AF%E4%BB%B6/PersepolisDownloadManager/PersepolisDownloadManagerIntegration_v2.2.0_0.crx" target="_blank" rel="noopener">[本地下载]</a><br>一般地，将其拖拽至浏览器即可安装。<br>更多内容请参见<a href="https://github.com/persepolisdm/Persepolis-WebExtension" target="_blank" rel="noopener">github项目地址</a></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>点击加号新建任务便可以使用了，还有很多实用功能，如批量下载网页链接，使用代理下载等。新版本内置了<code>youtube-dl</code>来解析页面视频并下载，理论上不仅支持youtube，也应该支持国内外大部分视频站，博主还没有尝试，感兴趣的自己研究吧。</p>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>多线程下载，在默写情况下可以跑满宽带，是通过建立多个线程，多线下载来加速。但是对于以下情况无法起到加速作用或效果不好：</p>
 <blockquote>
 <p>1.单线程速度很快，已经跑满宽带<br>2.服务器限制连接线程数<br>3.服务器不支持断点续传，只能单线程一次性下载完毕<br>4.宽带线路差，对总速度产生影响</p>
@@ -1087,7 +1091,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">16.3k</span>&nbsp;字
+                class="white-color">16.5k</span>&nbsp;字
             
             
             

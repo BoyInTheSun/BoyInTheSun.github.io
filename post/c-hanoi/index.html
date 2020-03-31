@@ -844,12 +844,12 @@ void print(int ">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">
-                        <span class="chip bg-color">命令行</span>
-                    </a>
-                    
                     <a href="/tags/linux/">
                         <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">
+                        <span class="chip bg-color">命令行</span>
                     </a>
                     
                     <a href="/tags/python/">
@@ -929,7 +929,7 @@ void print(int ">
 
         var selection = window.getSelection();
         // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('150')) {
+        if (('' + selection).length < Number.parseInt('800')) {
             return;
         }
 

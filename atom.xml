@@ -444,9 +444,9 @@
       <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
     
     
-      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
-    
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
     
   </entry>
   
@@ -570,9 +570,9 @@
     
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
-    
       <category term="Scoop" scheme="http://boyinthesun.cn/tags/Scoop/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
     
   </entry>
   
@@ -581,7 +581,7 @@
     <link href="http://boyinthesun.cn/post/changelog/"/>
     <id>http://boyinthesun.cn/post/changelog/</id>
     <published>2020-02-20T00:00:00.000Z</published>
-    <updated>2020-03-27T03:32:27.869Z</updated>
+    <updated>2020-03-31T15:24:09.429Z</updated>
     
     <summary type="html">
     
@@ -589,8 +589,7 @@
       
         
         
-          &lt;h2 id=&quot;2020年3月25日&quot;&gt;&lt;a href=&quot;#2020年3月25日&quot; class=&quot;headerlink&quot; title=&quot;2020年3月25日&quot;&gt;&lt;/a&gt;2020年3月25日&lt;/h2&gt;&lt;p&gt;新增RSS推送链接。&lt;/p&gt;
-&lt;h2 id=&quot;2020年3月24日&quot;&gt;&lt;a
+          &lt;h2 id=&quot;2020年3月31日&quot;&gt;&lt;a href=&quot;#2020年3月31日&quot; class=&quot;headerlink&quot; title=&quot;2020年3月31日&quot;&gt;&lt;/a&gt;2020年3月31日&lt;/h2&gt;&lt;p&gt;将所有博客内容搬运到&lt;a
         
       
     

@@ -128,9 +128,9 @@
       <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
     
     
-      <category term="linux" scheme="http://boyinthesun.cn/tags/linux/"/>
-    
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="linux" scheme="http://boyinthesun.cn/tags/linux/"/>
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     

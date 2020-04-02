@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-03-26T09:02:44.574Z</updated>
+  <updated>2020-04-02T13:15:14.567Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>解决live2d看板娘和busuanzi不蒜子计数冲突</title>
+    <link href="http://boyinthesun.cn/post/error-live2d-busuanzi/"/>
+    <id>http://boyinthesun.cn/post/error-live2d-busuanzi/</id>
+    <published>2020-04-02T09:50:05.000Z</published>
+    <updated>2020-04-02T13:15:14.567Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;近日安装了live2d看板娘插件，&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="hexo" scheme="http://boyinthesun.cn/tags/hexo/"/>
+    
+      <category term="前端" scheme="http://boyinthesun.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用Persepolis Download Manager提升下载速度</title>
     <link href="http://boyinthesun.cn/post/persepolis/"/>
     <id>http://boyinthesun.cn/post/persepolis/</id>
     <published>2020-03-25T08:06:19.000Z</published>
-    <updated>2020-03-26T09:02:44.574Z</updated>
+    <updated>2020-04-02T10:29:05.246Z</updated>
     
     <summary type="html">
     
@@ -52,7 +81,7 @@
     <link href="http://boyinthesun.cn/post/proxifier/"/>
     <id>http://boyinthesun.cn/post/proxifier/</id>
     <published>2020-03-24T15:19:44.000Z</published>
-    <updated>2020-03-25T15:18:41.983Z</updated>
+    <updated>2020-04-02T10:33:11.823Z</updated>
     
     <summary type="html">
     
@@ -79,11 +108,40 @@
   </entry>
   
   <entry>
+    <title>Scrapy实例————爬取学堂在线合作院校页面内容</title>
+    <link href="http://boyinthesun.cn/post/python-scrapy1/"/>
+    <id>http://boyinthesun.cn/post/python-scrapy1/</id>
+    <published>2020-03-24T12:42:09.000Z</published>
+    <updated>2020-04-02T14:54:06.140Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程实例" scheme="http://boyinthesun.cn/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    
+    
+      <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
+    
+      <category term="学堂在线《Python数据分析与可视化》" scheme="http://boyinthesun.cn/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Scrapy实例————爬取链家新房数据</title>
     <link href="http://boyinthesun.cn/post/python-scrapy/"/>
     <id>http://boyinthesun.cn/post/python-scrapy/</id>
     <published>2020-03-24T12:42:09.000Z</published>
-    <updated>2020-03-31T07:15:48.683Z</updated>
+    <updated>2020-04-02T10:36:33.363Z</updated>
     
     <summary type="html">
     
@@ -103,6 +161,8 @@
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     
+      <category term="学堂在线《Python数据分析与可视化》" scheme="http://boyinthesun.cn/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/"/>
+    
   </entry>
   
   <entry>
@@ -110,7 +170,7 @@
     <link href="http://boyinthesun.cn/post/error-autosub/"/>
     <id>http://boyinthesun.cn/post/error-autosub/</id>
     <published>2020-03-18T01:27:21.000Z</published>
-    <updated>2020-03-26T02:10:56.720Z</updated>
+    <updated>2020-04-02T10:10:13.587Z</updated>
     
     <summary type="html">
     
@@ -141,7 +201,7 @@
     <link href="http://boyinthesun.cn/post/c-hanoi/"/>
     <id>http://boyinthesun.cn/post/c-hanoi/</id>
     <published>2020-03-17T14:12:22.000Z</published>
-    <updated>2020-03-17T14:16:42.399Z</updated>
+    <updated>2020-04-02T10:03:45.203Z</updated>
     
     <summary type="html">
     
@@ -169,7 +229,7 @@
     <link href="http://boyinthesun.cn/post/c-house/"/>
     <id>http://boyinthesun.cn/post/c-house/</id>
     <published>2020-03-17T13:11:41.000Z</published>
-    <updated>2020-03-17T14:13:51.141Z</updated>
+    <updated>2020-04-02T10:09:34.648Z</updated>
     
     <summary type="html">
     
@@ -197,7 +257,7 @@
     <link href="http://boyinthesun.cn/post/sharefolder/"/>
     <id>http://boyinthesun.cn/post/sharefolder/</id>
     <published>2020-03-13T00:20:19.000Z</published>
-    <updated>2020-03-17T13:57:31.627Z</updated>
+    <updated>2020-04-02T10:49:24.855Z</updated>
     
     <summary type="html">
     
@@ -224,7 +284,7 @@
     <link href="http://boyinthesun.cn/post/vm/"/>
     <id>http://boyinthesun.cn/post/vm/</id>
     <published>2020-03-10T11:50:32.000Z</published>
-    <updated>2020-03-17T12:48:25.883Z</updated>
+    <updated>2020-04-02T10:57:21.775Z</updated>
     
     <summary type="html">
     
@@ -253,7 +313,7 @@
     <link href="http://boyinthesun.cn/post/flvcd/"/>
     <id>http://boyinthesun.cn/post/flvcd/</id>
     <published>2020-03-10T06:00:16.000Z</published>
-    <updated>2020-03-17T12:51:59.902Z</updated>
+    <updated>2020-04-02T10:11:21.288Z</updated>
     
     <summary type="html">
     
@@ -282,7 +342,7 @@
     <link href="http://boyinthesun.cn/post/ByteVSbits/"/>
     <id>http://boyinthesun.cn/post/ByteVSbits/</id>
     <published>2020-03-10T04:44:53.000Z</published>
-    <updated>2020-03-17T12:50:04.385Z</updated>
+    <updated>2020-04-02T10:02:09.521Z</updated>
     
     <summary type="html">
     
@@ -339,7 +399,7 @@
     <link href="http://boyinthesun.cn/post/5g/"/>
     <id>http://boyinthesun.cn/post/5g/</id>
     <published>2020-02-28T02:40:00.000Z</published>
-    <updated>2020-03-17T09:35:02.463Z</updated>
+    <updated>2020-04-02T09:54:42.324Z</updated>
     
     <summary type="html">
     
@@ -397,7 +457,7 @@
     <link href="http://boyinthesun.cn/post/formatfactory/"/>
     <id>http://boyinthesun.cn/post/formatfactory/</id>
     <published>2020-02-27T08:27:12.000Z</published>
-    <updated>2020-03-17T12:52:11.167Z</updated>
+    <updated>2020-04-02T10:12:03.304Z</updated>
     
     <summary type="html">
     
@@ -426,7 +486,7 @@
     <link href="http://boyinthesun.cn/post/keyboard/"/>
     <id>http://boyinthesun.cn/post/keyboard/</id>
     <published>2020-02-24T12:24:56.000Z</published>
-    <updated>2020-03-19T12:04:02.147Z</updated>
+    <updated>2020-04-02T10:27:48.453Z</updated>
     
     <summary type="html">
     
@@ -444,9 +504,9 @@
       <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
     
     
-      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
-    
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
     
   </entry>
   
@@ -455,7 +515,7 @@
     <link href="http://boyinthesun.cn/post/winsandbox/"/>
     <id>http://boyinthesun.cn/post/winsandbox/</id>
     <published>2020-02-24T07:25:10.000Z</published>
-    <updated>2020-03-31T13:59:16.961Z</updated>
+    <updated>2020-04-02T12:37:05.600Z</updated>
     
     <summary type="html">
     
@@ -484,7 +544,7 @@
     <link href="http://boyinthesun.cn/post/TrafficMonitor/"/>
     <id>http://boyinthesun.cn/post/TrafficMonitor/</id>
     <published>2020-02-21T15:51:09.000Z</published>
-    <updated>2020-03-17T12:57:06.222Z</updated>
+    <updated>2020-04-02T10:52:30.911Z</updated>
     
     <summary type="html">
     
@@ -513,7 +573,7 @@
     <link href="http://boyinthesun.cn/post/scoop/"/>
     <id>http://boyinthesun.cn/post/scoop/</id>
     <published>2020-02-21T05:31:50.000Z</published>
-    <updated>2020-03-17T12:52:52.389Z</updated>
+    <updated>2020-04-02T10:38:32.083Z</updated>
     
     <summary type="html">
     
@@ -536,70 +596,6 @@
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
     
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-      <category term="Scoop" scheme="http://boyinthesun.cn/tags/Scoop/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Annie——一个简洁强大的轻量级视频下载神器</title>
-    <link href="http://boyinthesun.cn/post/annie/"/>
-    <id>http://boyinthesun.cn/post/annie/</id>
-    <published>2020-02-20T12:21:38.000Z</published>
-    <updated>2020-03-31T12:13:28.545Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;项目网站：&lt;a href=&quot;https://github.com/iawia002/annie&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    
-    
-      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
-      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
-      <category term="Scoop" scheme="http://boyinthesun.cn/tags/Scoop/"/>
-    
-      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>更新日志</title>
-    <link href="http://boyinthesun.cn/post/changelog/"/>
-    <id>http://boyinthesun.cn/post/changelog/</id>
-    <published>2020-02-20T00:00:00.000Z</published>
-    <updated>2020-03-31T15:24:09.429Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;2020年3月31日&quot;&gt;&lt;a href=&quot;#2020年3月31日&quot; class=&quot;headerlink&quot; title=&quot;2020年3月31日&quot;&gt;&lt;/a&gt;2020年3月31日&lt;/h2&gt;&lt;p&gt;将所有博客内容搬运到&lt;a
-        
-      
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://boyinthesun.cn/categories/%E6%9D%82%E6%96%87/"/>
-    
-    
-      <category term="杂文" scheme="http://boyinthesun.cn/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

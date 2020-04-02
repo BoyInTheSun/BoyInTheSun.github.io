@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="虚拟机,沙盒,sandbox,windows">
-    <meta name="description" content="在我们使用Windows的过程中，不可避免的要接触一些安全性未知的文件。Windows沙盒(Windows Sandbox)是一个隔离于用户操作系统的环境，和正常系统一样可以运行绝大多数程序，同时保证了用户操作系统的安全。">
+    <meta name="keywords" content="live2d,busuanzi,看板娘,不蒜子,冲突">
+    <meta name="description" content="近日安装了live2d看板娘插件，安装后却意外发现busuanzi不蒜子计数失效了。经排查，未发现问题。到issues查看，也未发现同类问题。至今博主未找到根本原因，也不懂js语法，只是找到了解决办法，做一个记录，烦请知道具体原因的大佬留言。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Windows沙盒——系统自带的一次性虚拟机 | BoyInTheSun</title>
+    <title>解决live2d看板娘和busuanzi不蒜子计数冲突 | BoyInTheSun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -333,12 +333,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Windows沙盒——系统自带的一次性虚拟机</h1>
+                    <h1 class="description center-align post-title">解决live2d看板娘和busuanzi不蒜子计数冲突</h1>
                 </div>
             </div>
         </div>
@@ -455,12 +455,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                <span class="chip bg-color">软件</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
-                            <a href="/tags/Windows/">
-                                <span class="chip bg-color">Windows</span>
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
                             </a>
                         
                     </div>
@@ -471,8 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-category">
-                                软件推荐
+                            <a href="/categories/%E8%B8%A9%E5%9D%91/" class="post-category">
+                                踩坑
                             </a>
                         
                     </div>
@@ -484,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-24
+                    2020-04-02
                 </div>
                 
 
@@ -498,7 +498,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    888
+                    626
                 </div>
                 
 
@@ -521,23 +521,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在我们使用Windows的过程中，不可避免的要接触一些安全性未知的文件，比如破解软件、带有宏的文件<del>以及一些不可描述的文件</del>。虽然现在杀毒软件较为强大，但是万一更强大的病毒劫持了杀毒软件，那后果就严重了。新功能<strong>Windows沙盒(Windows Sandbox)</strong>可有效解决这一问题，这是一个隔离于用户操作系统的环境，和正常系统一样可以运行绝大多数程序，同时保证了用户操作系统的安全，即使沙盒被病毒攻陷或系统文件损坏，也丝毫不会影响到用户的系统，用户的文件也不会被访问。且打开速度很快，不到五秒即可使用，比VMware新建虚拟机要快得多。<strong>非固态硬盘不建议尝试</strong>，会卡到你怀疑人生。</p>
-<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>必须是Windows10专业版（或教育专业版，工作站专业版）1903及以上</p>
-<h3 id="查看自己的操作系统"><a href="#查看自己的操作系统" class="headerlink" title="查看自己的操作系统"></a>查看自己的操作系统</h3><p>按快捷键<code>Win+R</code>打开运行窗口，输入<code>winver</code>并回车。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(1).png?x-oss-process=style/watermark" alt=""><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(2).png?x-oss-process=style/watermark" alt="如图符合要求"></p>
-<h3 id="升级操作系统"><a href="#升级操作系统" class="headerlink" title="升级操作系统"></a>升级操作系统</h3><h4 id="非专业版"><a href="#非专业版" class="headerlink" title="非专业版"></a>非专业版</h4><p>博主这里提供一个亲测可用的序列号<code>W4W7H-BCH7V-C62CW-2GDXK-DCPW4</code>，可以直接升级到专业版。若序列号失效，可以自己上网搜索或某宝购买<em>(这里欢迎友链，请私聊)</em>，二三十就能搞到一个。</p>
-<h4 id="低于1903"><a href="#低于1903" class="headerlink" title="低于1903"></a>低于1903</h4><p>如果你的系统是1803甚至更低，我不建议升级，因为目前已知的升级可能会带来操作系统响应变慢，开始菜单异常，某些程序异常等问题，而Microsoft支持给出的建议是直接重装系统解决。当然如果你想试试也无妨，反正可以直接一键回滚到原操作系统。<br>按快捷键<code>Win+I</code>打开<code>Windows设置</code>，<code>更新与安全-&gt;Windows更新-&gt;检查更新</code>，即可自动下载最新版本。<br>或使用Win10<a href="https://www.microsoft.com/zh-cn/software-download/windows10?OCID=WIP_r_Win10_Body_AddPC" target="_blank" rel="noopener">官方升级工具</a><br>重装系统就不说了，找到1903专业版的镜像即可。</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>首次使用需要先在功能列表中启用，打开<code>控制面板-&gt;程序-&gt;程序与功能-&gt;启用或关闭Windows功能</code>，在<code>Windows沙盒</code>打钩。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(3).png?x-oss-process=style/watermark" alt=""><br>重新启动后，就可以在开始菜单启动了。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox.png?x-oss-process=style/watermark" alt="Windows沙盒"></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p><strong>所有更改在关闭Windows沙盒后消失</strong>，再次打开还是全新的系统<br><strong>不同虚拟机软件并不兼容</strong>，比如启用Windows沙盒后会导致VMware运行异常：<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(5).png?x-oss-process=style/watermark" alt=""><br><strong>解决方法如下</strong></p>
-<ol>
-<li>进入<code>Windows安全中心</code>，<code>设备安全性-&gt;内存隔离详情</code>，将其关闭<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(6).png?x-oss-process=style/watermark" alt=""></li>
-<li>按快捷键<code>Win+R</code>打开运行窗口，输入<code>gpedit.msc</code>并回车，打开<code>组策略编辑器</code>，<code>计算机配置-&gt;管理模板-&gt;系统-&gt;Device Guard-&gt;打开基于虚拟化的安全</code>，改为<code>已禁用</code><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(7).png?x-oss-process=style/watermark" alt=""></li>
-<li>然后以管理员运行CMD（或powershell），输入<code>bcdedit /set hypervisorlaunchtype off</code></li>
-<li>还需要在Windows功能中取消勾选<code>Hyper-v</code>。</li>
-<li><strong>重启</strong>之后就可以了</li>
-<li>此时只能运行windows沙盒，如果想运行VMware或Hyper-v，需要以管理员运行CMD（或powershell）<code>bcdedit /set hypervisorlaunchtype auto</code></li>
-</ol>
-<hr>
-<p>关于windows沙盒沙盒中不能更改语言的bug已经修复：<a href="https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941" target="_blank" rel="noopener">https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941</a></p>
+                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>近日安装了live2d看板娘插件，<a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">github项目地址</a>，安装后却意外发现busuanzi不蒜子计数失效了,在页面中不显示，但强制刷新后出现，再刷新又消失。经排查，未发现问题，但事实是网站源码出现了变化。<br><em>正常时</em></p>
+<pre class="line-numbers language-HTML"><code class="language-HTML"><span id="busuanzi_container_site_pv">
+    |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+        class="white-color"></span>&nbsp;次
+    </span>
+<span id="busuanzi_container_site_uv">
+    |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+        class="white-color"></span>&nbsp;人
+    </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><em>异常时</em></p>
+<pre class="line-numbers language-HTML"><code class="language-HTML"><span id="busuanzi_container_site_pv" style="display: none;">
+    |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" 
+        class="white-color">2303950</span>&nbsp;次
+</span>
+<span id="busuanzi_container_site_uv" style="display: none;">
+    |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" 
+        class="white-color">160644</span>&nbsp;人
+</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>对比发现出现了多余的<code>style="display: none;</code>。<br>到issues查看，也未发现同类问题。至今博主未找到根本原因，也不懂js语法，只是找到了解决办法，做一个记录，烦请知道具体原因的大佬留言。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>首先是将不蒜子的js插件保存到本地，我的主题中位于<code>\themes\hexo-theme-matery\source\libs\others\busuanzi.pure.mini.js</code>。如果使用的是来自外网的js文件，也请下载到本地。<br>将js文件更改为如下：</p>
+<pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> bszCaller<span class="token punctuation">,</span>bszTag<span class="token punctuation">;</span><span class="token operator">!</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">var</span> c<span class="token punctuation">,</span>d<span class="token punctuation">,</span>e<span class="token punctuation">,</span>a<span class="token operator">=</span><span class="token operator">!</span><span class="token number">1</span><span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>ready<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span> a<span class="token operator">||</span><span class="token string">"interactive"</span><span class="token operator">===</span>document<span class="token punctuation">.</span>readyState<span class="token operator">||</span><span class="token string">"complete"</span><span class="token operator">===</span>document<span class="token punctuation">.</span>readyState<span class="token operator">?</span>c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">:</span>b<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span> c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">}</span><span class="token punctuation">,</span>d<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>c<span class="token operator">=</span>b<span class="token punctuation">.</span>length<span class="token punctuation">;</span>c<span class="token operator">></span>a<span class="token punctuation">;</span>a<span class="token operator">++</span><span class="token punctuation">)</span>b<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">;</span>b<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">,</span>e<span class="token operator">=</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>a<span class="token operator">||</span><span class="token punctuation">(</span>a<span class="token operator">=</span><span class="token operator">!</span><span class="token number">0</span><span class="token punctuation">,</span>d<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>window<span class="token punctuation">)</span><span class="token punctuation">,</span>document<span class="token punctuation">.</span>removeEventListener<span class="token operator">?</span>document<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">"DOMContentLoaded"</span><span class="token punctuation">,</span>e<span class="token punctuation">,</span><span class="token operator">!</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>document<span class="token punctuation">.</span>attachEvent<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">detachEvent</span><span class="token punctuation">(</span><span class="token string">"onreadystatechange"</span><span class="token punctuation">,</span>e<span class="token punctuation">)</span><span class="token punctuation">,</span>window<span class="token operator">==</span>window<span class="token punctuation">.</span>top<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span><span class="token function">clearInterval</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">,</span>c<span class="token operator">=</span><span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span>document<span class="token punctuation">.</span>addEventListener<span class="token operator">?</span>document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"DOMContentLoaded"</span><span class="token punctuation">,</span>e<span class="token punctuation">,</span><span class="token operator">!</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>document<span class="token punctuation">.</span>attachEvent<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">attachEvent</span><span class="token punctuation">(</span><span class="token string">"onreadystatechange"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token regex">/loaded|complete/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>readyState<span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>window<span class="token operator">==</span>window<span class="token punctuation">.</span>top<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>c<span class="token operator">=</span><span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">try</span><span class="token punctuation">{</span>a<span class="token operator">||</span>document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function">doScroll</span><span class="token punctuation">(</span><span class="token string">"left"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span><span class="token punctuation">}</span><span class="token function">e</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>bszCaller<span class="token operator">=</span><span class="token punctuation">{</span>fetch<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">var</span> c<span class="token operator">=</span><span class="token string">"BusuanziCallback_"</span><span class="token operator">+</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">1099511627776</span><span class="token operator">*</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>window<span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token operator">=</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">evalCall</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">,</span>a<span class="token operator">=</span>a<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"=BusuanziCallback"</span><span class="token punctuation">,</span><span class="token string">"="</span><span class="token operator">+</span>c<span class="token punctuation">)</span><span class="token punctuation">,</span>scriptTag<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"SCRIPT"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>scriptTag<span class="token punctuation">.</span>type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token punctuation">,</span>scriptTag<span class="token punctuation">.</span>defer<span class="token operator">=</span><span class="token operator">!</span><span class="token number">0</span><span class="token punctuation">,</span>scriptTag<span class="token punctuation">.</span>src<span class="token operator">=</span>a<span class="token punctuation">,</span>document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">"HEAD"</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>scriptTag<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span>evalCall<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">try</span><span class="token punctuation">{</span><span class="token function">a</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">,</span>scriptTag<span class="token punctuation">.</span>parentElement<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>scriptTag<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">{</span>bszTag<span class="token punctuation">.</span><span class="token function">hides</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span>bszCaller<span class="token punctuation">.</span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback"</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">{</span>bszTag<span class="token punctuation">.</span><span class="token function">texts</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">,</span>bszTag<span class="token punctuation">.</span><span class="token function">shows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>bszTag<span class="token operator">=</span><span class="token punctuation">{</span>bszs<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">"site_pv"</span><span class="token punctuation">,</span><span class="token string">"page_pv"</span><span class="token punctuation">,</span><span class="token string">"site_uv"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>texts<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>bszs<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">var</span> c<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"busuanzi_value_"</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>c<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>c<span class="token punctuation">.</span>innerHTML<span class="token operator">=</span>a<span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span>hides<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>bszs<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">var</span> b<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"busuanzi_container_"</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>b<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display<span class="token operator">=</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span>shows<span class="token punctuation">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>bszs<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">var</span> b<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"busuanzi_container_"</span><span class="token operator">+</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>b<span class="token operator">&amp;&amp;</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>style<span class="token punctuation">.</span>display<span class="token operator">=</span><span class="token string">"inline"</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>操作其实就是把其中的<code>b.style.display="none"</code>中<code>none</code>去掉。</p>
+<h2 id="最新进展"><a href="#最新进展" class="headerlink" title="最新进展"></a>最新进展</h2><p>我已经向作者提出issue，问题最新进展： <a href="https://github.com/EYHN/hexo-helper-live2d/issues/161" target="_blank" rel="noopener">https://github.com/EYHN/hexo-helper-live2d/issues/161</a></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -581,7 +587,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://boyinthesun.cn/post/winsandbox/">http://boyinthesun.cn/post/winsandbox/</a>
+                    <a href="http://boyinthesun.cn/post/error-live2d-busuanzi/">http://boyinthesun.cn/post/error-live2d-busuanzi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -619,12 +625,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                    <span class="chip bg-color">软件</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
-                                <a href="/tags/Windows/">
-                                    <span class="chip bg-color">Windows</span>
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
                                 </a>
                             
                         </div>
@@ -812,49 +818,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/post/keyboard/">
+                <a href="/post/error-live2d-busuanzi/">
                     <div class="card-image">
                         
-                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/keybroad.jpg" class="responsive-img" alt="键盘不为人知的一面（一）">
                         
-                        <span class="card-title">键盘不为人知的一面（一）</span>
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="解决live2d看板娘和busuanzi不蒜子计数冲突">
+                        
+                        <span class="card-title">解决live2d看板娘和busuanzi不蒜子计数冲突</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            作为计算机的输入设备，我们无法避免地要使用**键盘**来操作系统。但你真的了解键盘吗？博主将以**windows10系统104键盘布局**为例，介绍键盘使用小技巧。此篇将着重介绍单按键。组合按键将于后续文章中介绍。
+                            近日安装了live2d看板娘插件，安装后却意外发现busuanzi不蒜子计数失效了。经排查，未发现问题。到issues查看，也未发现同类问题。至今博主未找到根本原因，也不懂js语法，只是找到了解决办法，做一个记录，烦请知道具体原因的大佬留言。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/" class="post-category">
-                                    科普小文
+                            <a href="/categories/%E8%B8%A9%E5%9D%91/" class="post-category">
+                                    踩坑
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Windows/">
-                        <span class="chip bg-color">Windows</span>
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
                     </a>
                     
-                    <a href="/tags/%E5%B8%B8%E8%AF%86/">
-                        <span class="chip bg-color">常识</span>
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>
@@ -868,24 +877,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/TrafficMonitor/">
+                <a href="/post/persepolis/">
                     <div class="card-image">
                         
+                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/persepolis(1).png" class="responsive-img" alt="使用Persepolis Download Manager提升下载速度">
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="TrafficMonitor——简洁实用的网速/cpu/内存监控器">
-                        
-                        <span class="card-title">TrafficMonitor——简洁实用的网速/cpu/内存监控器</span>
+                        <span class="card-title">使用Persepolis Download Manager提升下载速度</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Traffic Monitor是一款用于Windows平台的网速监控悬浮窗软件，可以显示当前网速、CPU及内存利用率，支持嵌入到任务栏显示，支持更换皮肤、历史流量统计等功能。
+                            aria2是程序员们最爱的多线程下载工具，甚至还有远程下载，自动执行脚本等等附属功能，而且支持几乎所有平台。但是命令行的操作方式让普通用户不习惯，于是便衍生出了一系列套壳GUI程序。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-25
                             </span>
                         <span class="publish-author">
                             
@@ -902,12 +910,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                        <span class="chip bg-color">软件</span>
-                    </a>
-                    
                     <a href="/tags/Windows/">
                         <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/macOS/">
+                        <span class="chip bg-color">macOS</span>
                     </a>
                     
                 </div>

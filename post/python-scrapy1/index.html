@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="虚拟机,沙盒,sandbox,windows">
-    <meta name="description" content="在我们使用Windows的过程中，不可避免的要接触一些安全性未知的文件。Windows沙盒(Windows Sandbox)是一个隔离于用户操作系统的环境，和正常系统一样可以运行绝大多数程序，同时保证了用户操作系统的安全。">
+    <meta name="keywords" content="scrapy,爬虫,学堂在线,爬取,python">
+    <meta name="description" content="通过`Scrapy`爬取到合作院校的名称及该所院校在学堂在线开课的数量，将爬取到的数据保存到一个json文件中，例如：“清华大学,308”，地址 http://www.xuetangx.com/partners">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Windows沙盒——系统自带的一次性虚拟机 | BoyInTheSun</title>
+    <title>Scrapy实例————爬取学堂在线合作院校页面内容 | BoyInTheSun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -333,12 +333,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Windows沙盒——系统自带的一次性虚拟机</h1>
+                    <h1 class="description center-align post-title">Scrapy实例————爬取学堂在线合作院校页面内容</h1>
                 </div>
             </div>
         </div>
@@ -455,12 +455,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                <span class="chip bg-color">软件</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
-                            <a href="/tags/Windows/">
-                                <span class="chip bg-color">Windows</span>
+                            <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                             </a>
                         
                     </div>
@@ -471,8 +471,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-category">
-                                软件推荐
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                编程实例
                             </a>
                         
                     </div>
@@ -484,7 +484,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-24
+                    2020-03-24
                 </div>
                 
 
@@ -498,7 +498,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    888
+                    750
                 </div>
                 
 
@@ -521,23 +521,79 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>在我们使用Windows的过程中，不可避免的要接触一些安全性未知的文件，比如破解软件、带有宏的文件<del>以及一些不可描述的文件</del>。虽然现在杀毒软件较为强大，但是万一更强大的病毒劫持了杀毒软件，那后果就严重了。新功能<strong>Windows沙盒(Windows Sandbox)</strong>可有效解决这一问题，这是一个隔离于用户操作系统的环境，和正常系统一样可以运行绝大多数程序，同时保证了用户操作系统的安全，即使沙盒被病毒攻陷或系统文件损坏，也丝毫不会影响到用户的系统，用户的文件也不会被访问。且打开速度很快，不到五秒即可使用，比VMware新建虚拟机要快得多。<strong>非固态硬盘不建议尝试</strong>，会卡到你怀疑人生。</p>
-<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>必须是Windows10专业版（或教育专业版，工作站专业版）1903及以上</p>
-<h3 id="查看自己的操作系统"><a href="#查看自己的操作系统" class="headerlink" title="查看自己的操作系统"></a>查看自己的操作系统</h3><p>按快捷键<code>Win+R</code>打开运行窗口，输入<code>winver</code>并回车。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(1).png?x-oss-process=style/watermark" alt=""><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(2).png?x-oss-process=style/watermark" alt="如图符合要求"></p>
-<h3 id="升级操作系统"><a href="#升级操作系统" class="headerlink" title="升级操作系统"></a>升级操作系统</h3><h4 id="非专业版"><a href="#非专业版" class="headerlink" title="非专业版"></a>非专业版</h4><p>博主这里提供一个亲测可用的序列号<code>W4W7H-BCH7V-C62CW-2GDXK-DCPW4</code>，可以直接升级到专业版。若序列号失效，可以自己上网搜索或某宝购买<em>(这里欢迎友链，请私聊)</em>，二三十就能搞到一个。</p>
-<h4 id="低于1903"><a href="#低于1903" class="headerlink" title="低于1903"></a>低于1903</h4><p>如果你的系统是1803甚至更低，我不建议升级，因为目前已知的升级可能会带来操作系统响应变慢，开始菜单异常，某些程序异常等问题，而Microsoft支持给出的建议是直接重装系统解决。当然如果你想试试也无妨，反正可以直接一键回滚到原操作系统。<br>按快捷键<code>Win+I</code>打开<code>Windows设置</code>，<code>更新与安全-&gt;Windows更新-&gt;检查更新</code>，即可自动下载最新版本。<br>或使用Win10<a href="https://www.microsoft.com/zh-cn/software-download/windows10?OCID=WIP_r_Win10_Body_AddPC" target="_blank" rel="noopener">官方升级工具</a><br>重装系统就不说了，找到1903专业版的镜像即可。</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>首次使用需要先在功能列表中启用，打开<code>控制面板-&gt;程序-&gt;程序与功能-&gt;启用或关闭Windows功能</code>，在<code>Windows沙盒</code>打钩。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(3).png?x-oss-process=style/watermark" alt=""><br>重新启动后，就可以在开始菜单启动了。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox.png?x-oss-process=style/watermark" alt="Windows沙盒"></p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p><strong>所有更改在关闭Windows沙盒后消失</strong>，再次打开还是全新的系统<br><strong>不同虚拟机软件并不兼容</strong>，比如启用Windows沙盒后会导致VMware运行异常：<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(5).png?x-oss-process=style/watermark" alt=""><br><strong>解决方法如下</strong></p>
-<ol>
-<li>进入<code>Windows安全中心</code>，<code>设备安全性-&gt;内存隔离详情</code>，将其关闭<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(6).png?x-oss-process=style/watermark" alt=""></li>
-<li>按快捷键<code>Win+R</code>打开运行窗口，输入<code>gpedit.msc</code>并回车，打开<code>组策略编辑器</code>，<code>计算机配置-&gt;管理模板-&gt;系统-&gt;Device Guard-&gt;打开基于虚拟化的安全</code>，改为<code>已禁用</code><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/winsandbox(7).png?x-oss-process=style/watermark" alt=""></li>
-<li>然后以管理员运行CMD（或powershell），输入<code>bcdedit /set hypervisorlaunchtype off</code></li>
-<li>还需要在Windows功能中取消勾选<code>Hyper-v</code>。</li>
-<li><strong>重启</strong>之后就可以了</li>
-<li>此时只能运行windows沙盒，如果想运行VMware或Hyper-v，需要以管理员运行CMD（或powershell）<code>bcdedit /set hypervisorlaunchtype auto</code></li>
-</ol>
-<hr>
-<p>关于windows沙盒沙盒中不能更改语言的bug已经修复：<a href="https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941" target="_blank" rel="noopener">https://support.microsoft.com/zh-cn/help/4512941/windows-10-update-kb4512941</a></p>
+                <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>通过<code>Scrapy</code>爬取到合作院校的名称及该所院校在学堂在线开课的数量，将爬取到的数据保存到一个json文件中，例如：“清华大学,308”，地址 <a href="http://www.xuetangx.com/partners" target="_blank" rel="noopener">http://www.xuetangx.com/partners</a> 。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>博主是在<code>Windows</code>平台使用<code>PyCharm</code>基于<code>Python 3.7</code>和<code>Scrapy 2.0.1</code>编写爬虫，不赘述环境配置了。</p>
+<h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><p>右键<code>Scrapy</code>文件夹，选择在终端中打开<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(1).png?x-oss-process=style/watermark" alt=""><br>在终端中输入<code>scrapy startproject xtzx</code>，其中<code>xtzx</code>为项目名（忽略图中lianjia，只是博主懒得再重新截图了，下同）。</p>
+<h3 id="新建begin-py"><a href="#新建begin-py" class="headerlink" title="新建begin.py"></a>新建begin.py</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(2).png?x-oss-process=style/watermark" alt=""><br>在项目文件夹中新建<code>begin.py</code>，内容为：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> scrapy <span class="token keyword">import</span> cmdline
+cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl xtzx"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>其中<code>xtzx</code>为爬虫名（无须与项目名相同）。目的是为了方便运行爬虫。否则，需要在终端手动输入<code>scrapy crawl xtzx</code>来运行</p>
+<h3 id="更改items-py"><a href="#更改items-py" class="headerlink" title="更改items.py"></a>更改<code>items.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+<span class="token keyword">class</span> <span class="token class-name">MyItem</span> <span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>Item<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    school <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    num <span class="token operator">=</span> scrapy<span class="token punctuation">.</span>Field<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="分析网页"><a href="#分析网页" class="headerlink" title="分析网页"></a>分析网页</h3><p>右键爬取内容，<code>检查</code>，以下以<code>school</code>为例讲解。<br>复制三个<code>school</code>的xpath路径，不难找到规律。</p>
+<pre class="line-numbers language-xpath"><code class="language-xpath">/html/body/article[1]/section/ul/li[1]/a/div[2]/h3
+/html/body/article[1]/section/ul/li[2]/a/div[2]/h3
+/html/body/article[1]/section/ul/li[3]/a/div[2]/h3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="新建并更改spider-py"><a href="#新建并更改spider-py" class="headerlink" title="新建并更改spider.py"></a>新建并更改<code>spider.py</code></h3><p>在<code>spider</code>文件夹中新建<code>spider.py</code>，并键入：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> scrapy
+<span class="token keyword">from</span> xtzx<span class="token punctuation">.</span>items <span class="token keyword">import</span> MyItem
+<span class="token keyword">class</span> <span class="token class-name">mySpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>spiders<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    name <span class="token operator">=</span> <span class="token string">"xtzx"</span>
+    allowed_domains <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"xuetangx.com"</span><span class="token punctuation">]</span>
+    start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"http://www.xuetangx.com/partners"</span><span class="token punctuation">]</span>
+    <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        item <span class="token operator">=</span> MyItem <span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true">#开课院校</span>
+        <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/article[1]/section/ul/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
+            item<span class="token punctuation">[</span><span class="token string">'school'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/h3/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            item<span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/p/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">yield</span> item 
+        <span class="token comment" spellcheck="true">#edX合作院校和伙伴</span>
+        <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/article[2]/section/ul/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
+            item<span class="token punctuation">[</span><span class="token string">'school'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/h3/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            item<span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/p/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">yield</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#不遵守机器人协议</span>
+ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">False</span>
+BOT_NAME <span class="token operator">=</span> <span class="token string">'xtzx'</span>
+SPIDER_MODULES <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'xtzx.spiders'</span><span class="token punctuation">]</span>
+NEWSPIDER_MODULE <span class="token operator">=</span> <span class="token string">'xtzx.spiders'</span>
+<span class="token comment" spellcheck="true">#开启管道</span>
+ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'xtzx.pipelines.MyPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span><span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">#客户端伪装</span>
+USER_AGENT <span class="token operator">=</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="更改pipelines-py"><a href="#更改pipelines-py" class="headerlink" title="更改pipelines.py"></a>更改<code>pipelines.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> json
+<span class="token keyword">class</span> <span class="token class-name">MyPipeline</span> <span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true">#打开文件</span>
+    <span class="token keyword">def</span> open_spider <span class="token punctuation">(</span>self<span class="token punctuation">,</span>spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">try</span><span class="token punctuation">:</span>
+            self<span class="token punctuation">.</span>file <span class="token operator">=</span> open<span class="token punctuation">(</span><span class="token string">'MyData.json '</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span>
+        <span class="token keyword">except</span> Exception <span class="token keyword">as</span> err<span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">#写入</span>
+    <span class="token keyword">def</span> process_item <span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        dict_item <span class="token operator">=</span> dict <span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true"># 生成 json 串</span>
+        json_str <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>dict_item <span class="token punctuation">,</span> ensure_ascii<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span> 
+        self<span class="token punctuation">.</span>file<span class="token punctuation">.</span>write<span class="token punctuation">(</span>json_str<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> item
+    <span class="token comment" spellcheck="true">#关闭文件</span>
+    <span class="token keyword">def</span> close_spider <span class="token punctuation">(</span>self<span class="token punctuation">,</span>spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>file<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="运行爬虫"><a href="#运行爬虫" class="headerlink" title="运行爬虫"></a>运行爬虫</h2><p>运行<code>begin.py</code>，成功爬取到数据。这里只列举部分数据。</p>
+<pre class="line-numbers language-json"><code class="language-json"><span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"清华大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"31门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"台湾清华大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"台湾交通大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"斯坦福大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"中央社会主义学院"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"西安交通大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"16门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"中南财经政法大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"3门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"复旦大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"北京理工大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">"school"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"中国科学技术大学"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token property">"num"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"0门课程"</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -581,7 +637,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://boyinthesun.cn/post/winsandbox/">http://boyinthesun.cn/post/winsandbox/</a>
+                    <a href="http://boyinthesun.cn/post/python-scrapy1/">http://boyinthesun.cn/post/python-scrapy1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -619,12 +675,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                    <span class="chip bg-color">软件</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
-                                <a href="/tags/Windows/">
-                                    <span class="chip bg-color">Windows</span>
+                                <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                    <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                                 </a>
                             
                         </div>
@@ -816,77 +872,24 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/keyboard/">
+                <a href="/post/proxifier/">
                     <div class="card-image">
                         
-                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/keybroad.jpg" class="responsive-img" alt="键盘不为人知的一面（一）">
+                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/proxifier(1).png" class="responsive-img" alt="proxifier搭配v2ray等实现Windows/macOS全平台代理">
                         
-                        <span class="card-title">键盘不为人知的一面（一）</span>
+                        <span class="card-title">proxifier搭配v2ray等实现Windows/macOS全平台代理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            作为计算机的输入设备，我们无法避免地要使用**键盘**来操作系统。但你真的了解键盘吗？博主将以**windows10系统104键盘布局**为例，介绍键盘使用小技巧。此篇将着重介绍单按键。组合按键将于后续文章中介绍。
+                            我们当前在Windows使用的梯子大多数只能通过修改代理使网页访问外网，但无法使程序走梯子。搭配proxifier，可以实现类似vpn的全平台代理，也可以分应用代理，功能强大。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-24
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
                         </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/" class="post-category">
-                                    科普小文
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Windows/">
-                        <span class="chip bg-color">Windows</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%B8%B8%E8%AF%86/">
-                        <span class="chip bg-color">常识</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/post/TrafficMonitor/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="TrafficMonitor——简洁实用的网速/cpu/内存监控器">
-                        
-                        <span class="card-title">TrafficMonitor——简洁实用的网速/cpu/内存监控器</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Traffic Monitor是一款用于Windows平台的网速监控悬浮窗软件，可以显示当前网速、CPU及内存利用率，支持嵌入到任务栏显示，支持更换皮肤、历史流量统计等功能。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-21
-                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -908,6 +911,64 @@
                     
                     <a href="/tags/Windows/">
                         <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/macOS/">
+                        <span class="chip bg-color">macOS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/post/python-scrapy/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Scrapy实例————爬取链家新房数据">
+                        
+                        <span class="card-title">Scrapy实例————爬取链家新房数据</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            目标通过Scrapy爬取链家新房数据，地址 https://bj.fang.lianjia.com/loupan ，并将爬取到的数据存储到json文件中。
+环境博主是在Windows平台使用PyCharm基于Python 3.7和Scrap
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                    编程实例
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                        <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                     </a>
                     
                 </div>

@@ -1,4 +1,4 @@
-http://boyinthesun.cn/post/python-nppd/
+http://boyinthesun.cn/post/python-pd/
 http://boyinthesun.cn/post/python-scrapy1/
 http://boyinthesun.cn/post/error-live2d-busuanzi/
 http://boyinthesun.cn/post/persepolis/

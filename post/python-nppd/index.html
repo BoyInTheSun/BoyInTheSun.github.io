@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="5G,5GHz,5Gwifi,wifi">
-    <meta name="description" content="你知道5G和5Ghz、5GWiFi的区别吗">
+    <meta name="keywords" content="numpy,pandas,python,pm">
+    <meta name="description" content="要求根据提供的cvs文件，计算北京空气质量数据：
+
+1.汇总计算PM指数年平均值的变化情况2.汇总计算每年中1-12月的PM指数数据变化情况
+
+分析分析问题问题1实际是求PM指数的年平均值；问题2实际是求PM指数的月平均值。
+分析csv文件">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>5G VS 5GHz | BoyInTheSun</title>
+    <title>Numpy和Pandas实例————分析北京市pm指数 | BoyInTheSun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -333,12 +338,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/5g(1).jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">5G VS 5GHz</h1>
+                    <h1 class="description center-align post-title">Numpy和Pandas实例————分析北京市pm指数</h1>
                 </div>
             </div>
         </div>
@@ -455,12 +460,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%B8%B8%E8%AF%86/">
-                                <span class="chip bg-color">常识</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
-                            <a href="/tags/%E7%BD%91%E7%BB%9C/">
-                                <span class="chip bg-color">网络</span>
+                            <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                             </a>
                         
                     </div>
@@ -471,8 +476,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/" class="post-category">
-                                科普小文
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                编程实例
                             </a>
                         
                     </div>
@@ -484,28 +489,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-28
+                    2020-04-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-02
+                    2020-04-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    682
+                    1.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    10 分
                 </div>
                 
 
@@ -521,11 +526,265 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>正像3G时代的远去，5G将取代4G，以提供速度更快的移动网络。而现今很多路由器产品都声称支持5G，这又是怎么回事呢？<br>事实上两者是完全不同的概念</p>
-<h2 id="5G——一种新的蜂窝网络标准"><a href="#5G——一种新的蜂窝网络标准" class="headerlink" title="5G——一种新的蜂窝网络标准"></a>5G——一种新的蜂窝网络标准</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/5g(1).jpg?x-oss-process=style/watermark" alt=""><br>5G的英文全称是5th generation mobile networks或5th generation wireless systems，即第五代移动通信技术。其理论峰值速度可达1000Mbps，甚至比现在大部分家用宽带还快。由于5G网络的诞生，对企业、对行业，车联网、物联网、工业互联网等都将开辟新的大陆。原来在4G下需要下载十分钟的高清电影，在5g只需要1秒钟！<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/5g(3).png?x-oss-process=style/watermark" alt=""></p>
-<h2 id="5GHz——一种WiFi频率"><a href="#5GHz——一种WiFi频率" class="headerlink" title="5GHz——一种WiFi频率"></a>5GHz——一种WiFi频率</h2><p>以前的路由器WiFi频率都是2.4GHz，而因为5GHz可以有更高的速度，市面上便出现了双频路由器（即支持2.4GHz和5GHz）。这里稍作解释，频率单位Hz即每秒钟次数，5GHz是2.4GHz的两倍，所以在同样的传输协议下，5GHz大概有2.4GHz的两倍速度。另一方面，如今我们的生活已经被电磁波充斥，工作频率在2.4GHz的设备很多，除了WiFi，还有蓝牙等无线协议，且发出2.4GHz的可不止路由器，比如微波炉这类也会对信号造成干扰。5GHz像是一片净土，没有被污染。<br>但是缺点也是有的。我们在中学学过，频率越小，衍射能力越强，穿透能力越强。同样功率下，2.4GHz轻松穿过两堵墙，5GHz过一堵墙就没信号了，是正常现象。</p>
-<h2 id="5G-WiFi——一种新的WiFi标准"><a href="#5G-WiFi——一种新的WiFi标准" class="headerlink" title="5G WiFi——一种新的WiFi标准"></a>5G WiFi——一种新的WiFi标准</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/5g(2).jpg?x-oss-process=style/watermark" alt=""><br>5G WiFi即第五代WiFi传输技术。博主认为这是一个很易混淆的概念。并不是运行在5Ghz频段的Wi-Fi就是5G Wi-Fi了，运行在5Ghz频段的Wi-Fi协议标准包括802.11a（第一代）、802.11n（第四代，同时运行在2.4Ghz和5Ghz双频段）和802.11ac（第五代），而只有采用802.11ac协议的Wi-Fi才是真正5G Wi-Fi。对应地，也有1GWiFi、2GWiFi等等。此概念被应用并不是很多。</p>
-<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><p>虽然三者由概念上看相去甚远，但也有共同点。三者都是网络上的概念，目的都是最求更快速度，都采用了高频信号（5G网络的频率为3300-3400MHz、3400-3600MHz和4800-5000MHz，5GHz即5000MHz），又是同一时期诞生的新概念，也是因为这些原因，很多人将两者混淆。</p>
+                <h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><p>根据提供的cvs文件，计算北京空气质量数据：</p>
+<blockquote>
+<p>1.<strong>汇总计算PM指数年平均值的变化情况</strong><br>2.<strong>汇总计算每年中1-12月的PM指数数据变化情况</strong></p>
+</blockquote>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="分析问题"><a href="#分析问题" class="headerlink" title="分析问题"></a>分析问题</h3><p><code>问题1</code>实际是求PM指数的年平均值；<br><code>问题2</code>实际是求PM指数的月平均值。</p>
+<h3 id="分析csv文件"><a href="#分析csv文件" class="headerlink" title="分析csv文件"></a>分析csv文件</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment" spellcheck="true"># 打开文件</span>
+FileNameStr <span class="token operator">=</span> <span class="token string">'BeijingPM20100101_20151231.csv'</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 禁止省略列信息</span>
+pd<span class="token punctuation">.</span>set_option<span class="token punctuation">(</span><span class="token string">'display.max_columns'</span><span class="token punctuation">,</span> None<span class="token punctuation">)</span> 
+<span class="token comment" spellcheck="true"># 打印信息</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"--------------head--------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------describe------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>describe<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"--------------info--------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>info<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"================================"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行后得到以下信息：</p>
+<pre class="line-numbers language-txt"><code class="language-txt">--------------head--------------
+   No  year  month  day  hour  season  PM_Dongsi  PM_Dongsihuan  \
+0   1  2010      1    1     0       4        NaN            NaN   
+1   2  2010      1    1     1       4        NaN            NaN   
+2   3  2010      1    1     2       4        NaN            NaN   
+3   4  2010      1    1     3       4        NaN            NaN   
+4   5  2010      1    1     4       4        NaN            NaN   
+
+   PM_Nongzhanguan  PM_US Post  DEWP  HUMI    PRES  TEMP cbwd    Iws  \
+0              NaN         NaN -21.0  43.0  1021.0 -11.0   NW   1.79   
+1              NaN         NaN -21.0  47.0  1020.0 -12.0   NW   4.92   
+2              NaN         NaN -21.0  43.0  1019.0 -11.0   NW   6.71   
+3              NaN         NaN -21.0  55.0  1019.0 -14.0   NW   9.84   
+4              NaN         NaN -20.0  51.0  1018.0 -12.0   NW  12.97   
+
+   precipitation  Iprec  
+0            0.0    0.0  
+1            0.0    0.0  
+2            0.0    0.0  
+3            0.0    0.0  
+4            0.0    0.0  
+------------describe------------
+                 No          year         month           day          hour  \
+count  52584.000000  52584.000000  52584.000000  52584.000000  52584.000000   
+mean   26292.500000   2012.499772      6.523962     15.726609     11.500000   
+std    15179.837614      1.707485      3.448452      8.798896      6.922252   
+min        1.000000   2010.000000      1.000000      1.000000      0.000000   
+25%    13146.750000   2011.000000      4.000000      8.000000      5.750000   
+50%    26292.500000   2012.000000      7.000000     16.000000     11.500000   
+75%    39438.250000   2014.000000     10.000000     23.000000     17.250000   
+max    52584.000000   2015.000000     12.000000     31.000000     23.000000   
+
+             season     PM_Dongsi  PM_Dongsihuan  PM_Nongzhanguan  \
+count  52584.000000  25052.000000   20508.000000     24931.000000   
+mean       2.491100     89.154439      92.560806        88.643737   
+std        1.116988     87.239267      88.027434        88.041166   
+min        1.000000      3.000000       3.000000         3.000000   
+25%        1.000000     24.000000      28.000000        24.000000   
+50%        2.000000     64.000000      68.000000        62.000000   
+75%        3.000000    124.000000     127.000000       122.000000   
+max        4.000000    737.000000     672.000000       844.000000   
+
+         PM_US Post          DEWP          HUMI          PRES          TEMP  \
+count  50387.000000  52579.000000  52245.000000  52245.000000  52579.000000   
+mean      95.904241      2.074554     54.602421   1016.465442     12.587040   
+std       91.643772     14.222059     25.991338     10.295070     12.098527   
+min        1.000000    -40.000000      2.000000    991.000000    -19.000000   
+25%       27.000000    -10.000000     31.000000   1008.000000      2.000000   
+50%       69.000000      2.000000     55.000000   1016.000000     14.000000   
+75%      132.000000     15.000000     78.000000   1025.000000     23.000000   
+max      994.000000     28.000000    100.000000   1046.000000     42.000000   
+
+                Iws  precipitation          Iprec  
+count  52579.000000   52100.000000   52100.000000  
+mean      23.261829      19.258683      19.519008  
+std       49.281706    4381.035532    4381.036040  
+min        0.450000       0.000000       0.000000  
+25%        1.790000       0.000000       0.000000  
+50%        4.920000       0.000000       0.000000  
+75%       21.020000       0.000000       0.000000  
+max      585.600000  999990.000000  999990.000000  
+--------------info--------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 52584 entries, 0 to 52583
+Data columns (total 18 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   No               52584 non-null  int64  
+ 1   year             52584 non-null  int64  
+ 2   month            52584 non-null  int64  
+ 3   day              52584 non-null  int64  
+ 4   hour             52584 non-null  int64  
+ 5   season           52584 non-null  int64  
+ 6   PM_Dongsi        25052 non-null  float64
+ 7   PM_Dongsihuan    20508 non-null  float64
+ 8   PM_Nongzhanguan  24931 non-null  float64
+ 9   PM_US Post       50387 non-null  float64
+ 10  DEWP             52579 non-null  float64
+ 11  HUMI             52245 non-null  float64
+ 12  PRES             52245 non-null  float64
+ 13  TEMP             52579 non-null  float64
+ 14  cbwd             52579 non-null  object 
+ 15  Iws              52579 non-null  float64
+ 16  precipitation    52100 non-null  float64
+ 17  Iprec            52100 non-null  float64
+dtypes: float64(11), int64(6), object(1)
+memory usage: 7.2+ MB
+None
+================================<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>经查阅资料，可知各变量含义：</p>
+<blockquote>
+<p><code>No</code>: 行号<br><code>year</code>: 年份<br><code>month</code>: 月份<br><code>day</code>: 日期<br><code>hour</code>: 小时<br><code>season</code>: 季节<br><code>PM_Dongsi</code>: 来自<code>Dongsi（东四？）</code>的PM2.5浓度 (ug/m^3)<br><code>PM_Dongsihuan</code>: 来自<code>Dongsihuan（东四环？）</code>的PM2.5浓度 (ug/m^3)<br><code>PM_Nongzhanguan</code>: 来自<code>Nongzhanguan（农展馆？）</code>的PM2.5浓度 (ug/m^3)<br><code>PM_US Post</code>: 来自<code>US Post</code>的PM2.5浓度 (ug/m^3)<br><code>DEWP</code>: 露点 (摄氏温度) 指在固定气压之下，空气中所含的气态水达到饱和而凝结成液态水所需要降至的温度。<br><code>TEMP</code>: Temperature (摄氏温度)<br><code>HUMI</code>: 湿度 (%)<br><code>PRES</code>: 气压 (hPa)<br><code>cbwd</code>: 组合风向<br><code>Iws</code>: 累计风速 (m/s)<br><code>precipitation</code>: 降水量/时 (mm)<br><code>Iprec</code>: 累计降水量 (mm)</p>
+</blockquote>
+<p>不难发现，仅有第2, 3, 7, 8, 9, 10列的数据与题目相关。但四列PM数据都存在不同程度的缺失。</p>
+<h3 id="分析缺失数据"><a href="#分析缺失数据" class="headerlink" title="分析缺失数据"></a>分析缺失数据</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment" spellcheck="true"># 打开文件，仅读取第7至第10列</span>
+FileNameStr <span class="token operator">=</span> <span class="token string">'BeijingPM20100101_20151231.csv'</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 打印信息</span>
+
+<span class="token comment" spellcheck="true"># 总行数</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Total of rows: {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 显示某列缺失值个数</span>
+<span class="token comment" spellcheck="true"># print("The number of missing data in PM_Dongsi: {}".format(len(df.index) - len(df['PM_Dongsi'].dropna())))</span>
+<span class="token comment" spellcheck="true"># 为了书写简便，使用循环，遍历所有列，获得每列缺失值个数</span>
+<span class="token keyword">for</span> col <span class="token keyword">in</span> df<span class="token punctuation">:</span>
+    <span class="token comment" spellcheck="true">#dropna()会去除缺省值的数据，遂得到每列的缺失数据数</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in {}: {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>col<span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 获取所有列均为缺失值的行的个数，how='all'是限定所有列均为缺省值</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in BOTH: "</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>how<span class="token operator">=</span><span class="token string">'all'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>得到信息：1</p>
+<pre class="line-numbers language-txt"><code class="language-txt">Total of rows: 52584
+The number of missing data in PM_Dongsi: 27532
+The number of missing data in PM_Dongsihuan: 32076
+The number of missing data in PM_Nongzhanguan: 27653
+The number of missing data in PM_US_Post: 2197
+The number of missing data in BOTH:  1894<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>可见PM_US_Post的数据最为完整，但是仍存在部分四个值均缺失的情况。<br>为了数据的可靠性，博主采用四项求平均的方式来确定每日的PM数据。</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>原文件中变量<code>PM_US Post</code>中包含空格，可能会对命令操作造成干扰，建议将<code>' '</code>替换为<code>'_'</code>。</p>
+<h2 id="求解"><a href="#求解" class="headerlink" title="求解"></a>求解</h2><p>问题1：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment" spellcheck="true"># 打开文件，仅读取第7至第10列</span>
+FileNameStr <span class="token operator">=</span> <span class="token string">'BeijingPM20100101_20151231.csv'</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 新建平均值列，并将平均值写入</span>
+<span class="token comment" spellcheck="true"># 其中，iloc[:, 1:5]指第2到第5列，mean(axis=1)为求行平均值</span>
+df<span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 以年为分组求平均值并打印</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'year'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 保存到文件</span>
+df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution1.csv"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>得到：</p>
+<pre class="line-numbers language-txt"><code class="language-txt">year    PM_ave
+2010    104.0457298
+2011    99.09324038
+2012    90.53876764
+2013    98.40266354
+2014    93.9177037
+2015    85.85894216<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>问题2：</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment" spellcheck="true"># 打开文件，仅读取第7至第10列</span>
+FileNameStr <span class="token operator">=</span> <span class="token string">'BeijingPM20100101_20151231.csv'</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 新建平均值列，并将平均值写入</span>
+<span class="token comment" spellcheck="true"># 其中，iloc[:, 2:6]指第3到第6列，mean(axis=1)为求行平均值</span>
+df<span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 保存到文件，其中以'year'和'month'分组，计算'PM_ave'列的平均值。</span>
+df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">,</span> <span class="token string">'month'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution2.csv"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 为方便，再打印一份</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">,</span> <span class="token string">'month'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>得到：</p>
+<pre class="line-numbers language-txt"><code class="language-txt">year    month    PM_ave
+2010    1    90.40366972
+2010    2    97.23994039
+2010    3    94.04654443
+2010    4    80.0724234
+2010    5    87.07191316
+2010    6    109.0389381
+2010    7    123.4260753
+2010    8    97.68343195
+2010    9    122.792735
+2010    10    118.7843666
+2010    11    138.3840361
+2010    12    97.11574697
+2011    1    44.87369985
+2011    2    150.2901786
+2011    3    57.99198718
+2011    4    91.72067039
+2011    5    65.10814607
+2011    6    108.7946554
+2011    7    107.3864865
+2011    8    103.7338004
+2011    9    94.96940195
+2011    10    145.5568182
+2011    11    109.434965
+2011    12    108.7213997
+2012    1    118.9223881
+2012    2    84.44202899
+2012    3    96.47432432
+2012    4    87.83588317
+2012    5    90.96671491
+2012    6    96.63418079
+2012    7    80.6497093
+2012    8    81.16532905
+2012    9    59.95224719
+2012    10    94.95135135
+2012    11    87.43696275
+2012    12    109.1872964
+2013    1    183.1952703
+2013    2    113.5664683
+2013    3    114.5726927
+2013    4    63.04780093
+2013    5    89.14852151
+2013    6    111.3548611
+2013    7    74.93283917
+2013    8    67.92361111
+2013    9    85.71782407
+2013    10    102.2087814
+2013    11    85.1462963
+2013    12    90.31776434
+2014    1    107.9117384
+2014    2    160.5138889
+2014    3    103.1832437
+2014    4    92.16064815
+2014    5    64.95855735
+2014    6    59.15462963
+2014    7    91.7999552
+2014    8    65.66823688
+2014    9    68.23263889
+2014    10    135.2697133
+2014    11    106.3375
+2014    12    76.62253584
+2015    1    110.0227375
+2015    2    103.4455605
+2015    3    94.48342294
+2015    4    79.39699074
+2015    5    61.16756272
+2015    6    60.33240741
+2015    7    60.22950269
+2015    8    45.89605735
+2015    9    50.92476852
+2015    10    77.2578405
+2015    11    125.803125
+2015    12    162.1789875<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -569,7 +828,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://boyinthesun.cn/post/5g/">http://boyinthesun.cn/post/5g/</a>
+                    <a href="http://boyinthesun.cn/post/python-nppd/">http://boyinthesun.cn/post/python-nppd/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -607,12 +866,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%B8%B8%E8%AF%86/">
-                                    <span class="chip bg-color">常识</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
-                                <a href="/tags/%E7%BD%91%E7%BB%9C/">
-                                    <span class="chip bg-color">网络</span>
+                                <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                    <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                                 </a>
                             
                         </div>
@@ -800,46 +1059,57 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/post/myskill/">
+                <a href="/post/python-nppd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="博主提供的帮助">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Numpy和Pandas实例————分析北京市pm指数">
                         
-                        <span class="card-title">博主提供的帮助</span>
+                        <span class="card-title">Numpy和Pandas实例————分析北京市pm指数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            博主可以提供以下帮助，只要不过分，帮忙宣传就免费！
+                            要求根据提供的cvs文件，计算北京空气质量数据：
+
+1.汇总计算PM指数年平均值的变化情况2.汇总计算每年中1-12月的PM指数数据变化情况
+
+分析分析问题问题1实际是求PM指数的年平均值；问题2实际是求PM指数的月平均值。
+分析csv文件
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9D%82%E6%96%87/" class="post-category">
-                                    杂文
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                    编程实例
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9D%82%E6%96%87/">
-                        <span class="chip bg-color">杂文</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                        <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                     </a>
                     
                 </div>
@@ -853,30 +1123,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/Universal/">
+                <a href="/post/python-scrapy1/">
                     <div class="card-image">
                         
-                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Universal.png" class="responsive-img" alt="破解器汇总">
                         
-                        <span class="card-title">破解器汇总</span>
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Scrapy实例————爬取学堂在线合作院校页面内容">
+                        
+                        <span class="card-title">Scrapy实例————爬取学堂在线合作院校页面内容</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            此文的目的是汇总博主用过的破解器，不定期更新，如有需求请在文末留言。如果涉及到版权问题，请联系我，我会在24小时内删除。
+                            通过`Scrapy`爬取到合作院校的名称及该所院校在学堂在线开课的数量，将爬取到的数据保存到一个json文件中，例如：“清华大学,308”，地址 http://www.xuetangx.com/partners
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9D%82%E6%96%87/" class="post-category">
-                                    杂文
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                    编程实例
                                 </a>
                             
                             
@@ -886,8 +1157,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9D%82%E6%96%87/">
-                        <span class="chip bg-color">杂文</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                        <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                     </a>
                     
                 </div>

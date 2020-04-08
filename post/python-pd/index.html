@@ -10,7 +10,7 @@
 1.汇总计算PM指数年平均值的变化情况2.汇总计算每年中1-12月的PM指数数据变化情况
 
 csv文件详见附件
-分析分析问题问题1实际是求PM指数的年平均值；问题2实际是求PM指数的月平均">
+分析分析问题问题1实际是求PM指数的年平均值，即按年分组计算平均值；问题2实">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -496,14 +496,14 @@ csv文件详见附件
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-07
+                    2020-04-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2k
                 </div>
                 
 
@@ -531,7 +531,7 @@ csv文件详见附件
 <p>1.<strong>汇总计算PM指数年平均值的变化情况</strong><br>2.<strong>汇总计算每年中1-12月的PM指数数据变化情况</strong></p>
 </blockquote>
 <p>csv文件详见附件</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="分析问题"><a href="#分析问题" class="headerlink" title="分析问题"></a>分析问题</h3><p><code>问题1</code>实际是求PM指数的年平均值；<br><code>问题2</code>实际是求PM指数的月平均值。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="分析问题"><a href="#分析问题" class="headerlink" title="分析问题"></a>分析问题</h3><p><code>问题1</code>实际是求PM指数的年平均值，即按年分组计算平均值；<br><code>问题2</code>实际是求PM指数的月平均值，即按年和月分组计算平均值。</p>
 <h3 id="分析csv文件"><a href="#分析csv文件" class="headerlink" title="分析csv文件"></a>分析csv文件</h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
 <span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
 
@@ -665,7 +665,7 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 
 <span class="token comment" spellcheck="true"># 获取所有列均为缺失值的行的个数，how='all'是限定所有列均为缺省值</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in BOTH: "</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>how<span class="token operator">=</span><span class="token string">'all'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>得到信息：1</p>
+<p>得到信息：</p>
 <pre class="line-numbers language-txt"><code class="language-txt">Total of rows: 52584
 The number of missing data in PM_Dongsi: 27532
 The number of missing data in PM_Dongsihuan: 32076
@@ -685,10 +685,10 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 <span class="token comment" spellcheck="true"># 新建平均值列，并将平均值写入</span>
 <span class="token comment" spellcheck="true"># 其中，iloc[:, 1:5]指第2到第5列，mean(axis=1)为求行平均值</span>
 df<span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 以年为分组求平均值并打印</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'year'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># 保存到文件</span>
-df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution1.csv"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment" spellcheck="true"># 保存到文件，其中以'year'分组，计算'PM_ave'列的平均值。</span>
+df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'year'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution1.csv"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true"># 为方便，再打印一份</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'year'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>得到：</p>
 <pre class="line-numbers language-txt"><code class="language-txt">year    PM_ave
 2010    104.0457298
@@ -1083,7 +1083,7 @@ df<span class="token punctuation">.</span>groupby<span class="token punctuation"
 1.汇总计算PM指数年平均值的变化情况2.汇总计算每年中1-12月的PM指数数据变化情况
 
 csv文件详见附件
-分析分析问题问题1实际是求PM指数的年平均值；问题2实际是求PM指数的月平均
+分析分析问题问题1实际是求PM指数的年平均值，即按年分组计算平均值；问题2实
                         
                     </div>
                     <div class="publish-info">
@@ -1363,8 +1363,8 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
-                   type="album"
-                   id="3110201"
+                   type="playlist"
+                   id="4958549334"
                    fixed='true'
                    autoplay='true'
                    theme='#42b983'

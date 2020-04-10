@@ -1,0 +1,12 @@
+User-agent: * 
+Allow: /
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
+Disallow: /friends/
+Disallow: /contact/
+Disallow: /changelog/
+
+Sitemap: http://boyinthesun.cn/atom.xml
+Sitemap: http://boyinthesun.cn/sitemap.xml
+Sitemap: http:/boyinthesun.cn/baidusitemap.xml

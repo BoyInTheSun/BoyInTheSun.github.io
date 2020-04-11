@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-04-08T13:49:37.184Z</updated>
+  <updated>2020-04-11T15:21:37.939Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>V2Ray客户端汇总</title>
+    <link href="http://boyinthesun.cn/post/v2ray/"/>
+    <id>http://boyinthesun.cn/post/v2ray/</id>
+    <published>2020-04-11T11:29:11.000Z</published>
+    <updated>2020-04-11T15:21:37.939Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    
+    
+      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
+      <category term="macOS" scheme="http://boyinthesun.cn/tags/macOS/"/>
+    
+      <category term="Android" scheme="http://boyinthesun.cn/tags/Android/"/>
+    
+      <category term="IOS" scheme="http://boyinthesun.cn/tags/IOS/"/>
+    
+  </entry>
   
   <entry>
     <title>Pandas实例————分析北京市pm指数</title>
@@ -199,7 +236,7 @@
     <link href="http://boyinthesun.cn/post/error-autosub/"/>
     <id>http://boyinthesun.cn/post/error-autosub/</id>
     <published>2020-03-18T01:27:21.000Z</published>
-    <updated>2020-04-02T10:10:13.587Z</updated>
+    <updated>2020-04-10T13:03:52.216Z</updated>
     
     <summary type="html">
     
@@ -219,7 +256,7 @@
     
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
-      <category term="linux" scheme="http://boyinthesun.cn/tags/linux/"/>
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     
@@ -553,35 +590,6 @@
         
         
           &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    
-    
-      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TrafficMonitor——简洁实用的网速/cpu/内存监控器</title>
-    <link href="http://boyinthesun.cn/post/TrafficMonitor/"/>
-    <id>http://boyinthesun.cn/post/TrafficMonitor/</id>
-    <published>2020-02-21T15:51:09.000Z</published>
-    <updated>2020-04-03T15:36:59.606Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;项目地址：&lt;a href=&quot;https://github.com/zhongyang219/TrafficMonitor&quot;
         
       
     

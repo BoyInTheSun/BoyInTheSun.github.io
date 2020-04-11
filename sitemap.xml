@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://boyinthesun.cn/post/v2ray/</loc>
+    
+    <lastmod>2020-04-11T15:21:37.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://boyinthesun.cn/post/error-autosub/</loc>
+    
+    <lastmod>2020-04-10T13:03:52.216Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://boyinthesun.cn/post/python-pd/</loc>
     
     <lastmod>2020-04-08T13:49:37.184Z</lastmod>
@@ -110,13 +124,6 @@
     <loc>http://boyinthesun.cn/post/flvcd/</loc>
     
     <lastmod>2020-04-02T10:11:21.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://boyinthesun.cn/post/error-autosub/</loc>
-    
-    <lastmod>2020-04-02T10:10:13.587Z</lastmod>
     
   </url>
   

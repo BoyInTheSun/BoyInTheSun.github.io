@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-04-12T14:13:06.242Z</updated>
+  <updated>2020-04-24T16:20:40.233Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过高级启动拯救损坏的Windows10系统</title>
+    <link href="http://boyinthesun.cn/post/win10-advanced-startup/"/>
+    <id>http://boyinthesun.cn/post/win10-advanced-startup/</id>
+    <published>2020-04-24T15:22:56.000Z</published>
+    <updated>2020-04-24T16:20:40.233Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;进入安全模式&quot;&gt;&lt;a href=&quot;#进入安全模式&quot; class=&quot;headerlink&quot; title=&quot;进入安全模式&quot;&gt;&lt;/a&gt;进入安全模式&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="常识" scheme="http://boyinthesun.cn/categories/%E5%B8%B8%E8%AF%86/"/>
+    
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>V2Ray客户端汇总</title>
@@ -39,11 +66,11 @@
       <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     
     
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
       <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
     
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
-      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
     
       <category term="macOS" scheme="http://boyinthesun.cn/tags/macOS/"/>
     
@@ -116,7 +143,7 @@
     <link href="http://boyinthesun.cn/post/error-live2d-busuanzi/"/>
     <id>http://boyinthesun.cn/post/error-live2d-busuanzi/</id>
     <published>2020-04-02T09:50:05.000Z</published>
-    <updated>2020-04-05T10:18:05.259Z</updated>
+    <updated>2020-04-22T11:24:04.477Z</updated>
     
     <summary type="html">
     
@@ -163,9 +190,9 @@
       <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
     
     
-      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
       <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
     
       <category term="macOS" scheme="http://boyinthesun.cn/tags/macOS/"/>
     
@@ -254,9 +281,9 @@
       <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
     
     
-      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
-    
       <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
+    
+      <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     
@@ -571,35 +598,6 @@
     
     
       <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
-    
-      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows沙盒——系统自带的一次性虚拟机</title>
-    <link href="http://boyinthesun.cn/post/winsandbox/"/>
-    <id>http://boyinthesun.cn/post/winsandbox/</id>
-    <published>2020-02-24T07:25:10.000Z</published>
-    <updated>2020-04-02T12:37:05.600Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="软件推荐" scheme="http://boyinthesun.cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    
-    
-      <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
     
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
     

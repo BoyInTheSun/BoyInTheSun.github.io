@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>通过高级启动拯救损坏的Windows10系统</title>
+      <link href="/post/win10-advanced-startup/"/>
+      <url>/post/win10-advanced-startup/</url>
+      
+        <content type="html"><![CDATA[<h2 id="进入安全模式"><a href="#进入安全模式" class="headerlink" title="进入安全模式"></a>进入安全模式</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/win10-advanced-startup(2).png?x-oss-process=style/watermark" alt=""><br>Windows10自发布以来，各种bug从未间断，系统损坏也是常有的事。如果你随身携带pe系统，那么无需阅读此文。<br>拯救的第一步就是<strong>进入Win10高级启动</strong>，一般的，如果系统损坏，会<strong>自动进入</strong>，如果没有自动进入，可以<strong>连续异常关机</strong>（按电源键七秒）<strong>三次</strong>。如果你闲来无事，可通过<code>Windows设置-&gt;更新和安全-&gt;恢复-&gt;高级启动-&gt;立即重新启动</code>进入。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/win10-advanced-startup(1).png?x-oss-process=style/watermark" alt=""><br>进入<code>疑难解答-&gt;高级选项</code></p><h2 id="开始尝试"><a href="#开始尝试" class="headerlink" title="开始尝试"></a>开始尝试</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/win10-advanced-startup(5).png?x-oss-process=style/watermark" alt=""><br>在尝试终极方案之前，可先尝试以下以下方法。这些操作均不会对数据产生影响，大可放心操作。但千万不要选择<code>重置此电脑</code>。</p><h3 id="启动修复"><a href="#启动修复" class="headerlink" title="启动修复"></a>启动修复</h3><p>这能解决一部分系统故障，只需耐心等待即可。</p><h3 id="卸载更新"><a href="#卸载更新" class="headerlink" title="卸载更新"></a>卸载更新</h3><p>如果你是在安装更新后系统出现故障，卸载更新很大几率可以解决问题。</p><h3 id="系统还原"><a href="#系统还原" class="headerlink" title="系统还原"></a>系统还原</h3><p>如果你有良好的习惯，设立了还原点，很大几率可以恢复成功。</p><h3 id="启动设置"><a href="#启动设置" class="headerlink" title="启动设置"></a>启动设置</h3><p>点击后进入启动设置选择，这里按<code>F5</code>选择<code>5) 启用安全模式</code>。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/win10-advanced-startup(3).png?x-oss-process=style/watermark" alt=""><br>如果你知道导致如何排除系统故障，比如卸载错误的显卡驱动、进行病毒查杀、卸载更新等，尽可以操作。如果无法解决，也可以救急，将c盘文件拷贝至u盘，连接网络制作pe盘等等。</p><h2 id="终极方案————CMD"><a href="#终极方案————CMD" class="headerlink" title="终极方案————CMD"></a>终极方案————CMD</h2><p>如果以上方法均无效，只好上大招了。请确保你已经熟悉基本cmd用法，如<code>cd</code>，<code>dir</code>，<code>copy</code>，<code>C:\</code>来更换盘符，<code>diskpart</code>等，本文不再赘述。<br>可以进入<code>启动设置</code>按<code>F5</code>选择<code>5) 带命令提示符的安全模式</code>，也可进入<code>命令提示符</code>，后者是一定可行的。本地磁盘的盘符会从<code>C</code>开始，寻找你所需文件的盘符，尤其是位于c盘的。如果你的c盘文件不多，可以将有用文件复制到其他盘，然后<code>重置此电脑</code>，崭新的系统就在你面前了。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/win10-advanced-startup(4).png?x-oss-process=style/watermark" alt=""><br>如图，我通过操作确定了我的系统盘盘符为D。于是便可以输入<code>d:</code>进入c盘，在cd到我需要的目录，拷贝文件。</p><h2 id="说在最后"><a href="#说在最后" class="headerlink" title="说在最后"></a>说在最后</h2><p>作为一名IT工作者，随身携带pe是良好的习惯，但是即便你身边有pe，也不妨先利用自带的工具尝试修复。最好养成定期建立还原点的良好习惯！</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 常识 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>V2Ray客户端汇总</title>
       <link href="/post/v2ray/"/>
       <url>/post/v2ray/</url>
@@ -20,11 +45,11 @@
       
         <tags>
             
+            <tag> Linux </tag>
+            
             <tag> 软件 </tag>
             
             <tag> Windows </tag>
-            
-            <tag> Linux </tag>
             
             <tag> macOS </tag>
             
@@ -136,9 +161,9 @@
       
         <tags>
             
-            <tag> Windows </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> Windows </tag>
             
             <tag> macOS </tag>
             
@@ -221,9 +246,9 @@
       
         <tags>
             
-            <tag> 命令行 </tag>
-            
             <tag> Linux </tag>
+            
+            <tag> 命令行 </tag>
             
             <tag> python </tag>
             
@@ -591,11 +616,11 @@
       
         <tags>
             
+            <tag> 命令行 </tag>
+            
             <tag> 软件 </tag>
             
             <tag> Windows </tag>
-            
-            <tag> 命令行 </tag>
             
         </tags>
       
@@ -620,13 +645,13 @@
       
         <tags>
             
-            <tag> 软件 </tag>
-            
-            <tag> Windows </tag>
+            <tag> Linux </tag>
             
             <tag> 命令行 </tag>
             
-            <tag> Linux </tag>
+            <tag> 软件 </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       

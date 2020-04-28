@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
+    
+    <lastmod>2020-04-27T12:28:24.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
+    
+    <lastmod>2020-04-27T12:24:46.223Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://boyinthesun.cn/post/win10-advanced-startup/</loc>
     
     <lastmod>2020-04-24T16:20:40.233Z</lastmod>
@@ -51,13 +65,6 @@
   </url>
   
   <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
-    
-    <lastmod>2020-04-03T00:23:54.380Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://boyinthesun.cn/post/winsandbox/</loc>
     
     <lastmod>2020-04-02T12:37:05.600Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>http://boyinthesun.cn/post/annie/</loc>
     
     <lastmod>2020-04-02T10:37:16.846Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
-    
-    <lastmod>2020-04-02T10:36:33.363Z</lastmod>
     
   </url>
   

@@ -491,7 +491,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-03
+                    2020-04-27
                 </div>
                 
 
@@ -545,42 +545,42 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
     start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"http://www.xuetangx.com/partners"</span><span class="token punctuation">]</span>
     <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
         item <span class="token operator">=</span> MyItem <span class="token punctuation">(</span><span class="token punctuation">)</span>
-        <span class="token comment" spellcheck="true">#开课院校</span>
+        <span class="token comment" spellcheck="true"># 开课院校</span>
         <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/article[1]/section/ul/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
             item<span class="token punctuation">[</span><span class="token string">'school'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/h3/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             item<span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/p/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             <span class="token keyword">yield</span> item 
-        <span class="token comment" spellcheck="true">#edX合作院校和伙伴</span>
+        <span class="token comment" spellcheck="true"># edX合作院校和伙伴</span>
         <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/article[2]/section/ul/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
             item<span class="token punctuation">[</span><span class="token string">'school'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/h3/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             item<span class="token punctuation">[</span><span class="token string">'num'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"a/div[2]/p/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            <span class="token keyword">yield</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> 
+            <span class="token keyword">yield</span> item
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true">#不遵守机器人协议</span>
+<h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 不遵守机器人协议</span>
 ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">False</span>
 BOT_NAME <span class="token operator">=</span> <span class="token string">'xtzx'</span>
 SPIDER_MODULES <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'xtzx.spiders'</span><span class="token punctuation">]</span>
 NEWSPIDER_MODULE <span class="token operator">=</span> <span class="token string">'xtzx.spiders'</span>
-<span class="token comment" spellcheck="true">#开启管道</span>
+<span class="token comment" spellcheck="true"># 开启管道</span>
 ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'xtzx.pipelines.MyPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span><span class="token punctuation">}</span>
-<span class="token comment" spellcheck="true">#客户端伪装</span>
+<span class="token comment" spellcheck="true"># 客户端伪装</span>
 USER_AGENT <span class="token operator">=</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="更改pipelines-py"><a href="#更改pipelines-py" class="headerlink" title="更改pipelines.py"></a>更改<code>pipelines.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> json
 <span class="token keyword">class</span> <span class="token class-name">MyPipeline</span> <span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token comment" spellcheck="true">#打开文件</span>
+    <span class="token comment" spellcheck="true"># 打开文件</span>
     <span class="token keyword">def</span> open_spider <span class="token punctuation">(</span>self<span class="token punctuation">,</span>spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">try</span><span class="token punctuation">:</span>
             self<span class="token punctuation">.</span>file <span class="token operator">=</span> open<span class="token punctuation">(</span><span class="token string">'MyData.json '</span><span class="token punctuation">,</span> <span class="token string">"w"</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">"utf-8"</span><span class="token punctuation">)</span>
         <span class="token keyword">except</span> Exception <span class="token keyword">as</span> err<span class="token punctuation">:</span>
             <span class="token keyword">print</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
-    <span class="token comment" spellcheck="true">#写入</span>
+    <span class="token comment" spellcheck="true"># 写入</span>
     <span class="token keyword">def</span> process_item <span class="token punctuation">(</span>self<span class="token punctuation">,</span> item<span class="token punctuation">,</span> spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
         dict_item <span class="token operator">=</span> dict <span class="token punctuation">(</span>item<span class="token punctuation">)</span>
         <span class="token comment" spellcheck="true"># 生成 json 串</span>
         json_str <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>dict_item <span class="token punctuation">,</span> ensure_ascii<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"\n"</span> 
         self<span class="token punctuation">.</span>file<span class="token punctuation">.</span>write<span class="token punctuation">(</span>json_str<span class="token punctuation">)</span>
         <span class="token keyword">return</span> item
-    <span class="token comment" spellcheck="true">#关闭文件</span>
+    <span class="token comment" spellcheck="true"># 关闭文件</span>
     <span class="token keyword">def</span> close_spider <span class="token punctuation">(</span>self<span class="token punctuation">,</span>spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>file<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="运行爬虫"><a href="#运行爬虫" class="headerlink" title="运行爬虫"></a>运行爬虫</h2><p>运行<code>begin.py</code>，成功爬取到数据。这里只列举部分数据。</p>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
     <loc>http://boyinthesun.cn/post/win10-advanced-startup/</loc>
     <lastmod>2020-04-24</lastmod>
   </url>  <url>
@@ -19,9 +25,6 @@
     <loc>http://boyinthesun.cn/post/TrafficMonitor/</loc>
     <lastmod>2020-04-03</lastmod>
   </url>  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
-    <lastmod>2020-04-03</lastmod>
-  </url>  <url>
     <loc>http://boyinthesun.cn/post/winsandbox/</loc>
     <lastmod>2020-04-02</lastmod>
   </url>  <url>
@@ -35,9 +38,6 @@
     <lastmod>2020-04-02</lastmod>
   </url>  <url>
     <loc>http://boyinthesun.cn/post/annie/</loc>
-    <lastmod>2020-04-02</lastmod>
-  </url>  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
     <lastmod>2020-04-02</lastmod>
   </url>  <url>
     <loc>http://boyinthesun.cn/post/proxifier/</loc>

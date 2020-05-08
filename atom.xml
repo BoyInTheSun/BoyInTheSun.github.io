@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-04-24T16:20:40.233Z</updated>
+  <updated>2020-05-08T03:04:55.081Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows启动pycharm报错：Failed to load JVM DLL</title>
+    <link href="http://boyinthesun.cn/post/error-pycharm/"/>
+    <id>http://boyinthesun.cn/post/error-pycharm/</id>
+    <published>2020-05-08T01:31:27.000Z</published>
+    <updated>2020-05-08T03:04:55.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;问题出现&quot;&gt;&lt;a href=&quot;#问题出现&quot; class=&quot;headerlink&quot; title=&quot;问题出现&quot;&gt;&lt;/a&gt;问题出现&lt;/h2&gt;&lt;p&gt;安装好pycharm后，启动主程序时报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Failed to load JVM DLL
+        
+      
+    
+    </summary>
+    
+    
+      <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
+    
+    
+      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
+    
+      <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>通过高级启动拯救损坏的Windows10系统</title>
@@ -281,9 +311,9 @@
       <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
     
     
-      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
-    
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     
@@ -569,35 +599,6 @@
     
     
       <category term="软件" scheme="http://boyinthesun.cn/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>键盘不为人知的一面（一）</title>
-    <link href="http://boyinthesun.cn/post/keyboard/"/>
-    <id>http://boyinthesun.cn/post/keyboard/</id>
-    <published>2020-02-24T12:24:56.000Z</published>
-    <updated>2020-04-02T10:27:48.453Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;概况篇&quot;&gt;&lt;a href=&quot;#概况篇&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="科普小文" scheme="http://boyinthesun.cn/categories/%E7%A7%91%E6%99%AE%E5%B0%8F%E6%96%87/"/>
-    
-    
-      <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
     
       <category term="Windows" scheme="http://boyinthesun.cn/tags/Windows/"/>
     

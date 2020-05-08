@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Windows启动pycharm报错：Failed to load JVM DLL</title>
+      <link href="/post/error-pycharm/"/>
+      <url>/post/error-pycharm/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题出现"><a href="#问题出现" class="headerlink" title="问题出现"></a>问题出现</h2><p>安装好pycharm后，启动主程序时报错：</p><pre><code>Failed to load JVM DLL C:\Program Files\JetBrain.s＼PyCharm Community Edition 2020.1.1\jbr\ \bin\server\jvm.dll If you already have a 64-bit JDK installed, define a JAVA_HOME variable in Computer &gt; System Properties &gt; System Settings &gt; Environment Variables. </code></pre><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/error-pycharm.png?x-oss-process=style/watermark" alt=""></p><h2 id="通用解决方案"><a href="#通用解决方案" class="headerlink" title="通用解决方案"></a>通用解决方案</h2><p>经查阅资料，发现是因为系统缺少<code>Microsoft Visual C++ 2010 Redistributable Package</code><br>于是进行安装：</p><blockquote><p>32 bit: <a href="http://www.microsoft.com/download/en/details.aspx?id=5555" target="_blank" rel="noopener">http://www.microsoft.com/download/en/details.aspx?id=5555</a><br>64 bit: <a href="http://www.microsoft.com/download/en/details.aspx?id=14632" target="_blank" rel="noopener">http://www.microsoft.com/download/en/details.aspx?id=14632</a><br>参考网址：<a href="https://www.cnblogs.com/whu-2017/p/8984038.html" target="_blank" rel="noopener">https://www.cnblogs.com/whu-2017/p/8984038.html</a></p></blockquote><h2 id="我的解决方案"><a href="#我的解决方案" class="headerlink" title="我的解决方案"></a>我的解决方案</h2><p>我正确安装<code>Microsoft Visual C++ 2010 Redistributable Package</code>又重启后，<strong>相同错误依然存在</strong>。<br>于是尝试<strong>以管理员身份运行主程序</strong>，程序正常运行。<br>目前未知导致此问题的原因。<br>为了方便，你也可以更改快捷方式的选项，使其自动以管理员身份运行。</p><h2 id="其他解决方案"><a href="#其他解决方案" class="headerlink" title="其他解决方案"></a>其他解决方案</h2><p>博主未尝试该方案，请自行判断。</p><blockquote><p>1.下载JDK_8.0.1310.11_32bit；（下载链接：<a href="https://pan.baidu.com/s/16Wsq3S1isYAHLIPEJujymw" target="_blank" rel="noopener">https://pan.baidu.com/s/16Wsq3S1isYAHLIPEJujymw</a> 密码：hf2n）<br>2.配置环境变量：JAVA_HOME；<br>3.重启电脑让配置的环境变量生效；<br>4.运行PyCharm，问题解决。<br>————————————————<br>版权声明：本文为CSDN博主「望见明月」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/u013751642/article/details/82659091" target="_blank" rel="noopener">https://blog.csdn.net/u013751642/article/details/82659091</a></p></blockquote><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>通过高级启动拯救损坏的Windows10系统</title>
       <link href="/post/win10-advanced-startup/"/>
       <url>/post/win10-advanced-startup/</url>
@@ -246,9 +273,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> 命令行 </tag>
+            
+            <tag> Linux </tag>
             
             <tag> python </tag>
             
@@ -618,9 +645,9 @@
             
             <tag> 软件 </tag>
             
-            <tag> Windows </tag>
-            
             <tag> 命令行 </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -647,11 +674,11 @@
             
             <tag> 软件 </tag>
             
+            <tag> 命令行 </tag>
+            
             <tag> Windows </tag>
             
             <tag> Linux </tag>
-            
-            <tag> 命令行 </tag>
             
         </tags>
       

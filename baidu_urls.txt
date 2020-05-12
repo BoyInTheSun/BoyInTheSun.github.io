@@ -1,3 +1,4 @@
+http://boyinthesun.cn/post/python-pyecharts/
 http://boyinthesun.cn/post/error-pycharm/
 http://boyinthesun.cn/post/win10-advanced-startup/
 http://boyinthesun.cn/post/v2ray/
@@ -17,4 +18,3 @@ http://boyinthesun.cn/post/ByteVSbits/
 http://boyinthesun.cn/post/myskill/
 http://boyinthesun.cn/post/5g/
 http://boyinthesun.cn/post/Universal/
-http://boyinthesun.cn/post/formatfactory/

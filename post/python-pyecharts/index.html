@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vmare,虚拟机,windows,vm">
-    <meta name="description" content="前言Vmware Workstation几乎是目前公认的Windows系统最好用的虚拟机软件，简称vm。
-安装目前计算机的硬件基本都符合要求，对于虚拟机，影响性能的主要是内存的大小和频率（推荐2GB以上）、存储介质（固态硬盘最好）、cpu、">
+    <meta name="keywords" content="python,pyecharts">
+    <meta name="description" content="目标通过提供的csv文件，利用pyecharts(v1.7)，在中国地图上展示各省的高考人数和大学数量。
+分析csv文件由于数据较少，直接在此列出
+,高考人数,,大学数量,
+省/市,2017年,2016年,211&amp;985大学数量,公办本科大">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Vmware安装详解 | BoyInTheSun</title>
+    <title>pyecharts实例————绘制中国各省高考人数和大学数量可视化地图 | BoyInTheSun</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -334,12 +336,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vmware安装详解</h1>
+                    <h1 class="description center-align post-title">pyecharts实例————绘制中国各省高考人数和大学数量可视化地图</h1>
                 </div>
             </div>
         </div>
@@ -456,12 +458,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                <span class="chip bg-color">软件</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
-                            <a href="/tags/Windows/">
-                                <span class="chip bg-color">Windows</span>
+                            <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                             </a>
                         
                     </div>
@@ -472,8 +474,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-category">
-                                软件推荐
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                编程实例
                             </a>
                         
                     </div>
@@ -485,28 +487,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-10
+                    2020-05-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-02
+                    2020-05-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    634
+                    953
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -522,10 +524,111 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>Vmware Workstation</strong>几乎是目前公认的Windows系统最好用的虚拟机软件，简称vm。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>目前计算机的硬件基本都符合要求，对于虚拟机，影响性能的主要是内存的大小和频率（推荐2GB以上）、存储介质（固态硬盘最好）、cpu、显卡等。请确认操作系统是<strong>64位</strong>，否则请下载<strong>vm10</strong>版本<br>下载<strong>vm15安装包</strong>，[<a href="https://my.vmware.com/cn/web/vmware/details?downloadGroup=WKST-1551-WIN&amp;productId=799&amp;rPId=39513" target="_blank" rel="noopener">官方下载链接</a>][<a href="http://down-ww3.newasp.net/pcdown/big/vmware15pro.rar" target="_blank" rel="noopener">备用下载链接1</a>][<a href="http://down-ww3.7down.net/pcdown/soft/xiazai/vmware-pro15.zip" target="_blank" rel="noopener">备用下载链接2</a>]<br>然后运行.exe安装程序<br>一直下一步，别忘了勾选<strong>接受条款</strong><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(1).png?x-oss-process=style/watermark" alt=""><br>安装路径自己选择，只是程序本体的安装路径，虚拟机路径可在以后单独设置。<br>增强型键盘可以不勾选，影响不大。勾选后可以绕过Windows系统直接把按键传输给虚拟机，比如当按下Cltr+Alt+Delete只会打开虚拟机中的任务管理器。安装后也可以通过再次运行安装包更改相关设置。<br>继续下一步，根据个人需求勾选选项。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(2).png?x-oss-process=style/watermark" alt="等待安装"><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(3).png?x-oss-process=style/watermark" alt=""><br>点击许可证，在框内输入密匙<code>FC7D0-D1YDL-M8DXZ-CYPZE-P2AY6</code>，重新启动。</p>
-<h2 id="添加虚拟机"><a href="#添加虚拟机" class="headerlink" title="添加虚拟机"></a>添加虚拟机</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(4).png?x-oss-process=style/watermark" alt="创建新的虚拟机"><br>一般地，选择典型即可。<br>下文以安装Windows 7为例<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(5).png?x-oss-process=style/watermark" alt=""><br>选择iso格式的原版镜像镜像，Windows镜像推荐到<a href="https://msdn.itellyou.cn/" target="_blank" rel="noopener">MSDN我告诉你</a>下载，汇总了微软几乎所有的ed2k下载链接，使用电驴、迅雷等下载。正常应出现<code>快速安装</code>，省去大部分手动操作。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(6).png?x-oss-process=style/watermark" alt=""><br>版本要选择正确。建议留空序列号，因为此时无法验证序列号是否可用。可以安装后以激活物理机的方式激活虚拟机。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(7).png?x-oss-process=style/watermark" alt=""><br>位置建议安装到固态硬盘，但不要在C盘。当然普通磁盘也可，只是速度感人。<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/vm(8).png?x-oss-process=style/watermark" alt=""><br>根据自己需求选择<br>完成后就由vm自动安装操作系统，静观其变即可。安装完成后别忘了激活系统。</p>
-<h2 id="VMware-Tools"><a href="#VMware-Tools" class="headerlink" title="VMware Tools"></a>VMware Tools</h2><p>VMware Tools是一个实用插件，支持现有绝大多数系统。一般会自动安装，也可手动安装或更新。安装后可以支持直接拖拽传输文件、同步剪切板信息、任意分辨率显示、鼠标直接跨屏幕操作等等实用功能。</p>
+                <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>通过提供的csv文件，利用<code>pyecharts(v1.7)</code>，在中国地图上展示各省的高考人数和大学数量。</p>
+<h2 id="分析csv文件"><a href="#分析csv文件" class="headerlink" title="分析csv文件"></a>分析csv文件</h2><p>由于数据较少，直接在此列出</p>
+<pre class="line-numbers language-csv"><code class="language-csv">,高考人数,,大学数量,
+省/市,2017年,2016年,211&985大学数量,公办本科大学数量
+河南,86.3万,82万,1,37
+广东,75.7万,73.3万,4,41
+山东,58.3万,60.2万,3,44
+四川,58.3万,57.13万,5,34
+安徽,49.9万,50.99万,3,30
+河北,43.6万,42.31万,0,36
+贵州,41.2万,37.38万,1,19
+湖南,41.1万,40.16万,3,31
+广西,36.5万,33万,1,24
+江西,36.5万,36.06万,1,23
+湖北,36.2万,36.14万,1,36
+江苏,33万,36.04万,11,45
+陕西,31.9万,32.8万,1,34
+山西,31.7万,33.9万,1,22
+云南,29.3万,28万,1,22
+浙江,29.1万,30.74万,1,32
+甘肃,28.5万,29.6万,1,17
+重庆,21.1万,24.88万,2,17
+辽宁,20.8万,21.82万,4,4
+内蒙古,19.8万,20.11万,1,14
+福建,18.8万,17.5万,2,22
+黑龙江,18.8万,19.7万,4,26
+新疆,18.4万,16.61万,2,13
+吉林,14.3万,14.85万,3,25
+宁夏,6.9万,6.9万,1,4
+北京,6万,6.12万,26,60
+海南,5.7万,6.04万,1,5
+天津,5.7万,6万,4,18
+上海,5万,5.1万,9,31
+青海,4.6万,4.5万,1,3
+西藏,2.8万,2.4万,1,3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><strong>数据从第三行开始</strong>，应以第二行作为真正的表头。<br>对于第二三列中<code>某某万</code>的表述，需进行处理再使用，因为pyecharts是无法将<code>86.3万</code>识别为数的。</p>
+<h2 id="求解"><a href="#求解" class="headerlink" title="求解"></a>求解</h2><p>具体请见注释</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> pyecharts <span class="token keyword">import</span> options <span class="token keyword">as</span> opts
+<span class="token keyword">from</span> pyecharts<span class="token punctuation">.</span>charts <span class="token keyword">import</span> Map
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+FileNameStr <span class="token operator">=</span> <span class="token string">'dataset.csv'</span>
+<span class="token comment" spellcheck="true"># 读取csv，以第二行作为表头</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> header<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># 新建列表，并将已删除'万'字的数据存入</span>
+num_2016 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> row <span class="token keyword">in</span> df<span class="token punctuation">[</span><span class="token string">'2016年'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    num_2016<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'万'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+num_2017 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> row <span class="token keyword">in</span> df<span class="token punctuation">[</span><span class="token string">'2017年'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    num_2017<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'万'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+map0 <span class="token operator">=</span> Map<span class="token punctuation">(</span><span class="token punctuation">)</span>
+map0<span class="token punctuation">.</span>set_global_opts<span class="token punctuation">(</span>
+        title_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>TitleOpts<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">"全国各省份高考人数"</span><span class="token punctuation">,</span> subtitle<span class="token operator">=</span><span class="token string">"2016年至2017年"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true"># 表格标题</span>
+        visualmap_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>VisualMapOpts<span class="token punctuation">(</span>range_text<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'单位：万人\n'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> min_<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> max_<span class="token operator">=</span><span class="token number">80</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true"># 设置图例文本和最大值最小值</span>
+        legend_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>LegendOpts<span class="token punctuation">(</span>selected_mode<span class="token operator">=</span><span class="token string">'single'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 设置图例选择模式为单选</span>
+<span class="token punctuation">)</span>
+map0<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">"2016年"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>list<span class="token punctuation">(</span>z<span class="token punctuation">)</span> <span class="token keyword">for</span> z <span class="token keyword">in</span> zip<span class="token punctuation">(</span>list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'省/市'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> num_2016<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"china"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 添加数据</span>
+map0<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">"2017年"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>list<span class="token punctuation">(</span>z<span class="token punctuation">)</span> <span class="token keyword">for</span> z <span class="token keyword">in</span> zip<span class="token punctuation">(</span>list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'省/市'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> num_2017<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">"china"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 添加数据</span>
+map0<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token string">"map0.html"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 导出地图</span>
+
+
+map1 <span class="token operator">=</span> Map<span class="token punctuation">(</span><span class="token punctuation">)</span>
+map1<span class="token punctuation">.</span>set_global_opts<span class="token punctuation">(</span>
+        title_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>TitleOpts<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">"全国各省份大学数量"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        visualmap_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>VisualMapOpts<span class="token punctuation">(</span>
+                <span class="token comment" spellcheck="true"># 由于数据分布较为集中，线性无法形象反映，故设置为分段显示</span>
+                is_piecewise<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>
+                <span class="token comment" spellcheck="true"># 自定义分段区间、描述和颜色</span>
+                pieces<span class="token operator">=</span><span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"0所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"1所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#FFEBCD"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"2所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#FFA07A"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"3-5所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#EE5C42"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"6-10所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#CD3333"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token string">"max"</span><span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"11-20所"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#A52A2A"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">"min"</span><span class="token punctuation">:</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token string">"label"</span><span class="token punctuation">:</span> <span class="token string">"20所以上"</span><span class="token punctuation">,</span> <span class="token string">"color"</span><span class="token punctuation">:</span> <span class="token string">"#8B0000"</span><span class="token punctuation">}</span>  # 不指定 max，表示 max 为无穷大
+                <span class="token punctuation">]</span>
+        <span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+map1<span class="token punctuation">.</span>add<span class="token punctuation">(</span>
+        <span class="token string">"211&amp;985大学数量"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">[</span>list<span class="token punctuation">(</span>z<span class="token punctuation">)</span> <span class="token keyword">for</span> z <span class="token keyword">in</span> zip<span class="token punctuation">(</span>list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'省/市'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'211&amp;985大学数量'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">"china"</span><span class="token punctuation">,</span>
+        is_map_symbol_show<span class="token operator">=</span><span class="token boolean">False</span>  <span class="token comment" spellcheck="true"># 不显示省会的小红点</span>
+<span class="token punctuation">)</span>
+map1<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token string">"map1.html"</span><span class="token punctuation">)</span>
+
+
+map2 <span class="token operator">=</span> Map<span class="token punctuation">(</span><span class="token punctuation">)</span>
+map2<span class="token punctuation">.</span>set_global_opts<span class="token punctuation">(</span>
+        title_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>TitleOpts<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">"全国各省份大学数量"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        visualmap_opts<span class="token operator">=</span>opts<span class="token punctuation">.</span>VisualMapOpts<span class="token punctuation">(</span>min_<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> max_<span class="token operator">=</span><span class="token number">60</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+map2<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token string">"公办本科大学数量"</span><span class="token punctuation">,</span>
+         <span class="token punctuation">[</span>list<span class="token punctuation">(</span>z<span class="token punctuation">)</span> <span class="token keyword">for</span> z <span class="token keyword">in</span> zip<span class="token punctuation">(</span>list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'省/市'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> list<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'公办本科大学数量'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+         <span class="token string">"china"</span><span class="token punctuation">,</span>
+         is_map_symbol_show<span class="token operator">=</span><span class="token boolean">False</span>  <span class="token comment" spellcheck="true"># 不显示省会的小红点</span>
+<span class="token punctuation">)</span>
+map2<span class="token punctuation">.</span>render<span class="token punctuation">(</span><span class="token string">"map2.html"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="结果展示"><a href="#结果展示" class="headerlink" title="结果展示"></a>结果展示</h2><h3 id="map0"><a href="#map0" class="headerlink" title="map0"></a>map0</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(1).PNG?x-oss-process=style/watermark" alt=""><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(2).PNG?x-oss-process=style/watermark" alt=""></p>
+<h3 id="map1"><a href="#map1" class="headerlink" title="map1"></a>map1</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(3).PNG?x-oss-process=style/watermark" alt=""></p>
+<h3 id="map2"><a href="#map2" class="headerlink" title="map2"></a>map2</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(4).PNG?x-oss-process=style/watermark" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -569,7 +672,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://boyinthesun.cn/post/vm/">http://boyinthesun.cn/post/vm/</a>
+                    <a href="http://boyinthesun.cn/post/python-pyecharts/">http://boyinthesun.cn/post/python-pyecharts/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -607,12 +710,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                                    <span class="chip bg-color">软件</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
-                                <a href="/tags/Windows/">
-                                    <span class="chip bg-color">Windows</span>
+                                <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                                    <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                                 </a>
                             
                         </div>
@@ -800,46 +903,55 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/post/sharefolder/">
+                <a href="/post/python-pyecharts/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Windows共享文件夹————Windows互传文件">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="pyecharts实例————绘制中国各省高考人数和大学数量可视化地图">
                         
-                        <span class="card-title">Windows共享文件夹————Windows互传文件</span>
+                        <span class="card-title">pyecharts实例————绘制中国各省高考人数和大学数量可视化地图</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在同一局域网下，或其中一台电脑有热点功能，甚至只有一根网线时，在Windows互传文件最方便的方式便是利用共享文件夹。共享文件夹支持的系统很多，从WinME到Win10都可以相互传输文件。在win7时微软推出家庭组以方便家庭或办公环境下互传文件，可惜到了win10就被废弃了。本文以win10为例，其他系统大同小异。
+                            目标通过提供的csv文件，利用pyecharts(v1.7)，在中国地图上展示各省的高考人数和大学数量。
+分析csv文件由于数据较少，直接在此列出
+,高考人数,,大学数量,
+省/市,2017年,2016年,211&985大学数量,公办本科大
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="post-category">
-                                    小技巧
+                            <a href="/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/" class="post-category">
+                                    编程实例
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Windows/">
-                        <span class="chip bg-color">Windows</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/">
+                        <span class="chip bg-color">学堂在线《Python数据分析与可视化》</span>
                     </a>
                     
                 </div>
@@ -853,31 +965,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/flvcd/">
+                <a href="/post/error-pycharm/">
                     <div class="card-image">
                         
-                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/flvcd.png" class="responsive-img" alt="硕鼠——前些年很好用的视频下载神器">
+                        <img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/error-pycharm.png?x-oss-process=style/watermark" class="responsive-img" alt="Windows启动pycharm报错：Failed to load JVM DLL">
                         
-                        <span class="card-title">硕鼠——前些年很好用的视频下载神器</span>
+                        <span class="card-title">Windows启动pycharm报错：Failed to load JVM DLL</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言首先解释一下为什么要说是前几年。因为它太好用，知道的人越来越多，导致引起了视频平台的注意，以版权为由禁止自己的视频从硕鼠下载。这里推荐小众软件Annie，在我的另一篇中有介绍，传送门。
-官方网站http://www.flvcd.com这
+                            Failed to load JVM DLL C:\Program Files\JetBrain.s＼PyCharm Community Edition 2020.1.1\jbr\ \bin\server\jvm.dll  If you already have a 64-bit JDK installed, define a JAVA_ HOME variable in Computer > System Properties > System Settings > Environment Variables. 
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-08
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-category">
-                                    软件推荐
+                            <a href="/categories/%E8%B8%A9%E5%9D%91/" class="post-category">
+                                    踩坑
                                 </a>
                             
                             
@@ -887,12 +998,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%BD%AF%E4%BB%B6/">
-                        <span class="chip bg-color">软件</span>
-                    </a>
-                    
                     <a href="/tags/Windows/">
                         <span class="chip bg-color">Windows</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

@@ -496,7 +496,7 @@ csv文件详见附件
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-08
+                    2020-05-12
                 </div>
                 
 
@@ -664,14 +664,14 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in {}: {}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>col<span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">[</span>col<span class="token punctuation">]</span><span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span class="token comment" spellcheck="true"># 获取所有列均为缺失值的行的个数，how='all'是限定所有列均为缺省值</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in BOTH: "</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>how<span class="token operator">=</span><span class="token string">'all'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"The number of missing data in ALL: "</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>how<span class="token operator">=</span><span class="token string">'all'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>得到信息：</p>
 <pre class="line-numbers language-txt"><code class="language-txt">Total of rows: 52584
 The number of missing data in PM_Dongsi: 27532
 The number of missing data in PM_Dongsihuan: 32076
 The number of missing data in PM_Nongzhanguan: 27653
 The number of missing data in PM_US_Post: 2197
-The number of missing data in BOTH:  1894<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+The number of missing data in ALL:  1894<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>可见PM_US_Post的数据最为完整，但是仍存在部分四个值均缺失的情况。<br>为了数据的可靠性，博主采用四项求平均的方式来确定每日的PM数据。</p>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>原文件中变量<code>PM_US Post</code>中包含空格，可能会对命令操作造成干扰，建议将<code>' '</code>替换为<code>'_'</code>。</p>
 <h2 id="求解"><a href="#求解" class="headerlink" title="求解"></a>求解</h2><p>问题1：</p>
@@ -1400,7 +1400,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">21.4k</span>&nbsp;字
+                class="white-color">22.4k</span>&nbsp;字
             
             
             

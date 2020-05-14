@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy2/</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
+    <lastmod>2020-05-14</lastmod>
+  </url>  <url>
     <loc>http://boyinthesun.cn/post/python-pyecharts/</loc>
-    <lastmod>2020-05-12</lastmod>
+    <lastmod>2020-05-13</lastmod>
   </url>  <url>
     <loc>http://boyinthesun.cn/post/python-pd/</loc>
     <lastmod>2020-05-12</lastmod>
   </url>  <url>
     <loc>http://boyinthesun.cn/post/error-pycharm/</loc>
     <lastmod>2020-05-08</lastmod>
-  </url>  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
-    <lastmod>2020-04-27</lastmod>
-  </url>  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
-    <lastmod>2020-04-27</lastmod>
   </url>  <url>
     <loc>http://boyinthesun.cn/post/win10-advanced-startup/</loc>
     <lastmod>2020-04-24</lastmod>

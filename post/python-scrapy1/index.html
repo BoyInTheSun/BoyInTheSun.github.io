@@ -491,7 +491,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-27
+                    2020-05-14
                 </div>
                 
 
@@ -524,7 +524,7 @@
                 <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>通过<code>Scrapy</code>爬取到合作院校的名称及该所院校在学堂在线开课的数量，将爬取到的数据保存到一个json文件中，例如：“清华大学,308”，地址 <a href="http://www.xuetangx.com/partners" target="_blank" rel="noopener">http://www.xuetangx.com/partners</a> 。</p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>博主是在<code>Windows</code>平台使用<code>PyCharm</code>基于<code>Python 3.7</code>和<code>Scrapy 2.0.1</code>编写爬虫，不赘述环境配置了。</p>
 <h2 id="建立项目"><a href="#建立项目" class="headerlink" title="建立项目"></a>建立项目</h2><p>右键<code>Scrapy</code>文件夹，选择在终端中打开<br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(1).png?x-oss-process=style/watermark" alt=""><br>在终端中输入<code>scrapy startproject xtzx</code>，其中<code>xtzx</code>为项目名（忽略图中lianjia，只是博主懒得再重新截图了，下同）。</p>
-<h3 id="新建begin-py"><a href="#新建begin-py" class="headerlink" title="新建begin.py"></a>新建begin.py</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(2).png?x-oss-process=style/watermark" alt=""><br>在项目文件夹中新建<code>begin.py</code>，内容为：</p>
+<h3 id="新建begin-py"><a href="#新建begin-py" class="headerlink" title="新建begin.py"></a>新建<code>begin.py</code></h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(2).png?x-oss-process=style/watermark" alt=""><br>在项目文件夹中新建<code>begin.py</code>，内容为：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> scrapy <span class="token keyword">import</span> cmdline
 cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl xtzx"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>其中<code>xtzx</code>为爬虫名（无须与项目名相同）。目的是为了方便运行爬虫。否则，需要在终端手动输入<code>scrapy crawl xtzx</code>来运行</p>
@@ -1196,7 +1196,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.4k</span>&nbsp;字
+                class="white-color">23.7k</span>&nbsp;字
             
             
             

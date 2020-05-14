@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy2/</loc>
+    
+    <lastmod>2020-05-14T15:48:07.813Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
+    
+    <lastmod>2020-05-14T15:31:58.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
+    
+    <lastmod>2020-05-14T15:31:50.404Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://boyinthesun.cn/post/python-pyecharts/</loc>
     
-    <lastmod>2020-05-12T13:44:12.493Z</lastmod>
+    <lastmod>2020-05-13T14:29:58.594Z</lastmod>
     
   </url>
   
@@ -19,20 +40,6 @@
     <loc>http://boyinthesun.cn/post/error-pycharm/</loc>
     
     <lastmod>2020-05-08T03:04:55.081Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy1/</loc>
-    
-    <lastmod>2020-04-27T12:28:24.492Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://boyinthesun.cn/post/python-scrapy/</loc>
-    
-    <lastmod>2020-04-27T12:24:46.223Z</lastmod>
     
   </url>
   

@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://boyinthesun.cn/post/python-matplotlib/</loc>
+    
+    <lastmod>2020-05-15T02:20:05.837Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://boyinthesun.cn/post/python-scrapy2/</loc>
     
-    <lastmod>2020-05-14T15:48:07.813Z</lastmod>
+    <lastmod>2020-05-15T01:17:12.052Z</lastmod>
     
   </url>
   

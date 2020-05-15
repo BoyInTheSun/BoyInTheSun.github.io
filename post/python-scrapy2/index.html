@@ -492,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-14
+                    2020-05-15
                 </div>
                 
 
@@ -625,7 +625,7 @@ DOWNLOAD_DELAY <span class="token operator">=</span> <span class="token number">
 <h3 id="新建begin-py"><a href="#新建begin-py" class="headerlink" title="新建begin.py"></a>新建<code>begin.py</code></h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(2).png?x-oss-process=style/watermark" alt=""><br>在项目文件夹中新建<code>begin.py</code>，内容为：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> scrapy <span class="token keyword">import</span> cmdline
 <span class="token keyword">from</span> lianjiaershou<span class="token punctuation">.</span>spiders <span class="token keyword">import</span> spider
-cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data\data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>其中<code>lianjiaershou</code>为爬虫名（无须与项目名相同）。目的是为了方便运行爬虫。（忽略图中代码内容，只看项目结构就好，只是博主懒得再重新截图了）<br>这里直接使用scrapy保存到csv，并且以爬取的区域进行命名。</p>
 <h2 id="运行爬虫"><a href="#运行爬虫" class="headerlink" title="运行爬虫"></a>运行爬虫</h2><p>运行<code>begin.py</code>，成功爬取到数据。这里只列举部分。</p>
 <pre class="line-numbers language-csv"><code class="language-csv">关注人数,区域,单价,小区,已发布日,建成年份,建筑结构,总价,户型_厅,户型_室,朝向,标题,楼层,满二,满五,装修,近地铁,面积
@@ -908,31 +908,30 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/python-scrapy2/">
+                <a href="/post/python-matplotlib/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Scrapy实例————爬取链家二手房数据，并处理后存入csv">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="matplotlib实例————绘制链家二手房数据箱型图">
                         
-                        <span class="card-title">Scrapy实例————爬取链家二手房数据，并处理后存入csv</span>
+                        <span class="card-title">matplotlib实例————绘制链家二手房数据箱型图</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            目标通过Scrapy爬取链家二手房数据，地址 https://bj.lianjia.com/ershoufang/ ，并对爬取到的数据进行处理，存储到csv文件中。
-环境博主是在Windows平台使用PyCharm基于Python 3.7和
+                            目标利用matplotlib(v3.2)，在链家二手房平台爬取自己家乡或者北京的3~4个区域的二手房信息，处理后保存为data.csv，并探究不同的区二手房总价数据。
+求解爬取并处理数据参见 https://boyinthesun.cn/p
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-15
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -945,7 +944,6 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1237,7 +1235,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.7k</span>&nbsp;字
+                class="white-color">24k</span>&nbsp;字
             
             
             

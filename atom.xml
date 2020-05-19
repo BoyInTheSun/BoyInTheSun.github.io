@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-05-15T02:20:05.837Z</updated>
+  <updated>2020-05-19T01:33:47.301Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matplotlib实例————线性回归计算房屋面积和总价关系</title>
+    <link href="http://boyinthesun.cn/post/python-matplotlib1/"/>
+    <id>http://boyinthesun.cn/post/python-matplotlib1/</id>
+    <published>2020-05-18T15:38:51.000Z</published>
+    <updated>2020-05-19T01:33:47.301Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程实例" scheme="http://boyinthesun.cn/categories/%E7%BC%96%E7%A8%8B%E5%AE%9E%E4%BE%8B/"/>
+    
+    
+      <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
+    
+      <category term="学堂在线《Python数据分析与可视化》" scheme="http://boyinthesun.cn/tags/%E5%AD%A6%E5%A0%82%E5%9C%A8%E7%BA%BF%E3%80%8APython%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E3%80%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>matplotlib实例————绘制链家二手房数据箱型图</title>
@@ -50,7 +79,7 @@
     <link href="http://boyinthesun.cn/post/python-scrapy2/"/>
     <id>http://boyinthesun.cn/post/python-scrapy2/</id>
     <published>2020-05-14T14:59:26.000Z</published>
-    <updated>2020-05-15T01:17:12.052Z</updated>
+    <updated>2020-05-19T02:50:24.457Z</updated>
     
     <summary type="html">
     
@@ -573,34 +602,6 @@
       <category term="常识" scheme="http://boyinthesun.cn/tags/%E5%B8%B8%E8%AF%86/"/>
     
       <category term="文件" scheme="http://boyinthesun.cn/tags/%E6%96%87%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博主提供的帮助</title>
-    <link href="http://boyinthesun.cn/post/myskill/"/>
-    <id>http://boyinthesun.cn/post/myskill/</id>
-    <published>2020-02-28T03:26:43.000Z</published>
-    <updated>2020-03-26T09:04:22.028Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;博主可以提供以下帮助，只要不过分，帮忙宣传就免费！请&lt;a href=&quot;tencent://AddContact/?fromId=50&amp;amp;fromSubId=1&amp;amp;subcmd=all&amp;amp;uin=3527857306&quot;&gt;qq联系&lt;/a&gt;&lt;/p&gt;
-&lt;h2
-        
-      
-    
-    </summary>
-    
-    
-      <category term="杂文" scheme="http://boyinthesun.cn/categories/%E6%9D%82%E6%96%87/"/>
-    
-    
-      <category term="杂文" scheme="http://boyinthesun.cn/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   

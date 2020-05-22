@@ -492,14 +492,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-19
+                    2020-05-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.4k
+                    1.5k
                 </div>
                 
 
@@ -571,6 +571,7 @@ area <span class="token operator">=</span> <span class="token string">"haidian"<
     <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
         item <span class="token operator">=</span> MyItem <span class="token punctuation">(</span><span class="token punctuation">)</span>
         <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/div[4]/div[1]/ul/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment" spellcheck="true"># item['城区'] = response.url.split('/')[-3]  # 如果你希望一次性爬取多个城区，可以使用该语句，并向start_urls列表添加多个城区的网址</span>
             item<span class="token punctuation">[</span><span class="token string">'标题'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[1]/a/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
             item<span class="token punctuation">[</span><span class="token string">'小区'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[2]/div/a[1]/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
             item<span class="token punctuation">[</span><span class="token string">'区域'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[2]/div/a[2]/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
@@ -611,7 +612,7 @@ area <span class="token operator">=</span> <span class="token string">"haidian"<
                 item<span class="token punctuation">[</span><span class="token string">'近地铁'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
             item<span class="token punctuation">[</span><span class="token string">'总价'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[6]/div[1]/span/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
             item<span class="token punctuation">[</span><span class="token string">'单价'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[6]/div[2]/span/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">]</span>  <span class="token comment" spellcheck="true"># 去除汉字'单价*元/平米'</span>
-            <span class="token keyword">yield</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+            <span class="token keyword">yield</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python">BOT_NAME <span class="token operator">=</span> <span class="token string">'lianjiaershou'</span>
 
 SPIDER_MODULES <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lianjiaershou.spiders'</span><span class="token punctuation">]</span>
@@ -624,8 +625,11 @@ USER_AGENT <span class="token operator">=</span> <span class="token string">'Moz
 DOWNLOAD_DELAY <span class="token operator">=</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="新建begin-py"><a href="#新建begin-py" class="headerlink" title="新建begin.py"></a>新建<code>begin.py</code></h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/Python-scrapy(2).png?x-oss-process=style/watermark" alt=""><br>在项目文件夹中新建<code>begin.py</code>，内容为：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> scrapy <span class="token keyword">import</span> cmdline
-<span class="token keyword">from</span> lianjiaershou<span class="token punctuation">.</span>spiders <span class="token keyword">import</span> spider
-cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data\data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">from</span> lianjiaershou<span class="token punctuation">.</span>spiders <span class="token keyword">import</span> spider  <span class="token comment" spellcheck="true"># 用于从linajiaershou/spiders/spider.py读取area变量，若该处报错请检查文件是否存在</span>
+<span class="token keyword">import</span> os
+<span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">"data\data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    os<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">"data\data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 为了防止文件已存在导致索引和数据重复，先删除将要生成的文件</span>
+cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data\data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>其中<code>lianjiaershou</code>为爬虫名（无须与项目名相同）。目的是为了方便运行爬虫。（忽略图中代码内容，只看项目结构就好，只是博主懒得再重新截图了）<br>这里直接使用scrapy保存到csv，并且以爬取的区域进行命名。</p>
 <h2 id="运行爬虫"><a href="#运行爬虫" class="headerlink" title="运行爬虫"></a>运行爬虫</h2><p>运行<code>begin.py</code>，成功爬取到数据。这里只列举部分。</p>
 <pre class="line-numbers language-csv"><code class="language-csv">关注人数,区域,单价,小区,已发布日,建成年份,建筑结构,总价,户型_厅,户型_室,朝向,标题,楼层,满二,满五,装修,近地铁,面积
@@ -634,7 +638,7 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
 72,甘家口,93214,国兴家园 ,360,2000,塔楼,1390,1,3,东南,东南向三居室，户型方正，随时可看,低楼层(共24层),False,True,简装,True,149.12
 149,玉泉路,61400,玉海园二里 ,360,1998,板塔结合,610,2,2,西北,海淀玉泉路 玉海园电梯两居室 满五年商品房 诚意出售,高楼层(共11层),False,True,简装,True,99.35
 197,田村,78543,雅世合金公寓 ,360,2011,板塔结合,709,1,2,东 西,雅世合金 十大科技系统居住舒适度高 户型好,中楼层(共9层),False,True,精装,True,90.27<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>由于通过命令行写csv默认是<code>a</code>模式，所以如果多次运行会导致出现多个索引，除了通过<code>pipelines.py</code>实现，暂无解决方案。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>由于通过命令行写csv默认是<code>a</code>模式，所以如果多次运行会导致索引和数据重复。该问题已解决，已经修改代码。也可通过<code>pipelines.py</code>实现。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1236,7 +1240,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.4k</span>&nbsp;字
+                class="white-color">24.5k</span>&nbsp;字
             
             
             

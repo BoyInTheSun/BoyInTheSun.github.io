@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-05-19T01:33:47.301Z</updated>
+  <updated>2020-05-22T11:32:53.129Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://boyinthesun.cn/post/python-matplotlib1/"/>
     <id>http://boyinthesun.cn/post/python-matplotlib1/</id>
     <published>2020-05-18T15:38:51.000Z</published>
-    <updated>2020-05-19T01:33:47.301Z</updated>
+    <updated>2020-05-22T11:32:53.129Z</updated>
     
     <summary type="html">
     
@@ -79,7 +79,7 @@
     <link href="http://boyinthesun.cn/post/python-scrapy2/"/>
     <id>http://boyinthesun.cn/post/python-scrapy2/</id>
     <published>2020-05-14T14:59:26.000Z</published>
-    <updated>2020-05-19T02:50:24.457Z</updated>
+    <updated>2020-05-22T11:50:07.531Z</updated>
     
     <summary type="html">
     
@@ -427,9 +427,9 @@
       <category term="踩坑" scheme="http://boyinthesun.cn/categories/%E8%B8%A9%E5%9D%91/"/>
     
     
-      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
-    
       <category term="命令行" scheme="http://boyinthesun.cn/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+      <category term="Linux" scheme="http://boyinthesun.cn/tags/Linux/"/>
     
       <category term="python" scheme="http://boyinthesun.cn/tags/python/"/>
     

@@ -493,21 +493,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    411
+                    429
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -533,6 +533,8 @@
 <span class="token comment" spellcheck="true"># 为了显示中文，需要更换字体</span>
 plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.family'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'sans-serif'</span><span class="token punctuation">]</span>
 plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>
+<span class="token comment" spellcheck="true"># 如果你是macOSX，请使用以下</span>
+<span class="token comment" spellcheck="true"># plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']</span>
 
 path <span class="token operator">=</span> <span class="token string">'data\\data_tongzhou.csv'</span>  <span class="token comment" spellcheck="true"># 文件名，请根据情况修改</span>
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>path<span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'总价'</span><span class="token punctuation">,</span> <span class="token string">'面积'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 读取文件中总价和面积两列</span>
@@ -561,7 +563,7 @@ plt<span class="token punctuation">.</span>xlabel<span class="token punctuation"
 plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'房屋总价/万元'</span><span class="token punctuation">)</span>
 plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span>loc<span class="token operator">=</span><span class="token string">'upper left'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 图例位置</span>
 plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'北京市通州区房屋面积和总价关系预测'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 显示图表</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 显示图表</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="结果展示"><a href="#结果展示" class="headerlink" title="结果展示"></a>结果展示</h2><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-matplotlib1.png?x-oss-process=style/watermark" alt=""></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1165,7 +1167,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.6k</span>&nbsp;字
+                class="white-color">24.7k</span>&nbsp;字
             
             
             

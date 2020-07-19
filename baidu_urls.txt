@@ -1,5 +1,7 @@
+http://boyinthesun.cn/post/error-github/
 http://boyinthesun.cn/post/path/
 http://boyinthesun.cn/post/python-matplotlib1/
+http://boyinthesun.cn/post/python-matplotlib2/
 http://boyinthesun.cn/post/python-matplotlib/
 http://boyinthesun.cn/post/python-scrapy2/
 http://boyinthesun.cn/post/python-pyecharts/
@@ -16,5 +18,3 @@ http://boyinthesun.cn/post/error-autosub/
 http://boyinthesun.cn/post/c-hanoi/
 http://boyinthesun.cn/post/c-house/
 http://boyinthesun.cn/post/sharefolder/
-http://boyinthesun.cn/post/vm/
-http://boyinthesun.cn/post/flvcd/

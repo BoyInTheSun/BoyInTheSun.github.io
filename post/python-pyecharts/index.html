@@ -494,14 +494,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-13
+                    2020-07-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    953
+                    980
                 </div>
                 
 
@@ -572,10 +572,10 @@ df <span class="token operator">=</span> pd<span class="token punctuation">.</sp
 <span class="token comment" spellcheck="true"># 新建列表，并将已删除'万'字的数据存入</span>
 num_2016 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> row <span class="token keyword">in</span> df<span class="token punctuation">[</span><span class="token string">'2016年'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-    num_2016<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'万'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    num_2016<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 num_2017 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 <span class="token keyword">for</span> row <span class="token keyword">in</span> df<span class="token punctuation">[</span><span class="token string">'2017年'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
-    num_2017<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token string">'万'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    num_2017<span class="token punctuation">.</span>append<span class="token punctuation">(</span>row<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 
 map0 <span class="token operator">=</span> Map<span class="token punctuation">(</span><span class="token punctuation">)</span>
 map0<span class="token punctuation">.</span>set_global_opts<span class="token punctuation">(</span>
@@ -629,6 +629,7 @@ map2<span class="token punctuation">.</span>render<span class="token punctuation
 <h2 id="结果展示"><a href="#结果展示" class="headerlink" title="结果展示"></a>结果展示</h2><h3 id="map0"><a href="#map0" class="headerlink" title="map0"></a>map0</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(1).PNG?x-oss-process=style/watermark" alt=""><br><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(2).PNG?x-oss-process=style/watermark" alt=""></p>
 <h3 id="map1"><a href="#map1" class="headerlink" title="map1"></a>map1</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(3).PNG?x-oss-process=style/watermark" alt=""></p>
 <h3 id="map2"><a href="#map2" class="headerlink" title="map2"></a>map2</h3><p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/python-pyecharts(4).PNG?x-oss-process=style/watermark" alt=""></p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>最新版本<code>v1.8.1</code>并不兼容旧版本，请自行参考官网文档进行修改</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1226,7 +1227,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">29.3k</span>&nbsp;字
             
             
             

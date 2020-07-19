@@ -6,13 +6,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="c,c语言,汉诺塔,递归,hanoi">
     <meta name="description" content="基于C语言用递归算法实现汉诺塔解法的计算如有不懂欢迎提问
-#include&amp;lt;stdio.h&gt;
-
-int steps = 0;
-
-//三根柱A(用0表示)，B(用1表示)，C(用2表示)，起始A，目标C
-
-void print(int ">
+/***************************************************************
+三根柱A(用0表示)，B(用1表示)，C(用2表示)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -494,14 +489,14 @@ void print(int ">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-04-02
+                    2020-07-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    215
+                    310
                 </div>
                 
 
@@ -525,16 +520,23 @@ void print(int ">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>基于C语言用递归算法实现汉诺塔解法的计算<br>如有不懂欢迎提问</p>
-<pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
-
+<pre class="line-numbers language-c"><code class="language-c"><span class="token comment" spellcheck="true">/***************************************************************
+三根柱A(用0表示)，B(用1表示)，C(用2表示)，起始A，目标C
+***************************************************************/</span>
+<span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token comment" spellcheck="true">//全局变量steps记录步数</span>
 <span class="token keyword">int</span> steps <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-<span class="token comment" spellcheck="true">//三根柱A(用0表示)，B(用1表示)，C(用2表示)，起始A，目标C</span>
 
+<span class="token comment" spellcheck="true">//传入碟子号num，从get位移到put位</span>
 <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span> <span class="token keyword">int</span> get<span class="token punctuation">,</span> <span class="token keyword">int</span> put<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     steps<span class="token operator">++</span><span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"move disk%3d from %c to %c\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">,</span> get <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token string">'A'</span> <span class="token punctuation">:</span> get <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token string">'B'</span> <span class="token punctuation">:</span> <span class="token string">'C'</span><span class="token punctuation">,</span> put <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token string">'A'</span> <span class="token punctuation">:</span> put <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token string">'B'</span> <span class="token punctuation">:</span> <span class="token string">'C'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//get == 0 ? 'A' : get == 1 ? 'B' : 'C' 理解为 若get==0，则'A'，否则若get==1，则'B'，否则'C'，实际上是将012与ABC对应</span>
 <span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//递归函数，传入碟子号num，abc为三根柱子号，不一定对应ABC柱</span>
 <span class="token keyword">void</span> <span class="token function">mv</span><span class="token punctuation">(</span><span class="token keyword">int</span> num<span class="token punctuation">,</span><span class="token keyword">int</span> a<span class="token punctuation">,</span><span class="token keyword">int</span> b<span class="token punctuation">,</span><span class="token keyword">int</span> c<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
         <span class="token function">print</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -544,7 +546,11 @@ void print(int ">
         <span class="token function">mv</span><span class="token punctuation">(</span>num <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">,</span> a<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//主函数，程序从这里开始运行</span>
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//碟子数n</span>
     <span class="token keyword">int</span> n<span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Input the number of disks:"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -552,7 +558,7 @@ void print(int ">
     <span class="token function">mv</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Complelt in %d steps!\n"</span><span class="token punctuation">,</span>steps<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="https://boyinthesun.oss-cn-beijing.aliyuncs.com/img/c-hanoi(1).png?x-oss-process=style/watermark" alt="结果展示"></p>
 <script>
         document.querySelectorAll('.github-emoji')
@@ -1157,7 +1163,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">29.3k</span>&nbsp;字
             
             
             

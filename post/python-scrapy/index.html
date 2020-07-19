@@ -492,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-14
+                    2020-07-19
                 </div>
                 
 
@@ -548,6 +548,8 @@ cmdline<span class="token punctuation">.</span>execute<span class="token punctua
 <h3 id="新建并更改spider-py"><a href="#新建并更改spider-py" class="headerlink" title="新建并更改spider.py"></a>新建并更改<code>spider.py</code></h3><p>在<code>spider</code>文件夹中新建<code>spider.py</code>，并键入：</p>
 <pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 为方便更改，设置全局变量，爬取页数</span>
 page <span class="token operator">=</span> <span class="token number">5</span> 
+
+
 <span class="token keyword">import</span> scrapy
 <span class="token keyword">from</span> lianjia<span class="token punctuation">.</span>items <span class="token keyword">import</span> MyItem
 <span class="token keyword">class</span> <span class="token class-name">mySpider</span><span class="token punctuation">(</span>scrapy<span class="token punctuation">.</span>spiders<span class="token punctuation">.</span>Spider<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -558,17 +560,18 @@ page <span class="token operator">=</span> <span class="token number">5</span>
     <span class="token comment" spellcheck="true"># 新建爬取链接为空列表</span>
     start_urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
     <span class="token keyword">if</span> page <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">:</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span> <span class="token punctuation">,</span> page<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span> <span class="token punctuation">,</span> page <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             <span class="token comment" spellcheck="true"># 依次将第1页到第page页放入开始连接队列</span>
             start_urls<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">"https://bj.fang.lianjia.com/loupan/nhs1pg{}"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token keyword">else</span><span class="token punctuation">:</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"page must >= 1"</span><span class="token punctuation">)</span>
     <span class="token keyword">def</span> <span class="token function">parse</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> response<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        item <span class="token operator">=</span> MyItem <span class="token punctuation">(</span><span class="token punctuation">)</span>
+        item <span class="token operator">=</span> MyItem<span class="token punctuation">(</span><span class="token punctuation">)</span>
         <span class="token comment" spellcheck="true"># 迭代爬取每个li区块</span>
         <span class="token keyword">for</span> each <span class="token keyword">in</span> response<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"/html/body/div[4]/ul[2]/*"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             item<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">"div/div[1]/a/text()"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             item<span class="token punctuation">[</span><span class="token string">'resblock_type'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[1]/span[@class="resblock-type"]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment" spellcheck="true"># span[@class="resblock-type"]为限定属性class值为"resblock-type"的区块</span>
             item<span class="token punctuation">[</span><span class="token string">'sale_status'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[1]/span[@class="sale-status"]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             item<span class="token punctuation">[</span><span class="token string">'location0'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[2]/span[1]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             item<span class="token punctuation">[</span><span class="token string">'location1'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[2]/span[2]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -583,16 +586,14 @@ page <span class="token operator">=</span> <span class="token number">5</span>
             item<span class="token punctuation">[</span><span class="token string">'price_pre_spm'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'均价{}元/平方米'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[6]/div[1]/span[1]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
             item<span class="token punctuation">[</span><span class="token string">'price_pre_suite'</span><span class="token punctuation">]</span> <span class="token operator">=</span> each<span class="token punctuation">.</span>xpath<span class="token punctuation">(</span><span class="token string">'div/div[6]/div[2]/text()'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>extract<span class="token punctuation">(</span><span class="token punctuation">)</span>
             <span class="token comment" spellcheck="true"># 传递数据</span>
-            <span class="token keyword">yield</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 不遵守机器人协议</span>
-ROBOTSTXT_OBEY <span class="token operator">=</span> <span class="token boolean">False</span>
-BOT_NAME <span class="token operator">=</span> <span class="token string">'lianjia'</span>
+            <span class="token keyword">yield</span> item<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="更改setting-py"><a href="#更改setting-py" class="headerlink" title="更改setting.py"></a>更改<code>setting.py</code></h3><pre class="line-numbers language-python"><code class="language-python">BOT_NAME <span class="token operator">=</span> <span class="token string">'lianjia'</span>
 SPIDER_MODULES <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'lianjia.spiders'</span><span class="token punctuation">]</span>
 NEWSPIDER_MODULE <span class="token operator">=</span> <span class="token string">'lianjia.spiders'</span>
 <span class="token comment" spellcheck="true"># 开启管道</span>
 ITEM_PIPELINES <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'lianjia.pipelines.MyPipeline'</span><span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span><span class="token punctuation">}</span>
 <span class="token comment" spellcheck="true"># 客户端伪装</span>
-USER_AGENT <span class="token operator">=</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+USER_AGENT <span class="token operator">=</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="更改pipelines-py"><a href="#更改pipelines-py" class="headerlink" title="更改pipelines.py"></a>更改<code>pipelines.py</code></h3><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> json
 <span class="token keyword">class</span> <span class="token class-name">MyPipeline</span> <span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token comment" spellcheck="true"># 打开文件</span>
@@ -1224,7 +1225,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">29.3k</span>&nbsp;字
             
             
             

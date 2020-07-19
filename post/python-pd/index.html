@@ -496,7 +496,7 @@ csv文件详见附件
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-12
+                    2020-07-19
                 </div>
                 
 
@@ -683,7 +683,7 @@ FileNameStr <span class="token operator">=</span> <span class="token string">'Be
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 
 <span class="token comment" spellcheck="true"># 新建平均值列，并将平均值写入</span>
-<span class="token comment" spellcheck="true"># 其中，iloc[:, 1:5]指第2到第5列，mean(axis=1)为求行平均值</span>
+<span class="token comment" spellcheck="true"># 其中，iloc[:, 1:5]指第2到第5列，mean(axis=1)为求行平均值，否则默认为axis=0求列平均值</span>
 df<span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true"># 保存到文件，其中以'year'分组，计算'PM_ave'列的平均值。</span>
 df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token string">'year'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution1.csv"</span><span class="token punctuation">)</span>
@@ -706,7 +706,7 @@ FileNameStr <span class="token operator">=</span> <span class="token string">'Be
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span>FileNameStr<span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span> usecols<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 
 <span class="token comment" spellcheck="true"># 新建平均值列，并将平均值写入</span>
-<span class="token comment" spellcheck="true"># 其中，iloc[:, 2:6]指第3到第6列，mean(axis=1)为求行平均值</span>
+<span class="token comment" spellcheck="true"># 其中，iloc[:, 2:6]指第3到第6列，mean(axis=1)为求行平均值，否则默认为axis=0求列平均值</span>
 df<span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true"># 保存到文件，其中以'year'和'month'分组，计算'PM_ave'列的平均值。</span>
 df<span class="token punctuation">.</span>groupby<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">,</span> <span class="token string">'month'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'PM_ave'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">"solution2.csv"</span><span class="token punctuation">)</span>
@@ -1400,7 +1400,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">29.3k</span>&nbsp;字
             
             
             

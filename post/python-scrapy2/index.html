@@ -492,7 +492,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-26
+                    2020-05-29
                 </div>
                 
 
@@ -634,14 +634,14 @@ DOWNLOAD_DELAY <span class="token operator">=</span> <span class="token number">
 <pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">from</span> scrapy <span class="token keyword">import</span> cmdline
 <span class="token keyword">from</span> lianjiaershou<span class="token punctuation">.</span>spiders <span class="token keyword">import</span> spider  <span class="token comment" spellcheck="true"># 用于从linajiaershou/spiders/spider.py读取area变量</span>
 <span class="token keyword">import</span> os
-<span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">"data\data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    os<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">"data\data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 为了防止文件已存在导致索引和数据重复，先删除将要生成的文件</span>
-cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data\data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">"data/data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    os<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token string">"data/data_{}.csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 为了防止文件已存在导致索引和数据重复，先删除将要生成的文件</span>
+cmdline<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">"scrapy crawl lianjiaershou -o data/data_{}.csv -t csv"</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>spider<span class="token punctuation">.</span>area<span class="token punctuation">)</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token comment" spellcheck="true"># 如果你不想以spider.py中area命名文件，请参考以下</span>
 <span class="token triple-quoted-string string">'''
-if os.path.exists("data\data.csv"):
-    os.remove("data\data.csv")  # 为了防止文件已存在导致索引和数据重复，先删除将要生成的文件
-cmdline.execute("scrapy crawl lianjiaershou -o data\data.csv -t csv".split())
+if os.path.exists("data/data.csv"):
+    os.remove("data/data.csv")  # 为了防止文件已存在导致索引和数据重复，先删除将要生成的文件
+cmdline.execute("scrapy crawl lianjiaershou -o data/data.csv -t csv".split())
 '''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>其中<code>lianjiaershou</code>为爬虫名（无须与项目名相同）。目的是为了方便运行爬虫。（忽略图中代码内容，只看项目结构就好，只是博主懒得再重新截图了）<br>这里直接使用scrapy命令保存到csv，<code>pipelines.py</code>保持默认即可。</p>
 <h2 id="运行爬虫"><a href="#运行爬虫" class="headerlink" title="运行爬虫"></a>运行爬虫</h2><p>运行<code>begin.py</code>，成功爬取到数据。这里只列举部分。</p>
@@ -1253,7 +1253,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">25.6k</span>&nbsp;字
+                class="white-color">29.3k</span>&nbsp;字
             
             
             

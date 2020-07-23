@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://boyinthesun.cn/"/>
-  <updated>2020-06-30T17:05:26.197Z</updated>
+  <updated>2020-07-23T12:53:04.361Z</updated>
   <id>http://boyinthesun.cn/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>error-github</title>
+    <title>github下载错误在|0.0.0.0|:443或|::|:443</title>
     <link href="http://boyinthesun.cn/post/error-github/"/>
     <id>http://boyinthesun.cn/post/error-github/</id>
     <published>2020-06-30T16:47:20.000Z</published>
-    <updated>2020-06-30T17:05:26.197Z</updated>
+    <updated>2020-07-23T12:53:04.361Z</updated>
     
     <summary type="html">
     
@@ -68,11 +68,11 @@
   </entry>
   
   <entry>
-    <title>matplotlib实例————线性回归计算房屋面积和总价关系</title>
-    <link href="http://boyinthesun.cn/post/python-matplotlib1/"/>
-    <id>http://boyinthesun.cn/post/python-matplotlib1/</id>
+    <title>matplotlib实例————北京市链家二手房源深度分析</title>
+    <link href="http://boyinthesun.cn/post/python-matplotlib2/"/>
+    <id>http://boyinthesun.cn/post/python-matplotlib2/</id>
     <published>2020-05-18T15:38:51.000Z</published>
-    <updated>2020-07-19T14:22:21.502Z</updated>
+    <updated>2020-07-19T15:26:42.620Z</updated>
     
     <summary type="html">
     
@@ -80,7 +80,7 @@
       
         
         
-          &lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;matplotlib实例————北京市链家二手房源深度分析&quot;&gt;&lt;a href=&quot;#matplotlib实例————北京市链家二手房源深度分析&quot; class=&quot;headerlink&quot;
         
       
     
@@ -97,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>matplotlib实例————北京市链家二手房源深度分析</title>
-    <link href="http://boyinthesun.cn/post/python-matplotlib2/"/>
-    <id>http://boyinthesun.cn/post/python-matplotlib2/</id>
+    <title>matplotlib实例————线性回归计算房屋面积和总价关系</title>
+    <link href="http://boyinthesun.cn/post/python-matplotlib1/"/>
+    <id>http://boyinthesun.cn/post/python-matplotlib1/</id>
     <published>2020-05-18T15:38:51.000Z</published>
-    <updated>2020-07-19T15:26:42.620Z</updated>
+    <updated>2020-07-19T14:22:21.502Z</updated>
     
     <summary type="html">
     
@@ -109,7 +109,7 @@
       
         
         
-          &lt;h1 id=&quot;matplotlib实例————北京市链家二手房源深度分析&quot;&gt;&lt;a href=&quot;#matplotlib实例————北京市链家二手房源深度分析&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;目标&quot;&gt;&lt;a href=&quot;#目标&quot; class=&quot;headerlink&quot;
         
       
     

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://boyinthesun.cn/post/error-github/</loc>
+    
+    <lastmod>2020-07-23T12:53:04.361Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://boyinthesun.cn/post/python-matplotlib2/</loc>
     
     <lastmod>2020-07-19T15:26:42.620Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://boyinthesun.cn/post/c-hanoi/</loc>
     
     <lastmod>2020-07-19T14:17:09.160Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://boyinthesun.cn/post/error-github/</loc>
-    
-    <lastmod>2020-06-30T17:05:26.197Z</lastmod>
     
   </url>
   
